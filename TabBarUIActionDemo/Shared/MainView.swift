@@ -14,12 +14,9 @@ struct MainView: View {
             VStack {
                 TabBarUIAction {
                     ScreenModal()
-                } content: { currentView in
-                    if currentView == .tab1 {
-                        Screen1()
-                    } else {
-                        Screen2()
-                    }
+                } content: {
+                    Screen1()
+                    Screen2()
                 }
             }
             .edgesIgnoringSafeArea(.all)
