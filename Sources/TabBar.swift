@@ -10,7 +10,7 @@ import SwiftUI
 public struct TabBar: View {
     @Binding public var currentView: Tab
     @Binding public var showModal: Bool
-    
+
     public init(currentView: Binding<Tab>, showModal: Binding<Bool>) {
            self._currentView = currentView
            self._showModal = showModal

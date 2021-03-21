@@ -9,14 +9,18 @@ import SwiftUI
 import TabBarUIAction
 
 struct MainView: View {
-    @State private var currentView: Tab = .tab1
     @State private var showModal: Bool = false
 
     var body: some View {
         NavigationView {
             VStack {
-                CurrentScreen(currentView: self.$currentView)
-                TabBar(currentView: self.$currentView, showModal: self.$showModal)
+                TabBarUIAction(showModal: self.$showModal) { currentView in
+                    if currentView == .tab1 {
+                        Screen1()
+                    } else {
+                        Screen2()
+                    }
+                }
             }
             .edgesIgnoringSafeArea(.all)
         }
