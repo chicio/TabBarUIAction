@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TabBarUIAction
 
 struct MainView: View {
     @State private var currentView: Tab = .tab1

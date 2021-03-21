@@ -32,6 +32,6 @@ struct TabBarItem: View {
 
 struct TabBarItem_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarItem(currentView: .constant(.Tab1), imageName: "gear", paddingEdges: .leading, tab: .Tab1)
+        TabBarItem(currentView: .constant(.tab1), imageName: "gear", paddingEdges: .leading, tab: .tab1)
     }
 }

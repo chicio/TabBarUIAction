@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Tab {
-    case Tab1
-    case Tab2
+public enum Tab {
+    case tab1
+    case tab2
 }

@@ -20,12 +20,24 @@
 		45CA709D26078D4E008C5CDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA709126078D4E008C5CDF /* MainView.swift */; };
 		45CA70DC26078E6C008C5CDF /* TabBarUIActionDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA70D526078E6C008C5CDF /* TabBarUIActionDemoApp.swift */; };
 		45CA70DD26078E6C008C5CDF /* TabBarUIActionDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA70D526078E6C008C5CDF /* TabBarUIActionDemoApp.swift */; };
-		45CA70E026078E6C008C5CDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA70D726078E6C008C5CDF /* ContentView.swift */; };
-		45CA70E126078E6C008C5CDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA70D726078E6C008C5CDF /* ContentView.swift */; };
 		45CA70FD26078F06008C5CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45CA70FC26078F06008C5CDF /* Assets.xcassets */; };
 		45CA70FE26078F06008C5CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45CA70FC26078F06008C5CDF /* Assets.xcassets */; };
 		45CA713126078FEC008C5CDF /* TabBarUIActionDemoUITestsiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA713026078FEC008C5CDF /* TabBarUIActionDemoUITestsiOS.swift */; };
 		45CA714326078FFE008C5CDF /* TabBarUIActionDemoUITestsmacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA714226078FFE008C5CDF /* TabBarUIActionDemoUITestsmacOS.swift */; };
+		45CA715F260790DD008C5CDF /* TabBarUIAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CA707926078D2D008C5CDF /* TabBarUIAction.framework */; };
+		45CA7160260790DD008C5CDF /* TabBarUIAction.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45CA707926078D2D008C5CDF /* TabBarUIAction.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45CA7176260791B4008C5CDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA7174260791B4008C5CDF /* MainView.swift */; };
+		45CA7177260791B4008C5CDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA7174260791B4008C5CDF /* MainView.swift */; };
+		45CA7178260791B4008C5CDF /* CurrentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA7175260791B4008C5CDF /* CurrentScreen.swift */; };
+		45CA7179260791B4008C5CDF /* CurrentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA7175260791B4008C5CDF /* CurrentScreen.swift */; };
+		45CA718826079247008C5CDF /* ScreenModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA718626079247008C5CDF /* ScreenModal.swift */; };
+		45CA718926079247008C5CDF /* ScreenModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA718626079247008C5CDF /* ScreenModal.swift */; };
+		45CA718A26079247008C5CDF /* ScreenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA718726079247008C5CDF /* ScreenDetail.swift */; };
+		45CA718B26079247008C5CDF /* ScreenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA718726079247008C5CDF /* ScreenDetail.swift */; };
+		45CA71922607926C008C5CDF /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71902607926C008C5CDF /* Screen2.swift */; };
+		45CA71932607926C008C5CDF /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71902607926C008C5CDF /* Screen2.swift */; };
+		45CA71942607926C008C5CDF /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71912607926C008C5CDF /* Screen1.swift */; };
+		45CA71952607926C008C5CDF /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71912607926C008C5CDF /* Screen1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +55,28 @@
 			remoteGlobalIDString = 45CA70BC26078E2D008C5CDF;
 			remoteInfo = "TabBarUIActionDemo (macOS)";
 		};
+		45CA7161260790DD008C5CDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45CA707026078D2D008C5CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45CA707826078D2D008C5CDF;
+			remoteInfo = TabBarUIAction;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45CA7163260790DE008C5CDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				45CA7160260790DD008C5CDF /* TabBarUIAction.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		45CA707926078D2D008C5CDF /* TabBarUIAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TabBarUIAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +106,6 @@
 		45CA70D226078E6C008C5CDF /* macOS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		45CA70D326078E6C008C5CDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45CA70D526078E6C008C5CDF /* TabBarUIActionDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarUIActionDemoApp.swift; sourceTree = "<group>"; };
-		45CA70D726078E6C008C5CDF /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45CA70D926078E6C008C5CDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45CA70FC26078F06008C5CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45CA712E26078FEC008C5CDF /* TabBarUIActionDemoUITests (iOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TabBarUIActionDemoUITests (iOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +114,12 @@
 		45CA714026078FFE008C5CDF /* TabBarUIActionDemoUITests (macOS).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TabBarUIActionDemoUITests (macOS).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CA714226078FFE008C5CDF /* TabBarUIActionDemoUITestsmacOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUIActionDemoUITestsmacOS.swift; sourceTree = "<group>"; };
 		45CA714426078FFE008C5CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45CA7174260791B4008C5CDF /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		45CA7175260791B4008C5CDF /* CurrentScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentScreen.swift; sourceTree = "<group>"; };
+		45CA718626079247008C5CDF /* ScreenModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenModal.swift; sourceTree = "<group>"; };
+		45CA718726079247008C5CDF /* ScreenDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenDetail.swift; sourceTree = "<group>"; };
+		45CA71902607926C008C5CDF /* Screen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
+		45CA71912607926C008C5CDF /* Screen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CA715F260790DD008C5CDF /* TabBarUIAction.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +179,7 @@
 				45CA712F26078FEC008C5CDF /* TabBarUIActionDemoUITestsiOS */,
 				45CA714126078FFE008C5CDF /* TabBarUIActionDemoUITestsmacOS */,
 				45CA707A26078D2D008C5CDF /* Products */,
+				45CA715E260790DD008C5CDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,12 +198,12 @@
 		45CA708626078D4E008C5CDF /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				45CA708C26078D4E008C5CDF /* TabBarUIAction.h */,
 				45CA708726078D4E008C5CDF /* TabBar.swift */,
 				45CA708826078D4E008C5CDF /* ScreenModal.swift */,
 				45CA708926078D4E008C5CDF /* Screen2.swift */,
 				45CA708A26078D4E008C5CDF /* TabBarItem.swift */,
 				45CA708B26078D4E008C5CDF /* Screen1.swift */,
-				45CA708C26078D4E008C5CDF /* TabBarUIAction.h */,
 				45CA708D26078D4E008C5CDF /* CurrentScreen.swift */,
 				45CA708E26078D4E008C5CDF /* ScreenDetail.swift */,
 				45CA708F26078D4E008C5CDF /* ShowModalTabBarItem.swift */,
@@ -197,7 +237,12 @@
 			isa = PBXGroup;
 			children = (
 				45CA70D526078E6C008C5CDF /* TabBarUIActionDemoApp.swift */,
-				45CA70D726078E6C008C5CDF /* ContentView.swift */,
+				45CA71912607926C008C5CDF /* Screen1.swift */,
+				45CA71902607926C008C5CDF /* Screen2.swift */,
+				45CA718726079247008C5CDF /* ScreenDetail.swift */,
+				45CA718626079247008C5CDF /* ScreenModal.swift */,
+				45CA7175260791B4008C5CDF /* CurrentScreen.swift */,
+				45CA7174260791B4008C5CDF /* MainView.swift */,
 				45CA70FC26078F06008C5CDF /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -227,6 +272,13 @@
 				45CA714426078FFE008C5CDF /* Info.plist */,
 			);
 			path = TabBarUIActionDemoUITestsmacOS;
+			sourceTree = "<group>";
+		};
+		45CA715E260790DD008C5CDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +321,12 @@
 				45CA70B226078E2D008C5CDF /* Sources */,
 				45CA70B326078E2D008C5CDF /* Frameworks */,
 				45CA70B426078E2D008C5CDF /* Resources */,
+				45CA7163260790DE008C5CDF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				45CA7162260790DD008C5CDF /* PBXTargetDependency */,
 			);
 			name = "TabBarUIActionDemo (iOS)";
 			productName = "TabBarUIActionDemo (iOS)";
@@ -464,8 +518,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CA71922607926C008C5CDF /* Screen2.swift in Sources */,
 				45CA70DC26078E6C008C5CDF /* TabBarUIActionDemoApp.swift in Sources */,
-				45CA70E026078E6C008C5CDF /* ContentView.swift in Sources */,
+				45CA718826079247008C5CDF /* ScreenModal.swift in Sources */,
+				45CA718A26079247008C5CDF /* ScreenDetail.swift in Sources */,
+				45CA7178260791B4008C5CDF /* CurrentScreen.swift in Sources */,
+				45CA7176260791B4008C5CDF /* MainView.swift in Sources */,
+				45CA71942607926C008C5CDF /* Screen1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,8 +532,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CA71932607926C008C5CDF /* Screen2.swift in Sources */,
 				45CA70DD26078E6C008C5CDF /* TabBarUIActionDemoApp.swift in Sources */,
-				45CA70E126078E6C008C5CDF /* ContentView.swift in Sources */,
+				45CA718926079247008C5CDF /* ScreenModal.swift in Sources */,
+				45CA718B26079247008C5CDF /* ScreenDetail.swift in Sources */,
+				45CA7179260791B4008C5CDF /* CurrentScreen.swift in Sources */,
+				45CA7177260791B4008C5CDF /* MainView.swift in Sources */,
+				45CA71952607926C008C5CDF /* Screen1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +570,11 @@
 			isa = PBXTargetDependency;
 			target = 45CA70BC26078E2D008C5CDF /* TabBarUIActionDemo (macOS) */;
 			targetProxy = 45CA714526078FFE008C5CDF /* PBXContainerItemProxy */;
+		};
+		45CA7162260790DD008C5CDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45CA707826078D2D008C5CDF /* TabBarUIAction */;
+			targetProxy = 45CA7161260790DD008C5CDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -643,6 +712,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -667,6 +738,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
