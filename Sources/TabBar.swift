@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-public struct TabBar: View {
+public struct TabBar<Modal: View>: View {
     @Binding public var currentView: Tab
-    @Binding public var showModal: Bool
+    @State public var showModal: Bool = false
+    private let modal: () -> Modal
 
-    public init(currentView: Binding<Tab>, showModal: Binding<Bool>) {
-           self._currentView = currentView
-           self._showModal = showModal
-       }
+    public init(currentView: Binding<Tab>, @ViewBuilder modal: @escaping () -> Modal) {
+        self._currentView = currentView
+        self.modal = modal
+    }
 
     public var body: some View {
         HStack {
@@ -25,11 +26,14 @@ public struct TabBar: View {
             TabBarItem(currentView: self.$currentView, imageName: "gear", paddingEdges: .trailing, tab: .tab2)
         }
         .frame(minHeight: 70)
+        .sheet(isPresented: self.$showModal) { self.modal() }
     }
 }
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        TabBar(currentView: .constant(.tab1), showModal: .constant(false))
+        TabBar(currentView: .constant(.tab1)) {
+            Text("Test")
+        }
     }
 }

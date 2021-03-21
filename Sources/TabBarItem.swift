@@ -12,9 +12,9 @@ struct TabBarItem: View {
     let imageName: String
     let paddingEdges: Edge.Set
     let tab: Tab
-    
+
     var body: some View {
-        VStack(spacing:0) {
+        VStack(spacing: 0) {
             Image(systemName: imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)

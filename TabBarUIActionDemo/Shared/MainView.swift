@@ -9,12 +9,12 @@ import SwiftUI
 import TabBarUIAction
 
 struct MainView: View {
-    @State private var showModal: Bool = false
-
     var body: some View {
         NavigationView {
             VStack {
-                TabBarUIAction(showModal: self.$showModal) { currentView in
+                TabBarUIAction {
+                    ScreenModal()
+                } content: { currentView in
                     if currentView == .tab1 {
                         Screen1()
                     } else {
@@ -26,7 +26,6 @@ struct MainView: View {
         }
         .background(Color(.white))
         .navigationViewStyle(StackNavigationViewStyle())
-        .sheet(isPresented: self.$showModal) { ScreenModal() }
     }
 }
 

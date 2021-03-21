@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 public struct ShowModalTabBarItem: View {
     let radius: CGFloat
     let action: () -> Void
@@ -17,9 +15,9 @@ public struct ShowModalTabBarItem: View {
         self.radius = radius
         self.action = action
     }
-    
+
     public var body: some View {
-        VStack(spacing:0) {
+        VStack(spacing: 0) {
             Image(systemName: "plus.circle.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
