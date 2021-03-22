@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct ShowModalTabBarItem: View {
+public struct ModalTabBarItem: View {
     let radius: CGFloat
     let action: () -> Void
 
@@ -35,6 +35,6 @@ public struct ShowModalTabBarItem: View {
 
 struct ShowModalTabBarItem_Previews: PreviewProvider {
     static var previews: some View {
-        ShowModalTabBarItem(radius: 55) { }
+        ModalTabBarItem(radius: 55) { }
     }
 }

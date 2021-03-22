@@ -28,6 +28,7 @@ public struct TabBarUIAction<Modal: View>: View {
                 self.modal()
             }
         }
+        .ignoresSafeArea(.keyboard)
     }
 }
 

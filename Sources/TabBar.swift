@@ -21,7 +21,7 @@ public struct TabBar<Modal: View>: View {
         HStack {
             TabBarItem(currentView: self.$currentView, imageName: "list.bullet", paddingEdges: .leading, tab: .tab1)
             Spacer()
-            ShowModalTabBarItem(radius: 55) { self.showModal.toggle() }
+            ModalTabBarItem(radius: 55) { self.showModal.toggle() }
             Spacer()
             TabBarItem(currentView: self.$currentView, imageName: "gear", paddingEdges: .trailing, tab: .tab2)
         }
