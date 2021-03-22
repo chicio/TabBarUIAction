@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Tab {
-    case tab1
-    case tab2
+public enum Tab: Int {
+    case tab1 = 0
+    case tab2 = 1
 }
