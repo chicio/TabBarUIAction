@@ -22,7 +22,7 @@ struct Screen2: View {
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
         .background(Color(.purple).opacity(0.2))
-        .navigationBarTitle("Screen 2")
+        .navigationTitle("Screen 2")
     }
 }
 

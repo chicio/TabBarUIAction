@@ -19,9 +19,8 @@ struct MainView: View {
                     Screen2()
                 }
             }
-            .edgesIgnoringSafeArea(.all)
         }
-        .background(Color(.white))
+        .background(Color.white)
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }

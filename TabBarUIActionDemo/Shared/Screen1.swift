@@ -25,7 +25,7 @@ struct Screen1: View {
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
         .background(Color(.yellow).opacity(0.2))
-        .navigationBarTitle("Screen 1")
+        .navigationTitle("Screen 1")
     }
 }
 

@@ -31,7 +31,6 @@ public struct TabBarUIAction<Modal: View, C0: View, C1: View>: View {
                 self.modal()
             }
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
