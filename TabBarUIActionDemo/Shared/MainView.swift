@@ -15,8 +15,8 @@ struct MainView: View {
                 TabBarUIAction {
                     ScreenModal()
                 } content: {
-                    Screen1()
-                    Screen2()
+                    TabScreen { Screen1() }
+                    TabScreen { Screen2() }
                 }
             }
         }

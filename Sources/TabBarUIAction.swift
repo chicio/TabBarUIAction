@@ -10,15 +10,15 @@ import SwiftUI
 public struct TabBarUIAction<Modal: View>: View {
     @State private var currentView: Tab = .tab1
     private var modal: () -> Modal
-    private let screens: [AnyView]
+    private let screens: [TabScreen]
 
-    public init<C0, C1>(
+    public init(
         @ViewBuilder modal: @escaping () -> Modal,
-        @ViewBuilder content: () -> TupleView<(C0, C1)>
-    ) where C0: View, C1: View {
+        @ViewBuilder content: () -> TupleView<(TabScreen, TabScreen)>
+    ) {
         let views = content().value
         self.modal = modal
-        self.screens = [AnyView(views.0), AnyView(views.1)]
+        self.screens = [views.0, views.1]
     }
 
     public var body: some View {
@@ -37,8 +37,8 @@ struct TabBarUIAction_Previews: PreviewProvider {
         TabBarUIAction {
             Text("Modal")
         } content: {
-            Text("aaa")
-            Text("aaa")
+            TabScreen { Text("aaa") }
+            TabScreen { Text("aaa") }
         }
     }
 }
