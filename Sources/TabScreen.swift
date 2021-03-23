@@ -15,7 +15,7 @@ public struct TabScreen<Content: View>: View {
     }
 
     public var body: some View {
-        ZStack {
+        Group {
             self.content()
         }
     }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Screen2: View {
+    @State private var text: String = ""
+
     var body: some View {
         VStack {
             Spacer()
@@ -16,6 +18,7 @@ struct Screen2: View {
                 Text("Screen 2")
                     .font(.system(size: 20))
                     .bold()
+                TextField("test", text: self.$text)
                 Spacer()
             }
             Spacer()
