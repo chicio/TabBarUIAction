@@ -7,20 +7,27 @@
 
 import SwiftUI
 
-public struct TabBarUIAction<TabModal: View>: View {
+public struct TabBarUIAction<TabModal: View, TabScreen1: View, TabScreen2: View>: View {
     @State private var currentView: Tab = .tab1
     private var modal: TabModal
-    private let screens: [TabScreen]
+    private let tabScreen1: TabScreen<TabScreen1>
+    private let tabScreen2: TabScreen<TabScreen2>
 
-    public init(@ViewBuilder content: () -> TupleView<(TabScreen, TabModal, TabScreen)>) {
+    public init(@ViewBuilder content: () -> TupleView<(TabScreen<TabScreen1>, TabModal, TabScreen<TabScreen2>)>) {
         let views = content().value
         self.modal = views.1
-        self.screens = [views.0, views.2]
+        self.tabScreen1 = views.0
+        self.tabScreen2 = views.2
     }
 
     public var body: some View {
         VStack {
-            self.screens[self.currentView.rawValue]
+            if currentView == .tab1 {
+                self.tabScreen1
+            }
+            if currentView == .tab2 {
+                self.tabScreen2
+            }
             TabBar(currentView: self.$currentView) {
                 self.modal
             }

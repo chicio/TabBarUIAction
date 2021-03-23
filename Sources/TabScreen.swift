@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-public struct TabScreen: View {
-    public let content: AnyView
+public struct TabScreen<Content: View>: View {
+    public let content: () -> Content
 
-    public init<Content>(@ViewBuilder content: () -> Content) where Content: View {
-        self.content = AnyView(content())
+    public init(@ViewBuilder content: @escaping () -> Content) {
+        self.content = content
     }
 
     public var body: some View {
-        Group {
-            self.content
+        ZStack {
+            self.content()
         }
     }
 }
