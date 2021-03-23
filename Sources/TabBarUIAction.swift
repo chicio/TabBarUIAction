@@ -53,9 +53,9 @@ public struct TabBarUIAction: View {
 struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
         TabBarUIAction {
-            TabScreen(tabItem: TabItemContent()) { Text("aaa") }
+            TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Text("aaa") }
             TabModal { Text("Modal") }
-            TabScreen(tabItem: TabItemContent()) { Text("aaa") }
+            TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Text("aaa") }
         }
     }
 }

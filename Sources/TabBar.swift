@@ -41,8 +41,14 @@ public struct TabBar<Modal: View>: View {
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar(currentView: .constant(.tab1), tabItems: [
-            TabItem(position: .tab1, screen: TabScreen(tabItem: TabItemContent()) { Text("Screen1") }),
-            TabItem(position: .tab2, screen: TabScreen(tabItem: TabItemContent()) { Text("Screen2") })
+            TabItem(
+                position: .tab1,
+                screen: TabScreen(tabItem: TabItemContent(systemImageName: "gear")
+            ) { Text("Screen1") }),
+            TabItem(
+                position: .tab2,
+                screen: TabScreen(tabItem: TabItemContent(systemImageName: "gear")
+            ) { Text("Screen2") })
         ]) {
             Text("Test")
         }

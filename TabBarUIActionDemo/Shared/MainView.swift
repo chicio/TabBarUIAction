@@ -30,9 +30,9 @@ struct TabBarWith3Elements: View {
     var body: some View {
         VStack {
             TabBarUIAction {
-                TabScreen(tabItem: TabItemContent()) { Screen1() }
+                TabScreen(tabItem: TabItemContent(systemImageName: "folder.badge.plus")) { Screen1() }
                 TabModal { ScreenModal() }
-                TabScreen(tabItem: TabItemContent()) { Screen2() }
+                TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Screen2() }
             }
         }
     }
@@ -42,11 +42,11 @@ struct TabBarWith5Elements: View {
     var body: some View {
         VStack {
             TabBarUIAction {
-                TabScreen(tabItem: TabItemContent()) { Screen1() }
-                TabScreen(tabItem: TabItemContent()) { Screen1() }
+                TabScreen(tabItem: TabItemContent(systemImageName: "tray.fill")) { Screen1() }
+                TabScreen(tabItem: TabItemContent(systemImageName: "gamecontroller.fill")) { Screen1() }
                 TabModal { ScreenModal() }
-                TabScreen(tabItem: TabItemContent()) { Screen2() }
-                TabScreen(tabItem: TabItemContent()) { Screen2() }
+                TabScreen(tabItem: TabItemContent(systemImageName: "dpad.fill")) { Screen2() }
+                TabScreen(tabItem: TabItemContent(systemImageName: "l1.rectangle.roundedbottom.fill")) { Screen2() }
             }
         }
     }
