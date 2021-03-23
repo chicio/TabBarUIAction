@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-public struct TabScreen<Content: View>: View {
-    public let content: Content
-//    var tabItem: Label
+public struct TabScreen: View {
+    public let content: AnyView
 
-    public init(@ViewBuilder content: @escaping () -> Content) {
-        self.content = content()
+    public init<Content: View>(@ViewBuilder content: @escaping () -> Content) {
+        self.content = AnyView(content())
     }
 
     public var body: some View {
@@ -20,9 +19,4 @@ public struct TabScreen<Content: View>: View {
             self.content
         }
     }
-    
-//    public func tabItem() -> Self {
-//
-//        return self
-//    }
 }
