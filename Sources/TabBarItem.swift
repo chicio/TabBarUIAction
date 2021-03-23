@@ -8,33 +8,33 @@
 import SwiftUI
 
 struct TabBarItem: View {
-    @Binding var currentView: Tab
-    let imageName: String
-    let paddingEdges: Edge.Set
-    let tab: Tab
+    @Binding var currentView: TabPosition
+    let tabItem: TabItem
 
     var body: some View {
         Group {
-            Spacer()
             VStack(spacing: 0) {
-                Image(systemName: imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding(5)
-                    .frame(width: 40, height: 40, alignment: .center)
-                    .background(Color(self.currentView == tab ? .blue : .white).opacity(0.2))
-                    .foregroundColor(Color(self.currentView == tab ? .blue : .black))
+                self.tabItem.screen.tabItem
+                    .background(Color(self.currentView == self.tabItem.position ? .blue : .white).opacity(0.2))
+                    .foregroundColor(Color(self.currentView == self.tabItem.position ? .blue : .black))
                     .cornerRadius(6)
             }
-    //        .frame(width: 100, height: 50)
-            .onTapGesture { self.currentView = self.tab }
-            .padding(paddingEdges, 15)
+            .onTapGesture { self.currentView = self.tabItem.position }
         }
     }
 }
 
 struct TabBarItem_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarItem(currentView: .constant(.tab1), imageName: "gear", paddingEdges: .leading, tab: .tab1)
+        TabBarItem(
+            currentView: .constant(.tab1),
+            tabItem: TabItem(
+                position: .tab1,
+                screen: TabScreen(
+                    tabItem: TabItemContent(),
+                    content: { Text("Content")}
+                )
+            )
+        )
     }
 }

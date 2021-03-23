@@ -18,7 +18,6 @@ public struct ModalTabBarItem: View {
 
     public var body: some View {
         Group {
-            Spacer()
             VStack(spacing: 0) {
                 Image(systemName: "plus.circle.fill")
                     .resizable()

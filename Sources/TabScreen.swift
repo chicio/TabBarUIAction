@@ -9,8 +9,10 @@ import SwiftUI
 
 public struct TabScreen: View {
     public let content: AnyView
+    public let tabItem: TabItemContent
 
-    public init<Content: View>(@ViewBuilder content: @escaping () -> Content) {
+    public init<Content: View>(tabItem: TabItemContent, @ViewBuilder content: @escaping () -> Content) {
+        self.tabItem = tabItem
         self.content = AnyView(content())
     }
 

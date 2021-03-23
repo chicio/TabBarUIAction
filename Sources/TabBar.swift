@@ -8,28 +8,30 @@
 import SwiftUI
 
 public struct TabBar<Modal: View>: View {
-    @Binding public var currentView: Tab
+    @Binding public var currentView: TabPosition
     @State public var showModal: Bool = false
-    private let tabs: [Tab]
+    private let tabItems: [TabItem]
     private let modal: () -> Modal
 
-    public init(currentView: Binding<Tab>, tabs: [Tab], @ViewBuilder modal: @escaping () -> Modal) {
+    public init(currentView: Binding<TabPosition>, tabItems: [TabItem], @ViewBuilder modal: @escaping () -> Modal) {
         self._currentView = currentView
-        self.tabs = tabs
+        self.tabItems = tabItems
         self.modal = modal
     }
 
     public var body: some View {
-        HStack {
-            ForEach(self.tabs[0..<self.tabs.count/2], id: \.id) { tab in
-                TabBarItem(currentView: self.$currentView, imageName: "list.bullet", paddingEdges: .leading, tab: tab)
+        HStack(alignment: .center, spacing: 0) {
+            Spacer()
+            ForEach(self.tabItems[0..<self.tabItems.count/2], id: \.id) { tabItem in
+                TabBarItem(currentView: self.$currentView, tabItem: tabItem)
+                Spacer()
             }
             ModalTabBarItem(radius: 55) { self.showModal.toggle() }
-            ForEach(self.tabs[self.tabs.count/2..<self.tabs.count], id: \.id) { tab in
-                TabBarItem(currentView: self.$currentView, imageName: "gear", paddingEdges: .leading, tab: tab)
-            }
-
             Spacer()
+            ForEach(self.tabItems[self.tabItems.count/2..<self.tabItems.count], id: \.id) { tabItem in
+                TabBarItem(currentView: self.$currentView, tabItem: tabItem)
+                Spacer()
+            }
         }
         .frame(minHeight: 70)
         .sheet(isPresented: self.$showModal) { self.modal() }
@@ -38,7 +40,10 @@ public struct TabBar<Modal: View>: View {
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        TabBar(currentView: .constant(.tab1), tabs: [.tab1, .tab2]) {
+        TabBar(currentView: .constant(.tab1), tabItems: [
+            TabItem(position: .tab1, screen: TabScreen(tabItem: TabItemContent()) { Text("Screen1") }),
+            TabItem(position: .tab2, screen: TabScreen(tabItem: TabItemContent()) { Text("Screen2") })
+        ]) {
             Text("Test")
         }
     }
