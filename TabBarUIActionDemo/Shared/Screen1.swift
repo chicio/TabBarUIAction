@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Screen1: View {
+struct Screen1: View, Equatable {
     var body: some View {
         VStack {
             Spacer()

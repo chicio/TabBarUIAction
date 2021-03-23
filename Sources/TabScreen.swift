@@ -8,15 +8,21 @@
 import SwiftUI
 
 public struct TabScreen<Content: View>: View {
-    public let content: () -> Content
+    public let content: Content
+//    var tabItem: Label
 
     public init(@ViewBuilder content: @escaping () -> Content) {
-        self.content = content
+        self.content = content()
     }
 
     public var body: some View {
         Group {
-            self.content()
+            self.content
         }
     }
+    
+//    public func tabItem() -> Self {
+//
+//        return self
+//    }
 }

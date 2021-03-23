@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct TabBarUIAction<TabModal: View, TabScreen1: View, TabScreen2: View>: View {
+public struct TabBarUIAction<TabModal: View, TabScreen1: View & Equatable, TabScreen2: View & Equatable>: View {
     @State private var currentView: Tab = .tab1
     private var modal: TabModal
     private let tabScreen1: TabScreen<TabScreen1>
