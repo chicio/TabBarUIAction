@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4556AE0026092EAC00390C90 /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556ADFF26092EAC00390C90 /* TabScreen.swift */; };
+		4556AE0A2609D54B00390C90 /* TabModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556AE092609D54B00390C90 /* TabModal.swift */; };
+		4556AE0B2609D54B00390C90 /* TabModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556AE092609D54B00390C90 /* TabModal.swift */; };
 		45AB4870260884AF0025BF01 /* TabBarUIAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CA708C26078D4E008C5CDF /* TabBarUIAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45AB4879260884B70025BF01 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA709026078D4E008C5CDF /* Tab.swift */; };
 		45AB487A260884B70025BF01 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA708A26078D4E008C5CDF /* TabBarItem.swift */; };
@@ -66,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		4556ADFF26092EAC00390C90 /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
+		4556AE092609D54B00390C90 /* TabModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModal.swift; sourceTree = "<group>"; };
 		45AB485C2608849D0025BF01 /* TabBarUIAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TabBarUIAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AB48B3260889B10025BF01 /* TabBarUIActionDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TabBarUIActionDemo.entitlements; sourceTree = "<group>"; };
 		45CA707926078D2D008C5CDF /* TabBarUIAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TabBarUIAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +187,7 @@
 				45CA708C26078D4E008C5CDF /* TabBarUIAction.h */,
 				45CA71B2260797B0008C5CDF /* TabBarUIAction.swift */,
 				4556ADFF26092EAC00390C90 /* TabScreen.swift */,
+				4556AE092609D54B00390C90 /* TabModal.swift */,
 				45CA708726078D4E008C5CDF /* TabBar.swift */,
 				45CA708A26078D4E008C5CDF /* TabBarItem.swift */,
 				45CA708F26078D4E008C5CDF /* ModalTabBarItem.swift */,
@@ -487,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45AB487A260884B70025BF01 /* TabBarItem.swift in Sources */,
+				4556AE0B2609D54B00390C90 /* TabModal.swift in Sources */,
 				45AB487B260884B70025BF01 /* TabBarUIAction.swift in Sources */,
 				45AB487D260884B70025BF01 /* ModalTabBarItem.swift in Sources */,
 				45AB4879260884B70025BF01 /* Tab.swift in Sources */,
@@ -499,6 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45CA71C12607982B008C5CDF /* TabBarUIAction.swift in Sources */,
+				4556AE0A2609D54B00390C90 /* TabModal.swift in Sources */,
 				45CA709326078D4E008C5CDF /* TabBar.swift in Sources */,
 				45CA709626078D4E008C5CDF /* TabBarItem.swift in Sources */,
 				45CA709B26078D4E008C5CDF /* ModalTabBarItem.swift in Sources */,

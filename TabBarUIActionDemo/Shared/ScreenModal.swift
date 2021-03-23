@@ -13,7 +13,7 @@ struct ScreenModal: View {
             Spacer()
             HStack {
                 Spacer()
-                Text("Screen 2")
+                Text("Modal")
                 Spacer()
             }
             Spacer()

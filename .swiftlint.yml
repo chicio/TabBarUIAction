@@ -7,3 +7,6 @@ identifier_name:
   max_length:
     warning: 70
     error: 80
+
+disabled_rules:
+  - large_tuple

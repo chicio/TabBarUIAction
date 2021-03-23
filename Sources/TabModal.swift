@@ -1,13 +1,13 @@
 //
-//  TabScreen.swift
-//  TabBarUIAction iOS
+//  TabModal.swift
+//  TabBarUIAction
 //
-//  Created by Fabrizio Duroni on 22/03/21.
+//  Created by Fabrizio Duroni on 23/03/21.
 //
 
 import SwiftUI
 
-public struct TabScreen: View {
+public struct TabModal: View {
     public let content: AnyView
 
     public init<Content>(@ViewBuilder content: () -> Content) where Content: View {

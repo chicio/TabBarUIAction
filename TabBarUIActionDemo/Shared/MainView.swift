@@ -13,9 +13,8 @@ struct MainView: View {
         NavigationView {
             VStack {
                 TabBarUIAction {
-                    ScreenModal()
-                } content: {
                     TabScreen { Screen1() }
+                    TabModal { ScreenModal() }
                     TabScreen { Screen2() }
                 }
             }

@@ -7,25 +7,22 @@
 
 import SwiftUI
 
-public struct TabBarUIAction<Modal: View>: View {
+public struct TabBarUIAction<TabModal: View>: View {
     @State private var currentView: Tab = .tab1
-    private var modal: () -> Modal
+    private var modal: TabModal
     private let screens: [TabScreen]
 
-    public init(
-        @ViewBuilder modal: @escaping () -> Modal,
-        @ViewBuilder content: () -> TupleView<(TabScreen, TabScreen)>
-    ) {
+    public init(@ViewBuilder content: () -> TupleView<(TabScreen, TabModal, TabScreen)>) {
         let views = content().value
-        self.modal = modal
-        self.screens = [views.0, views.1]
+        self.modal = views.1
+        self.screens = [views.0, views.2]
     }
 
     public var body: some View {
         VStack {
             self.screens[self.currentView.rawValue]
             TabBar(currentView: self.$currentView) {
-                self.modal()
+                self.modal
             }
         }
         .ignoresSafeArea(.keyboard)
@@ -35,9 +32,8 @@ public struct TabBarUIAction<Modal: View>: View {
 struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
         TabBarUIAction {
-            Text("Modal")
-        } content: {
             TabScreen { Text("aaa") }
+            TabModal { Text("Modal") }
             TabScreen { Text("aaa") }
         }
     }
