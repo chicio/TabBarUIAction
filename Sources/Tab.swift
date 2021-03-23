@@ -7,7 +7,8 @@
 
 import Foundation
 
-public enum Tab: Int {
+public enum Tab: Int, Identifiable {
+    public var id: Int { rawValue }
     case tab1 = 0
     case tab2 = 1
     case tab3 = 2

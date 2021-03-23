@@ -10,30 +10,26 @@ import SwiftUI
 public struct TabBar<Modal: View>: View {
     @Binding public var currentView: Tab
     @State public var showModal: Bool = false
-    private let numberOfTabs: Int
+    private let tabs: [Tab]
     private let modal: () -> Modal
 
-    public init(currentView: Binding<Tab>, numberOfTabs: Int, @ViewBuilder modal: @escaping () -> Modal) {
+    public init(currentView: Binding<Tab>, tabs: [Tab], @ViewBuilder modal: @escaping () -> Modal) {
         self._currentView = currentView
-        self.numberOfTabs = numberOfTabs
+        self.tabs = tabs
         self.modal = modal
     }
 
     public var body: some View {
         HStack {
-            if numberOfTabs == 2 {
-                TabBarItem(currentView: self.$currentView, imageName: "list.bullet", paddingEdges: .leading, tab: .tab1)
-                ModalTabBarItem(radius: 55) { self.showModal.toggle() }
-                TabBarItem(currentView: self.$currentView, imageName: "gear", paddingEdges: .trailing, tab: .tab2)
-                Spacer()
-            } else {
-                TabBarItem(currentView: self.$currentView, imageName: "list.bullet", paddingEdges: .leading, tab: .tab1)
-                TabBarItem(currentView: self.$currentView, imageName: "list.bullet", paddingEdges: .leading, tab: .tab2)
-                ModalTabBarItem(radius: 55) { self.showModal.toggle() }
-                TabBarItem(currentView: self.$currentView, imageName: "gear", paddingEdges: .trailing, tab: .tab3)
-                TabBarItem(currentView: self.$currentView, imageName: "gear", paddingEdges: .trailing, tab: .tab4)
-                Spacer()
+            ForEach(self.tabs[0..<self.tabs.count/2], id: \.id) { tab in
+                TabBarItem(currentView: self.$currentView, imageName: "list.bullet", paddingEdges: .leading, tab: tab)
             }
+            ModalTabBarItem(radius: 55) { self.showModal.toggle() }
+            ForEach(self.tabs[self.tabs.count/2..<self.tabs.count], id: \.id) { tab in
+                TabBarItem(currentView: self.$currentView, imageName: "gear", paddingEdges: .leading, tab: tab)
+            }
+
+            Spacer()
         }
         .frame(minHeight: 70)
         .sheet(isPresented: self.$showModal) { self.modal() }
@@ -42,7 +38,7 @@ public struct TabBar<Modal: View>: View {
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
-        TabBar(currentView: .constant(.tab1), numberOfTabs: 3) {
+        TabBar(currentView: .constant(.tab1), tabs: [.tab1, .tab2]) {
             Text("Test")
         }
     }
