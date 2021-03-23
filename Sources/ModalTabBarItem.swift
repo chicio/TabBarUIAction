@@ -7,29 +7,35 @@
 
 import SwiftUI
 
+public struct ModalTabBarItemContent: View {
+    public init() {}
+
+    public var body: some View {
+        Image(systemName: "plus.circle.fill")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 55, height: 55, alignment: .center)
+            .foregroundColor(Color(.systemBlue))
+            .background(Color(.white))
+            .cornerRadius(55/2)
+            .overlay(RoundedRectangle(cornerRadius: 55/2).stroke(Color(.blue), lineWidth: 2))
+    }
+}
+
 public struct ModalTabBarItem: View {
-    let radius: CGFloat
+    let modalTabBarItemContent: ModalTabBarItemContent
     let action: () -> Void
 
-    public init(radius: CGFloat, action: @escaping () -> Void) {
-        self.radius = radius
+    public init(modalTabBarItemContent: ModalTabBarItemContent, action: @escaping () -> Void) {
+        self.modalTabBarItemContent = modalTabBarItemContent
         self.action = action
     }
 
     public var body: some View {
         Group {
             VStack(spacing: 0) {
-                Image(systemName: "plus.circle.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: radius, height: radius, alignment: .center)
-                    .foregroundColor(Color(.systemBlue))
-                    .background(Color(.white))
-                    .cornerRadius(radius/2)
-                    .overlay(RoundedRectangle(cornerRadius: radius/2).stroke(Color(.blue), lineWidth: 2))
-
+                self.modalTabBarItemContent
             }
-            .frame(width: radius, height: radius)
             .onTapGesture(perform: action)
         }
     }
@@ -37,6 +43,6 @@ public struct ModalTabBarItem: View {
 
 struct ShowModalTabBarItem_Previews: PreviewProvider {
     static var previews: some View {
-        ModalTabBarItem(radius: 55) { }
+        ModalTabBarItem(modalTabBarItemContent: ModalTabBarItemContent()) { }
     }
 }

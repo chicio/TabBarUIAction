@@ -60,10 +60,9 @@ public struct TabBarUIAction: View {
                 tabItemColor: tabItemColor,
                 tabItemSelectionColor: tabItemSelectionColor,
                 currentView: self.$currentView,
-                tabItems: self.tabItems
-            ) {
-                self.modal
-            }
+                tabItems: self.tabItems,
+                modal: self.modal
+            )
         }
         .ignoresSafeArea(.keyboard)
     }
@@ -73,7 +72,7 @@ struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
         TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
             TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Text("aaa") }
-            TabModal { Text("Modal") }
+            TabModal(modalTabBarItemContent: ModalTabBarItemContent()) { Text("Modal") }
             TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Text("aaa") }
         }
     }

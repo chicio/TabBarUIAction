@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-public struct TabBar<Modal: View>: View {
+public struct TabBar: View {
     @Binding public var currentView: TabPosition
     @State public var showModal: Bool = false
     private let tabItems: [TabItem]
-    private let modal: () -> Modal
+    private let modal: TabModal
     private let tabItemColor: Color
     private let tabItemSelectionColor: Color
 
@@ -19,7 +19,8 @@ public struct TabBar<Modal: View>: View {
         tabItemColor: Color,
         tabItemSelectionColor: Color,
         currentView: Binding<TabPosition>,
-        tabItems: [TabItem], @ViewBuilder modal: @escaping () -> Modal
+        tabItems: [TabItem],
+        modal: TabModal
     ) {
         self._currentView = currentView
         self.tabItems = tabItems
@@ -35,7 +36,7 @@ public struct TabBar<Modal: View>: View {
                 TabBarItem(currentView: self.$currentView, tabItem: tabItem, tabItemColor: self.tabItemColor, tabItemSelectionColor: self.tabItemSelectionColor)
                 Spacer()
             }
-            ModalTabBarItem(radius: 55) { self.showModal.toggle() }
+            ModalTabBarItem(modalTabBarItemContent: self.modal.modalTabBarItemContent) { self.showModal.toggle() }
             Spacer()
             ForEach(self.tabItems[self.tabItems.count/2..<self.tabItems.count], id: \.id) { tabItem in
                 TabBarItem(currentView: self.$currentView, tabItem: tabItem, tabItemColor: self.tabItemColor, tabItemSelectionColor: self.tabItemSelectionColor)
@@ -43,7 +44,7 @@ public struct TabBar<Modal: View>: View {
             }
         }
         .frame(minHeight: 70)
-        .sheet(isPresented: self.$showModal) { self.modal() }
+        .sheet(isPresented: self.$showModal) { self.modal }
     }
 }
 
@@ -62,8 +63,8 @@ struct TabBar_Previews: PreviewProvider {
                     position: .tab2,
                     screen: TabScreen(tabItem: TabItemContent(systemImageName: "gear")
                     ) { Text("Screen2") })
-            ]) {
-            Text("Test")
-        }
+            ],
+            modal: TabModal(modalTabBarItemContent: ModalTabBarItemContent(), content: { Text("Test") })
+        )
     }
 }
