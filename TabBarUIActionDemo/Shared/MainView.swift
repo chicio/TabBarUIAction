@@ -29,7 +29,7 @@ struct MainView: View {
 struct TabBarWith3Elements: View {
     var body: some View {
         VStack {
-            TabBarUIAction {
+            TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
                 TabScreen(tabItem: TabItemContent(systemImageName: "folder.badge.plus")) { Screen1() }
                 TabModal { ScreenModal() }
                 TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Screen2() }
@@ -41,7 +41,7 @@ struct TabBarWith3Elements: View {
 struct TabBarWith5Elements: View {
     var body: some View {
         VStack {
-            TabBarUIAction {
+            TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
                 TabScreen(tabItem: TabItemContent(systemImageName: "tray.fill")) { Screen1() }
                 TabScreen(tabItem: TabItemContent(systemImageName: "gamecontroller.fill")) { Screen1() }
                 TabModal { ScreenModal() }

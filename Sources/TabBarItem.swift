@@ -10,13 +10,15 @@ import SwiftUI
 struct TabBarItem: View {
     @Binding var currentView: TabPosition
     let tabItem: TabItem
+    let tabItemColor: Color
+    let tabItemSelectionColor: Color
 
     var body: some View {
         Group {
             VStack(spacing: 0) {
-                self.tabItem.screen.tabItem
-                    .background(Color(self.currentView == self.tabItem.position ? .blue : .white).opacity(0.2))
-                    .foregroundColor(Color(self.currentView == self.tabItem.position ? .blue : .black))
+                self.tabItem.screen.tabItemContent
+                    .background(tabItemSelectionColor.opacity(self.currentView == self.tabItem.position ? 0.2 : 0.0))
+                    .foregroundColor(self.currentView == self.tabItem.position ? self.tabItemSelectionColor : self.tabItemColor)
                     .cornerRadius(6)
             }
             .onTapGesture { self.currentView = self.tabItem.position }
@@ -34,7 +36,9 @@ struct TabBarItem_Previews: PreviewProvider {
                     tabItem: TabItemContent(systemImageName: "gear"),
                     content: { Text("Content")}
                 )
-            )
+            ),
+            tabItemColor: Color(.blue),
+            tabItemSelectionColor: Color(.black)
         )
     }
 }
