@@ -17,19 +17,22 @@ public struct ModalTabBarItem: View {
     }
 
     public var body: some View {
-        VStack(spacing: 0) {
-            Image(systemName: "plus.circle.fill")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: radius, height: radius, alignment: .center)
-                .foregroundColor(Color(.systemBlue))
-                .background(Color(.white))
-                .cornerRadius(radius/2)
-                .overlay(RoundedRectangle(cornerRadius: radius/2).stroke(Color(.blue), lineWidth: 2))
+        Group {
+            Spacer()
+            VStack(spacing: 0) {
+                Image(systemName: "plus.circle.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: radius, height: radius, alignment: .center)
+                    .foregroundColor(Color(.systemBlue))
+                    .background(Color(.white))
+                    .cornerRadius(radius/2)
+                    .overlay(RoundedRectangle(cornerRadius: radius/2).stroke(Color(.blue), lineWidth: 2))
 
+            }
+            .frame(width: radius, height: radius)
+            .onTapGesture(perform: action)
         }
-        .frame(width: radius, height: radius)
-        .onTapGesture(perform: action)
     }
 }
 

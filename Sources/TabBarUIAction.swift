@@ -27,7 +27,7 @@ public struct TabBarUIAction: View {
     public var body: some View {
         VStack {
             self.screens[currentView.rawValue]
-            TabBar(currentView: self.$currentView) {
+            TabBar(currentView: self.$currentView, numberOfTabs: self.screens.count) {
                 self.modal
             }
         }
