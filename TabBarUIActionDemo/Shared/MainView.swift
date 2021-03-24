@@ -56,7 +56,7 @@ struct TabBarWith3Elements: View {
 struct TabBarWith5Elements: View {
     var body: some View {
         VStack {
-            TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
+            TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.red)) {
                 TabScreen(
                     tabItem: TabItemContent(systemImageName: "tray.fill", text: "Tab item 1", font: Font.system(size: 12))
                 ) { Screen1() }
@@ -64,14 +64,15 @@ struct TabBarWith5Elements: View {
                     tabItem: TabItemContent(systemImageName: "gamecontroller.fill", text: "Tab item 2", font: Font.system(size: 12))
                 ) { Screen1() }
                 TabModal {
-                    Image(systemName: "plus.circle.fill")
+                    Image(systemName: "plus")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 55, height: 55, alignment: .center)
-                        .foregroundColor(Color(.systemBlue))
-                        .background(Color(.white))
-                        .cornerRadius(55/2)
-                        .overlay(RoundedRectangle(cornerRadius: 55/2).stroke(Color(.blue), lineWidth: 2))
+                        .frame(width: 30, height: 30, alignment: .center)
+                        .foregroundColor(Color(.white))
+                        .padding(10)
+                        .background(Color(.black))
+                        .cornerRadius(10)
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.black), lineWidth: 2))
                 } content: {
                     ScreenModal()
                 }
