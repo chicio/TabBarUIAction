@@ -26,7 +26,13 @@ struct TabBarWith3Elements: View {
     var body: some View {
         VStack {
             TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
-                TabScreen(tabItem: TabItemContent(systemImageName: "folder.badge.plus", text: "Tab item 1", font: Font.system(size: 16))) { Screen1() }
+                TabScreen(
+                    tabItem: TabItemContent(
+                        systemImageName: "folder.badge.plus",
+                        text: "Tab item 1",
+                        font: Font.system(size: 16)
+                    )
+                ) { Screen1() }
                 TabModal {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
@@ -39,7 +45,9 @@ struct TabBarWith3Elements: View {
                 } content: {
                     ScreenModal()
                 }
-                TabScreen(tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 16))) { Screen2() }
+                TabScreen(
+                    tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 16))
+                ) { Screen2() }
             }
         }
     }
