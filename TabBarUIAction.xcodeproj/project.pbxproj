@@ -30,9 +30,8 @@
 		45CA7160260790DD008C5CDF /* TabBarUIAction.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45CA707926078D2D008C5CDF /* TabBarUIAction.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45CA7176260791B4008C5CDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA7174260791B4008C5CDF /* MainView.swift */; };
 		45CA718826079247008C5CDF /* ScreenModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA718626079247008C5CDF /* ScreenModal.swift */; };
-		45CA718A26079247008C5CDF /* ScreenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA718726079247008C5CDF /* ScreenDetail.swift */; };
-		45CA71922607926C008C5CDF /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71902607926C008C5CDF /* Screen2.swift */; };
-		45CA71942607926C008C5CDF /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71912607926C008C5CDF /* Screen1.swift */; };
+		45CA71922607926C008C5CDF /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71902607926C008C5CDF /* Screen.swift */; };
+		45CA71942607926C008C5CDF /* ScreenWithDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71912607926C008C5CDF /* ScreenWithDetail.swift */; };
 		45CA71C12607982B008C5CDF /* TabBarUIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71B2260797B0008C5CDF /* TabBarUIAction.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,9 +102,8 @@
 		45CA714426078FFE008C5CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45CA7174260791B4008C5CDF /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		45CA718626079247008C5CDF /* ScreenModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenModal.swift; sourceTree = "<group>"; };
-		45CA718726079247008C5CDF /* ScreenDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenDetail.swift; sourceTree = "<group>"; };
-		45CA71902607926C008C5CDF /* Screen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
-		45CA71912607926C008C5CDF /* Screen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
+		45CA71902607926C008C5CDF /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		45CA71912607926C008C5CDF /* ScreenWithDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenWithDetail.swift; sourceTree = "<group>"; };
 		45CA71B2260797B0008C5CDF /* TabBarUIAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUIAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,9 +222,8 @@
 			children = (
 				45CA70D526078E6C008C5CDF /* TabBarUIActionDemoApp.swift */,
 				45CA7174260791B4008C5CDF /* MainView.swift */,
-				45CA71912607926C008C5CDF /* Screen1.swift */,
-				45CA71902607926C008C5CDF /* Screen2.swift */,
-				45CA718726079247008C5CDF /* ScreenDetail.swift */,
+				45CA71912607926C008C5CDF /* ScreenWithDetail.swift */,
+				45CA71902607926C008C5CDF /* Screen.swift */,
 				45CA718626079247008C5CDF /* ScreenModal.swift */,
 				45CA70FC26078F06008C5CDF /* Assets.xcassets */,
 			);
@@ -521,12 +518,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45CA71922607926C008C5CDF /* Screen2.swift in Sources */,
+				45CA71922607926C008C5CDF /* Screen.swift in Sources */,
 				45CA70DC26078E6C008C5CDF /* TabBarUIActionDemoApp.swift in Sources */,
 				45CA718826079247008C5CDF /* ScreenModal.swift in Sources */,
-				45CA718A26079247008C5CDF /* ScreenDetail.swift in Sources */,
 				45CA7176260791B4008C5CDF /* MainView.swift in Sources */,
-				45CA71942607926C008C5CDF /* Screen1.swift in Sources */,
+				45CA71942607926C008C5CDF /* ScreenWithDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

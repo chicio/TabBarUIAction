@@ -1,5 +1,5 @@
 //
-//  Screen2.swift
+//  ScreenWithDetail.swift
 //  CustomTabBar
 //
 //  Created by Fabrizio Duroni on 06.03.20.
@@ -7,27 +7,30 @@
 
 import SwiftUI
 
-struct Screen2: View, Equatable {
+struct ScreenWithDetail: View, Equatable {
     var body: some View {
         VStack {
             Spacer()
             HStack {
                 Spacer()
-                Text("Screen 2")
+                Text("Screen with detail")
                     .font(.system(size: 20))
                     .bold()
                 Spacer()
             }
+            HStack {
+                NavigationLink(destination: Screen(text: "Detail Screen", color: Color(.systemGreen))) { Text("Show detail") }
+            }
             Spacer()
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-        .background(Color(.purple).opacity(0.2))
-        .navigationTitle("Screen 2")
+        .background(Color(.yellow).opacity(0.2))
+        .navigationTitle("Screen with detail")
     }
 }
 
-struct Screen2_Previews: PreviewProvider {
+struct Screen1_Previews: PreviewProvider {
     static var previews: some View {
-        Screen2()
+        ScreenWithDetail()
     }
 }
