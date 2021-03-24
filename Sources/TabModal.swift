@@ -9,10 +9,10 @@ import SwiftUI
 
 public struct TabModal: View {
     public let content: AnyView
-    public let modalTabBarItemContent: ModalTabBarItemContent
+    public let modalTabBarItemContent: AnyView
 
-    public init<Content>(modalTabBarItemContent: ModalTabBarItemContent, @ViewBuilder content: () -> Content) where Content: View {
-        self.modalTabBarItemContent = modalTabBarItemContent
+    public init<Content, ModalContent>(@ViewBuilder modalTabBarItemContent: () -> Content, @ViewBuilder content: () -> ModalContent) where Content: View, ModalContent: View {
+        self.modalTabBarItemContent = AnyView(modalTabBarItemContent())
         self.content = AnyView(content())
     }
 

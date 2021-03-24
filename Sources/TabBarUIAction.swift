@@ -72,7 +72,18 @@ struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
         TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
             TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Text("aaa") }
-            TabModal(modalTabBarItemContent: ModalTabBarItemContent()) { Text("Modal") }
+            TabModal {
+                Image(systemName: "plus.circle.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 55, height: 55, alignment: .center)
+                    .foregroundColor(Color(.systemBlue))
+                    .background(Color(.white))
+                    .cornerRadius(55/2)
+                    .overlay(RoundedRectangle(cornerRadius: 55/2).stroke(Color(.blue), lineWidth: 2))
+            } content: {
+                Text("Modal")
+            }
             TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Text("aaa") }
         }
     }
