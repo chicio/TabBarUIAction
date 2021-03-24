@@ -26,7 +26,7 @@ struct TabBarWith3Elements: View {
     var body: some View {
         VStack {
             TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
-                TabScreen(tabItem: TabItemContent(systemImageName: "folder.badge.plus")) { Screen1() }
+                TabScreen(tabItem: TabItemContent(systemImageName: "folder.badge.plus", text: "Tab item 1", font: Font.system(size: 16))) { Screen1() }
                 TabModal {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
@@ -39,8 +39,7 @@ struct TabBarWith3Elements: View {
                 } content: {
                     ScreenModal()
                 }
-
-                TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Screen2() }
+                TabScreen(tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 16))) { Screen2() }
             }
         }
     }
@@ -50,8 +49,12 @@ struct TabBarWith5Elements: View {
     var body: some View {
         VStack {
             TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
-                TabScreen(tabItem: TabItemContent(systemImageName: "tray.fill")) { Screen1() }
-                TabScreen(tabItem: TabItemContent(systemImageName: "gamecontroller.fill")) { Screen1() }
+                TabScreen(
+                    tabItem: TabItemContent(systemImageName: "tray.fill", text: "Tab item 1", font: Font.system(size: 12))
+                ) { Screen1() }
+                TabScreen(
+                    tabItem: TabItemContent(systemImageName: "gamecontroller.fill", text: "Tab item 2", font: Font.system(size: 12))
+                ) { Screen1() }
                 TabModal {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
@@ -64,8 +67,12 @@ struct TabBarWith5Elements: View {
                 } content: {
                     ScreenModal()
                 }
-                TabScreen(tabItem: TabItemContent(systemImageName: "dpad.fill")) { Screen2() }
-                TabScreen(tabItem: TabItemContent(systemImageName: "l1.rectangle.roundedbottom.fill")) { Screen2() }
+                TabScreen(
+                    tabItem: TabItemContent(systemImageName: "dpad.fill", text: "Tab item 3", font: Font.system(size: 12))
+                ) { Screen2() }
+                TabScreen(
+                    tabItem: TabItemContent(systemImageName: "l1.rectangle.roundedbottom.fill", text: "Tab item 4", font: Font.system(size: 12))
+                ) { Screen2() }
             }
         }
     }

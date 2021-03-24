@@ -71,7 +71,9 @@ public struct TabBarUIAction: View {
 struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
         TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
-            TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Text("aaa") }
+            TabScreen(
+                tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 1", font: Font.system(size: 12))
+            ) { Text("aaa") }
             TabModal {
                 Image(systemName: "plus.circle.fill")
                     .resizable()
@@ -84,7 +86,9 @@ struct TabBarUIAction_Previews: PreviewProvider {
             } content: {
                 Text("Modal")
             }
-            TabScreen(tabItem: TabItemContent(systemImageName: "gear")) { Text("aaa") }
+            TabScreen(
+                tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 12))
+            ) { Text("aaa") }
         }
     }
 }

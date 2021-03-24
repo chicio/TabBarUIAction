@@ -33,7 +33,7 @@ struct TabBarItem_Previews: PreviewProvider {
             tabItem: TabItem(
                 position: .tab1,
                 screen: TabScreen(
-                    tabItem: TabItemContent(systemImageName: "gear"),
+                    tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 1", font: Font.system(size: 12)),
                     content: { Text("Content")}
                 )
             ),

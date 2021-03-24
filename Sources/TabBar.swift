@@ -57,11 +57,11 @@ struct TabBar_Previews: PreviewProvider {
             tabItems: [
                 TabItem(
                     position: .tab1,
-                    screen: TabScreen(tabItem: TabItemContent(systemImageName: "gear")
+                    screen: TabScreen(tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 1", font: Font.system(size: 12))
                     ) { Text("Screen1") }),
                 TabItem(
                     position: .tab2,
-                    screen: TabScreen(tabItem: TabItemContent(systemImageName: "gear")
+                    screen: TabScreen(tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 12))
                     ) { Text("Screen2") })
             ],
             modal: TabModal(modalTabBarItemContent: { 
