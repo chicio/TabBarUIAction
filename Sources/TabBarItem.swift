@@ -18,7 +18,11 @@ struct TabBarItem: View {
             VStack(spacing: 0) {
                 self.tabItem.screen.tabItemContent
                     .background(tabItemSelectionColor.opacity(self.currentView == self.tabItem.position ? 0.2 : 0.0))
-                    .foregroundColor(self.currentView == self.tabItem.position ? self.tabItemSelectionColor : self.tabItemColor)
+                    .foregroundColor(
+                        self.currentView == self.tabItem.position
+                            ? self.tabItemSelectionColor
+                            : self.tabItemColor
+                    )
                     .cornerRadius(6)
             }
             .onTapGesture { self.currentView = self.tabItem.position }

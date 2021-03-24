@@ -33,13 +33,23 @@ public struct TabBar: View {
         HStack(alignment: .center, spacing: 0) {
             Spacer()
             ForEach(self.tabItems[0..<self.tabItems.count/2], id: \.id) { tabItem in
-                TabBarItem(currentView: self.$currentView, tabItem: tabItem, tabItemColor: self.tabItemColor, tabItemSelectionColor: self.tabItemSelectionColor)
+                TabBarItem(
+                    currentView: self.$currentView,
+                    tabItem: tabItem,
+                    tabItemColor: self.tabItemColor,
+                    tabItemSelectionColor: self.tabItemSelectionColor
+                )
                 Spacer()
             }
             ModalTabBarItem(modalTabBarItemContent: self.modal.modalTabBarItemContent) { self.showModal.toggle() }
             Spacer()
             ForEach(self.tabItems[self.tabItems.count/2..<self.tabItems.count], id: \.id) { tabItem in
-                TabBarItem(currentView: self.$currentView, tabItem: tabItem, tabItemColor: self.tabItemColor, tabItemSelectionColor: self.tabItemSelectionColor)
+                TabBarItem(
+                    currentView: self.$currentView,
+                    tabItem: tabItem,
+                    tabItemColor: self.tabItemColor,
+                    tabItemSelectionColor: self.tabItemSelectionColor
+                )
                 Spacer()
             }
         }
@@ -57,14 +67,24 @@ struct TabBar_Previews: PreviewProvider {
             tabItems: [
                 TabItem(
                     position: .tab1,
-                    screen: TabScreen(tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 1", font: Font.system(size: 12))
+                    screen: TabScreen(
+                        tabItem: TabItemContent(
+                            systemImageName: "gear",
+                            text: "Tab item 1",
+                            font: Font.system(size: 12)
+                        )
                     ) { Text("Screen1") }),
                 TabItem(
                     position: .tab2,
-                    screen: TabScreen(tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 12))
+                    screen: TabScreen(
+                        tabItem: TabItemContent(
+                            systemImageName: "gear",
+                            text: "Tab item 2",
+                            font: Font.system(size: 12)
+                        )
                     ) { Text("Screen2") })
             ],
-            modal: TabModal(modalTabBarItemContent: { 
+            modal: TabModal(modalTabBarItemContent: {
                 Image(systemName: "plus.circle.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)

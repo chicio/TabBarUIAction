@@ -1,6 +1,6 @@
 //
 //  ScreenWithDetail.swift
-//  CustomTabBar
+//  TabBarUIActionDemo
 //
 //  Created by Fabrizio Duroni on 06.03.20.
 //
@@ -19,7 +19,9 @@ struct ScreenWithDetail: View, Equatable {
                 Spacer()
             }
             HStack {
-                NavigationLink(destination: Screen(text: "Detail Screen", color: Color(.systemGreen))) { Text("Show detail") }
+                NavigationLink(destination: Screen(text: "Detail Screen", color: Color(.systemGreen))) {
+                    Text("Show detail")
+                }
             }
             Spacer()
         }
