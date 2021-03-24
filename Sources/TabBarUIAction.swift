@@ -11,10 +11,12 @@ public struct TabBarUIAction: View {
     @State private var currentView: TabPosition = .tab1
     private var modal: TabModal
     private let tabItemsProperties: [TabItemProperties]
+    private let tabBarColor: Color
     private let tabItemColor: Color
     private let tabItemSelectionColor: Color
 
     public init(
+        tabBarColor: Color,
         tabItemColor: Color,
         tabItemSelectionColor: Color,
         @ViewBuilder content: () -> TupleView<(TabScreen, TabModal, TabScreen)>
@@ -25,11 +27,13 @@ public struct TabBarUIAction: View {
             TabItemProperties(position: .tab1, screen: views.0),
             TabItemProperties(position: .tab2, screen: views.2)
         ]
+        self.tabBarColor = tabBarColor
         self.tabItemColor = tabItemColor
         self.tabItemSelectionColor = tabItemSelectionColor
     }
 
     public init(
+        tabBarColor: Color,
         tabItemColor: Color,
         tabItemSelectionColor: Color,
         @ViewBuilder content: () -> TupleView<(TabScreen, TabScreen, TabModal, TabScreen, TabScreen)>
@@ -42,6 +46,7 @@ public struct TabBarUIAction: View {
             TabItemProperties(position: .tab3, screen: views.3),
             TabItemProperties(position: .tab4, screen: views.4)
         ]
+        self.tabBarColor = tabBarColor
         self.tabItemColor = tabItemColor
         self.tabItemSelectionColor = tabItemSelectionColor
     }
@@ -55,7 +60,7 @@ public struct TabBarUIAction: View {
                 currentView: self.$currentView,
                 tabItems: self.tabItemsProperties,
                 modal: self.modal
-            )
+            ).background(self.tabBarColor.ignoresSafeArea())
         }
         .ignoresSafeArea(.keyboard)
     }
@@ -63,7 +68,7 @@ public struct TabBarUIAction: View {
 
 struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
+        TabBarUIAction(tabBarColor: Color(.white), tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
             TabScreen(
                 tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 1", font: Font.system(size: 12))
             ) { Text("aaa") }

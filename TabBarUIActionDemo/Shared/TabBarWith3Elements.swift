@@ -11,7 +11,11 @@ import TabBarUIAction
 struct TabBarWith3Elements: View {
     var body: some View {
         VStack {
-            TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
+            TabBarUIAction(
+                tabBarColor: Color(.white),
+                tabItemColor: Color(.black),
+                tabItemSelectionColor: Color(.blue)
+            ) {
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "folder.badge.plus",

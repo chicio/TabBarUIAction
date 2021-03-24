@@ -11,7 +11,11 @@ import TabBarUIAction
 struct TabBarWith5Elements: View {
     var body: some View {
         VStack {
-            TabBarUIAction(tabItemColor: Color(.black), tabItemSelectionColor: Color(.red)) {
+            TabBarUIAction(
+                tabBarColor: Color(.systemGray5),
+                tabItemColor: Color(.black),
+                tabItemSelectionColor: Color(.systemIndigo)
+            ) {
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "tray.fill",
