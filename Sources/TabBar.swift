@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-public struct TabBar: View {
+struct TabBar: View {
     @Binding public var currentView: TabPosition
     @State public var showModal: Bool = false
-    private let tabItems: [TabItem]
+    private let tabItems: [TabItemProperties]
     private let modal: TabModal
     private let tabItemColor: Color
     private let tabItemSelectionColor: Color
 
-    public init(
+    init(
         tabItemColor: Color,
         tabItemSelectionColor: Color,
         currentView: Binding<TabPosition>,
-        tabItems: [TabItem],
+        tabItems: [TabItemProperties],
         modal: TabModal
     ) {
         self._currentView = currentView
@@ -32,26 +32,20 @@ public struct TabBar: View {
     public var body: some View {
         HStack(alignment: .center, spacing: 0) {
             Spacer()
-            ForEach(self.tabItems[0..<self.tabItems.count/2], id: \.id) { tabItem in
-                TabBarItem(
-                    currentView: self.$currentView,
-                    tabItem: tabItem,
-                    tabItemColor: self.tabItemColor,
-                    tabItemSelectionColor: self.tabItemSelectionColor
-                )
-                Spacer()
-            }
+            TabItemsList(
+                currentView: self.$currentView,
+                tabItems: Array(self.tabItems[0..<self.tabItems.count/2]),
+                tabItemColor: tabItemColor,
+                tabItemSelectionColor: tabItemSelectionColor
+            )
             ModalTabBarItem(modalTabBarItemContent: self.modal.modalTabBarItemContent) { self.showModal.toggle() }
             Spacer()
-            ForEach(self.tabItems[self.tabItems.count/2..<self.tabItems.count], id: \.id) { tabItem in
-                TabBarItem(
-                    currentView: self.$currentView,
-                    tabItem: tabItem,
-                    tabItemColor: self.tabItemColor,
-                    tabItemSelectionColor: self.tabItemSelectionColor
-                )
-                Spacer()
-            }
+            TabItemsList(
+                currentView: self.$currentView,
+                tabItems: Array(self.tabItems[self.tabItems.count/2..<self.tabItems.count]),
+                tabItemColor: tabItemColor,
+                tabItemSelectionColor: tabItemSelectionColor
+            )
         }
         .frame(minHeight: 70)
         .sheet(isPresented: self.$showModal) { self.modal }
@@ -65,7 +59,7 @@ struct TabBar_Previews: PreviewProvider {
             tabItemSelectionColor: Color(.black),
             currentView: .constant(.tab1),
             tabItems: [
-                TabItem(
+                TabItemProperties(
                     position: .tab1,
                     screen: TabScreen(
                         tabItem: TabItemContent(
@@ -74,11 +68,11 @@ struct TabBar_Previews: PreviewProvider {
                             font: Font.system(size: 12)
                         )
                     ) { Text("Screen1") }),
-                TabItem(
+                TabItemProperties(
                     position: .tab2,
                     screen: TabScreen(
                         tabItem: TabItemContent(
-                            systemImageName: "gear",
+                            systemImageName: "pencil",
                             text: "Tab item 2",
                             font: Font.system(size: 12)
                         )

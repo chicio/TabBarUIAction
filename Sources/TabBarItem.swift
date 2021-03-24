@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBarItem: View {
     @Binding var currentView: TabPosition
-    let tabItem: TabItem
+    let tabItem: TabItemProperties
     let tabItemColor: Color
     let tabItemSelectionColor: Color
 
@@ -34,7 +34,7 @@ struct TabBarItem_Previews: PreviewProvider {
     static var previews: some View {
         TabBarItem(
             currentView: .constant(.tab1),
-            tabItem: TabItem(
+            tabItem: TabItemProperties(
                 position: .tab1,
                 screen: TabScreen(
                     tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 1", font: Font.system(size: 12)),
