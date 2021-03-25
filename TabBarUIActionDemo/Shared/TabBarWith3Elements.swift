@@ -2,13 +2,13 @@
 //  TabBarWith3Elements.swift
 //  TabBarUIActionDemo
 //
-//  Created by Fabrizio Duroni on 24/03/21.
+//  Created by Fabrizio Duroni on 25/03/21.
 //
 
 import SwiftUI
 import TabBarUIAction
 
-struct TabBarWith5ElementsWithNavigation: View {
+struct TabBarWith3Elements: View {
     @State private var currentTab: TabPosition = .tab1
     @State private var showModal: Bool = false
 
@@ -30,7 +30,7 @@ struct TabBarWith5ElementsWithNavigation: View {
                         font: Font.system(size: 16)
                     )
                 ) {
-                    ScreenWithDetail()
+                    Screen(text: "Screen 1", color: Color(.systemBlue))
                 }
                 TabModal {
                     Image(systemName: "plus.circle.fill")
@@ -54,8 +54,8 @@ struct TabBarWith5ElementsWithNavigation: View {
     }
 }
 
-struct TabBarWith3ElementsWithNavigation_Previews: PreviewProvider {
+struct TabBarWith3Elements_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarWith5ElementsWithNavigation()
+        TabBarWith3Elements()
     }
 }

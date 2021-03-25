@@ -8,7 +8,7 @@
 import SwiftUI
 import TabBarUIAction
 
-struct TabBarWith3ElementsWithComplexContent: View {
+struct TabBarWith3ElementsWithScreensState: View {
     @State private var currentTab: TabPosition = .tab1
     @State private var showModal: Bool = false
     @State private var text: String = ""
@@ -32,15 +32,7 @@ struct TabBarWith3ElementsWithComplexContent: View {
                         font: Font.system(size: 16)
                     )
                 ) {
-                        Form {
-                            Label("Field example", systemImage: "pencil")
-                            TextField("field", text: $text)
-                                .background(Color(.white))
-                                .multilineTextAlignment(.center)
-                        }
-                        .padding(0)
-                        .background(Color.clear)
-                        .navigationTitle("Form Screen 1")
+                    ScreenForm(title: "Form 1", text: $text)
                 }
                 TabModal {
                     Image(systemName: "plus.circle.fill")
@@ -57,15 +49,7 @@ struct TabBarWith3ElementsWithComplexContent: View {
                 TabScreen(
                     tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 16))
                 ) {
-                    Form {
-                        Label("Field example", systemImage: "pencil")
-                        TextField("field", text: $text2)
-                            .background(Color(.white))
-                            .multilineTextAlignment(.center)
-                    }
-                    .padding(0)
-                    .background(Color.clear)
-                    .navigationTitle("Form Screen 2")
+                    ScreenForm(title: "Form 2", text: $text2)
                 }
             }
         }
@@ -74,6 +58,6 @@ struct TabBarWith3ElementsWithComplexContent: View {
 
 struct TabBarWith3ElementsWithComplexContent_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarWith3ElementsWithComplexContent()
+        TabBarWith3ElementsWithScreensState()
     }
 }

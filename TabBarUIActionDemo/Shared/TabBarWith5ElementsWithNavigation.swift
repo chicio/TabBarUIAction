@@ -1,5 +1,5 @@
 //
-//  TabBarWith5Elements.swift
+//  TabBarWith3Elements.swift
 //  TabBarUIActionDemo
 //
 //  Created by Fabrizio Duroni on 24/03/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import TabBarUIAction
 
-struct TabBarWith5ElementsWithCustomColors: View {
+struct TabBarWith5ElementsWithNavigation: View {
     @State private var currentTab: TabPosition = .tab1
     @State private var showModal: Bool = false
 
@@ -69,8 +69,8 @@ struct TabBarWith5ElementsWithCustomColors: View {
     }
 }
 
-struct TabBarWith5ElementsWithCustomColors_Previews: PreviewProvider {
+struct TabBarWith3ElementsWithNavigation_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarWith5ElementsWithCustomColors()
+        TabBarWith5ElementsWithNavigation()
     }
 }

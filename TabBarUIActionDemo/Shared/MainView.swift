@@ -12,14 +12,17 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: TabBarWith3ElementsWithNavigation()) {
-                    Text("Tab bar 3 items + with navigation to detail")
+                NavigationLink(destination: TabBarWith3Elements()) {
+                    Text("Tab bar 3 items")
                 }
-                NavigationLink(destination: TabBarWith3ElementsWithComplexContent()) {
-                    Text("Tab bar 3 items + complex content")
+                NavigationLink(destination: TabBarWith5Elements()) {
+                    Text("Tab bar 5 items")
                 }
-                NavigationLink(destination: TabBarWith5ElementsWithCustomColors()) {
-                    Text("Tab bar 5 items + custom tabbar colors")
+                NavigationLink(destination: TabBarWith3ElementsWithScreensState()) {
+                    Text("Tab bar 3 items + screens state")
+                }
+                NavigationLink(destination: TabBarWith5ElementsWithNavigation()) {
+                    Text("Tab bar 5 items + with navigation to detail")
                 }
             }
             .navigationTitle("TabBarUIAction Demo")

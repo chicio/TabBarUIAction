@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45216418260C95B1000CB2A2 /* TabBarWith3ElementsWithComplexContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45216417260C95B1000CB2A2 /* TabBarWith3ElementsWithComplexContent.swift */; };
+		45216418260C95B1000CB2A2 /* TabBarWith3ElementsWithScreensState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45216417260C95B1000CB2A2 /* TabBarWith3ElementsWithScreensState.swift */; };
 		45216426260CC011000CB2A2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45216425260CC011000CB2A2 /* Colors.swift */; };
 		45216427260CC011000CB2A2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45216425260CC011000CB2A2 /* Colors.swift */; };
 		4521642D260CC025000CB2A2 /* TabItemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521642C260CC025000CB2A2 /* TabItemColors.swift */; };
 		4521642E260CC025000CB2A2 /* TabItemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521642C260CC025000CB2A2 /* TabItemColors.swift */; };
-		4525ECB7260B3673008B9BEC /* TabBarWith3ElementsWithNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525ECB6260B3673008B9BEC /* TabBarWith3ElementsWithNavigation.swift */; };
-		4525ECC5260B36AC008B9BEC /* TabBarWith5ElementsWithCustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525ECC4260B36AC008B9BEC /* TabBarWith5ElementsWithCustomColors.swift */; };
+		4525ECB7260B3673008B9BEC /* TabBarWith5ElementsWithNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525ECB6260B3673008B9BEC /* TabBarWith5ElementsWithNavigation.swift */; };
+		4525ECC5260B36AC008B9BEC /* TabBarWith5Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525ECC4260B36AC008B9BEC /* TabBarWith5Elements.swift */; };
+		45511193260D09E7001DEEE8 /* ScreenForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45511192260D09E7001DEEE8 /* ScreenForm.swift */; };
+		455111A1260D0AE6001DEEE8 /* TabBarWith3Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455111A0260D0AE6001DEEE8 /* TabBarWith3Elements.swift */; };
 		4556AE0026092EAC00390C90 /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556ADFF26092EAC00390C90 /* TabScreen.swift */; };
 		4556AE0A2609D54B00390C90 /* TabModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556AE092609D54B00390C90 /* TabModal.swift */; };
 		4556AE0B2609D54B00390C90 /* TabModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556AE092609D54B00390C90 /* TabModal.swift */; };
@@ -78,11 +80,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		45216417260C95B1000CB2A2 /* TabBarWith3ElementsWithComplexContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarWith3ElementsWithComplexContent.swift; sourceTree = "<group>"; };
+		45216417260C95B1000CB2A2 /* TabBarWith3ElementsWithScreensState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarWith3ElementsWithScreensState.swift; sourceTree = "<group>"; };
 		45216425260CC011000CB2A2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4521642C260CC025000CB2A2 /* TabItemColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemColors.swift; sourceTree = "<group>"; };
-		4525ECB6260B3673008B9BEC /* TabBarWith3ElementsWithNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3ElementsWithNavigation.swift; sourceTree = "<group>"; };
-		4525ECC4260B36AC008B9BEC /* TabBarWith5ElementsWithCustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith5ElementsWithCustomColors.swift; sourceTree = "<group>"; };
+		4525ECB6260B3673008B9BEC /* TabBarWith5ElementsWithNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith5ElementsWithNavigation.swift; sourceTree = "<group>"; };
+		4525ECC4260B36AC008B9BEC /* TabBarWith5Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith5Elements.swift; sourceTree = "<group>"; };
+		45511192260D09E7001DEEE8 /* ScreenForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenForm.swift; sourceTree = "<group>"; };
+		455111A0260D0AE6001DEEE8 /* TabBarWith3Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3Elements.swift; sourceTree = "<group>"; };
 		4556ADFF26092EAC00390C90 /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
 		4556AE092609D54B00390C90 /* TabModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModal.swift; sourceTree = "<group>"; };
 		45A89849260A8F52001D7A3B /* TabItemContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemContent.swift; sourceTree = "<group>"; };
@@ -243,13 +247,15 @@
 			isa = PBXGroup;
 			children = (
 				45CA70D526078E6C008C5CDF /* TabBarUIActionDemoApp.swift */,
-				4525ECB6260B3673008B9BEC /* TabBarWith3ElementsWithNavigation.swift */,
-				45216417260C95B1000CB2A2 /* TabBarWith3ElementsWithComplexContent.swift */,
-				4525ECC4260B36AC008B9BEC /* TabBarWith5ElementsWithCustomColors.swift */,
+				4525ECB6260B3673008B9BEC /* TabBarWith5ElementsWithNavigation.swift */,
+				45216417260C95B1000CB2A2 /* TabBarWith3ElementsWithScreensState.swift */,
+				455111A0260D0AE6001DEEE8 /* TabBarWith3Elements.swift */,
+				4525ECC4260B36AC008B9BEC /* TabBarWith5Elements.swift */,
 				45CA7174260791B4008C5CDF /* MainView.swift */,
 				45CA71912607926C008C5CDF /* ScreenWithDetail.swift */,
 				45CA71902607926C008C5CDF /* Screen.swift */,
 				45CA718626079247008C5CDF /* ScreenModal.swift */,
+				45511192260D09E7001DEEE8 /* ScreenForm.swift */,
 				45CA70FC26078F06008C5CDF /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -553,11 +559,13 @@
 			files = (
 				45CA71922607926C008C5CDF /* Screen.swift in Sources */,
 				45CA70DC26078E6C008C5CDF /* TabBarUIActionDemoApp.swift in Sources */,
-				4525ECB7260B3673008B9BEC /* TabBarWith3ElementsWithNavigation.swift in Sources */,
+				455111A1260D0AE6001DEEE8 /* TabBarWith3Elements.swift in Sources */,
+				4525ECB7260B3673008B9BEC /* TabBarWith5ElementsWithNavigation.swift in Sources */,
 				45CA718826079247008C5CDF /* ScreenModal.swift in Sources */,
 				45CA7176260791B4008C5CDF /* MainView.swift in Sources */,
-				4525ECC5260B36AC008B9BEC /* TabBarWith5ElementsWithCustomColors.swift in Sources */,
-				45216418260C95B1000CB2A2 /* TabBarWith3ElementsWithComplexContent.swift in Sources */,
+				4525ECC5260B36AC008B9BEC /* TabBarWith5Elements.swift in Sources */,
+				45216418260C95B1000CB2A2 /* TabBarWith3ElementsWithScreensState.swift in Sources */,
+				45511193260D09E7001DEEE8 /* ScreenForm.swift in Sources */,
 				45CA71942607926C008C5CDF /* ScreenWithDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
