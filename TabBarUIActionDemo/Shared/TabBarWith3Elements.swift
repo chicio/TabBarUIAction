@@ -12,9 +12,11 @@ struct TabBarWith3Elements: View {
     var body: some View {
         VStack {
             TabBarUIAction(
-                tabBarColor: Color(.white),
-                tabItemColor: Color(.black),
-                tabItemSelectionColor: Color(.blue)
+                colors: Colors(
+                    tabBarColor: Color(.white),
+                    tabItemColor: Color(.black),
+                    tabItemSelectionColor: Color(.blue)
+                )
             ) {
                 TabScreen(
                     tabItem: TabItemContent(

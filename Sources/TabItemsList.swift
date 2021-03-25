@@ -10,16 +10,17 @@ import SwiftUI
 struct TabItemsList: View {
     @Binding var currentView: TabPosition
     let tabItems: [TabItemProperties]
-    let tabItemColor: Color
-    let tabItemSelectionColor: Color
+    let tabItemColors: TabItemColors
 
     var body: some View {
         ForEach(tabItems) { tabItem in
             TabBarItem(
                 currentView: self.$currentView,
                 tabItem: tabItem,
-                tabItemColor: self.tabItemColor,
-                tabItemSelectionColor: self.tabItemSelectionColor
+                tabItemColors: TabItemColors(
+                    tabItemColor: self.tabItemColors.tabItemColor,
+                    tabItemSelectionColor: self.tabItemColors.tabItemSelectionColor
+                )
             )
             Spacer()
         }
@@ -41,8 +42,10 @@ struct TabItemsList_Previews: PreviewProvider {
                         )
                     ) { Text("aaa") }
             )],
-            tabItemColor: Color(.blue),
-            tabItemSelectionColor: Color(.blue)
+            tabItemColors: TabItemColors(
+                tabItemColor: Color(.blue),
+                tabItemSelectionColor: Color(.blue)
+            )
         )
     }
 }

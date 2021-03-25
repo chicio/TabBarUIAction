@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct ModalTabBarItem: View {
+public struct TabBarModalItem: View {
     let modalTabBarItemContent: AnyView
     let action: () -> Void
 
@@ -28,7 +28,7 @@ public struct ModalTabBarItem: View {
 
 struct ShowModalTabBarItem_Previews: PreviewProvider {
     static var previews: some View {
-        ModalTabBarItem(modalTabBarItemContent: AnyView(
+        TabBarModalItem(modalTabBarItemContent: AnyView(
                             Image(systemName: "plus.circle.fill")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)

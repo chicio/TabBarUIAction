@@ -7,35 +7,39 @@
 
 import SwiftUI
 
+public struct TabItemColors {
+    let tabItemColor: Color
+    let tabItemSelectionColor: Color
+}
+
+public struct Colors {
+    let tabBarColor: Color
+    let tabItemColors: TabItemColors
+
+    public init(tabBarColor: Color, tabItemColor: Color, tabItemSelectionColor: Color) {
+        self.tabBarColor = tabBarColor
+        self.tabItemColors = TabItemColors(tabItemColor: tabItemColor, tabItemSelectionColor: tabItemSelectionColor)
+    }
+}
+
 public struct TabBarUIAction: View {
     @State private var currentView: TabPosition = .tab1
     private var modal: TabModal
     private let tabItemsProperties: [TabItemProperties]
-    private let tabBarColor: Color
-    private let tabItemColor: Color
-    private let tabItemSelectionColor: Color
+    private let colors: Colors
 
-    public init(
-        tabBarColor: Color,
-        tabItemColor: Color,
-        tabItemSelectionColor: Color,
-        @ViewBuilder content: () -> TupleView<(TabScreen, TabModal, TabScreen)>
-    ) {
+    public init(colors: Colors, @ViewBuilder content: () -> TupleView<(TabScreen, TabModal, TabScreen)>) {
         let views = content().value
         self.modal = views.1
         self.tabItemsProperties = [
             TabItemProperties(position: .tab1, screen: views.0),
             TabItemProperties(position: .tab2, screen: views.2)
         ]
-        self.tabBarColor = tabBarColor
-        self.tabItemColor = tabItemColor
-        self.tabItemSelectionColor = tabItemSelectionColor
+        self.colors = colors
     }
 
     public init(
-        tabBarColor: Color,
-        tabItemColor: Color,
-        tabItemSelectionColor: Color,
+        colors: Colors,
         @ViewBuilder content: () -> TupleView<(TabScreen, TabScreen, TabModal, TabScreen, TabScreen)>
     ) {
         let views = content().value
@@ -46,21 +50,19 @@ public struct TabBarUIAction: View {
             TabItemProperties(position: .tab3, screen: views.3),
             TabItemProperties(position: .tab4, screen: views.4)
         ]
-        self.tabBarColor = tabBarColor
-        self.tabItemColor = tabItemColor
-        self.tabItemSelectionColor = tabItemSelectionColor
+        self.colors = colors
     }
 
     public var body: some View {
         VStack {
-            self.tabItemsProperties[currentView.rawValue].screen
+            tabItemsProperties[currentView.rawValue].screen
             TabBar(
-                tabItemColor: tabItemColor,
-                tabItemSelectionColor: tabItemSelectionColor,
-                currentView: self.$currentView,
-                tabItems: self.tabItemsProperties,
-                modal: self.modal
-            ).background(self.tabBarColor.ignoresSafeArea())
+                tabItemColors: colors.tabItemColors,
+                currentView: $currentView,
+                tabItems: tabItemsProperties,
+                modal: modal
+            )
+            .background(colors.tabBarColor.ignoresSafeArea())
         }
         .ignoresSafeArea(.keyboard)
     }
@@ -68,7 +70,13 @@ public struct TabBarUIAction: View {
 
 struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarUIAction(tabBarColor: Color(.white), tabItemColor: Color(.black), tabItemSelectionColor: Color(.blue)) {
+        TabBarUIAction(
+            colors: Colors(
+                tabBarColor: Color(.white),
+                tabItemColor: Color(.black),
+                tabItemSelectionColor: Color(.blue)
+            )
+        ) {
             TabScreen(
                 tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 1", font: Font.system(size: 12))
             ) { Text("aaa") }

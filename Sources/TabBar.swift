@@ -8,43 +8,38 @@
 import SwiftUI
 
 struct TabBar: View {
-    @Binding public var currentView: TabPosition
+    @Binding var currentView: TabPosition
     @State public var showModal: Bool = false
     private let tabItems: [TabItemProperties]
     private let modal: TabModal
-    private let tabItemColor: Color
-    private let tabItemSelectionColor: Color
+    private let tabItemColors: TabItemColors
 
     init(
-        tabItemColor: Color,
-        tabItemSelectionColor: Color,
+        tabItemColors: TabItemColors,
         currentView: Binding<TabPosition>,
         tabItems: [TabItemProperties],
         modal: TabModal
     ) {
         self._currentView = currentView
+        self.tabItemColors = tabItemColors
         self.tabItems = tabItems
         self.modal = modal
-        self.tabItemColor = tabItemColor
-        self.tabItemSelectionColor = tabItemSelectionColor
     }
 
-    public var body: some View {
+    var body: some View {
         HStack(alignment: .center, spacing: 0) {
             Spacer()
             TabItemsList(
                 currentView: self.$currentView,
                 tabItems: Array(self.tabItems[0..<self.tabItems.count/2]),
-                tabItemColor: tabItemColor,
-                tabItemSelectionColor: tabItemSelectionColor
+                tabItemColors: self.tabItemColors
             )
-            ModalTabBarItem(modalTabBarItemContent: self.modal.modalTabBarItemContent) { self.showModal.toggle() }
+            TabBarModalItem(modalTabBarItemContent: self.modal.modalTabBarItemContent) { self.showModal.toggle() }
             Spacer()
             TabItemsList(
                 currentView: self.$currentView,
                 tabItems: Array(self.tabItems[self.tabItems.count/2..<self.tabItems.count]),
-                tabItemColor: tabItemColor,
-                tabItemSelectionColor: tabItemSelectionColor
+                tabItemColors: self.tabItemColors
             )
         }
         .frame(minHeight: 70)
@@ -55,8 +50,7 @@ struct TabBar: View {
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar(
-            tabItemColor: Color(.blue),
-            tabItemSelectionColor: Color(.black),
+            tabItemColors: TabItemColors(tabItemColor: Color(.blue), tabItemSelectionColor: Color(.black)),
             currentView: .constant(.tab1),
             tabItems: [
                 TabItemProperties(

@@ -10,22 +10,23 @@ import SwiftUI
 struct TabBarItem: View {
     @Binding var currentView: TabPosition
     let tabItem: TabItemProperties
-    let tabItemColor: Color
-    let tabItemSelectionColor: Color
+    let tabItemColors: TabItemColors
 
     var body: some View {
         Group {
             VStack(spacing: 0) {
-                self.tabItem.screen.tabItemContent
-                    .background(tabItemSelectionColor.opacity(self.currentView == self.tabItem.position ? 0.2 : 0.0))
+                tabItem.screen.tabItemContent
+                    .background(
+                        tabItemColors.tabItemSelectionColor.opacity(currentView == tabItem.position ? 0.2 : 0.0)
+                    )
                     .foregroundColor(
-                        self.currentView == self.tabItem.position
-                            ? self.tabItemSelectionColor
-                            : self.tabItemColor
+                        currentView == tabItem.position
+                            ? tabItemColors.tabItemSelectionColor
+                            : tabItemColors.tabItemColor
                     )
                     .cornerRadius(6)
             }
-            .onTapGesture { self.currentView = self.tabItem.position }
+            .onTapGesture { currentView = tabItem.position }
         }
     }
 }
@@ -41,8 +42,10 @@ struct TabBarItem_Previews: PreviewProvider {
                     content: { Text("Content")}
                 )
             ),
-            tabItemColor: Color(.blue),
-            tabItemSelectionColor: Color(.black)
+            tabItemColors: TabItemColors(
+                tabItemColor: Color(.blue),
+                tabItemSelectionColor: Color(.black)
+            )
         )
     }
 }
