@@ -11,7 +11,7 @@ import TabBarUIAction
 struct TabBarWith3ElementsWithComplexContent: View {
     @State private var currentTab: TabPosition = .tab1
     @State private var text: String = ""
-    
+
     var body: some View {
         VStack {
             TabBarUIAction(
@@ -29,7 +29,7 @@ struct TabBarWith3ElementsWithComplexContent: View {
                         font: Font.system(size: 16)
                     )
                 ) {
-                    Screen(text: "Screen 1", color: Color(.systemYellow))  {
+                    Screen(text: "Screen 1", color: Color(.systemYellow)) {
                         VStack(alignment: .leading, spacing: 10) {
                             Form {
                                 Label("Field example", systemImage: "pencil")

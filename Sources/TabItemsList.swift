@@ -9,11 +9,11 @@ import SwiftUI
 
 struct TabItemsList: View {
     @Binding var currentView: TabPosition
-    let tabItems: [TabItemProperties]
+    let tabItemsProperties: [TabItemProperties]
     let tabItemColors: TabItemColors
 
     var body: some View {
-        ForEach(tabItems) { tabItem in
+        ForEach(tabItemsProperties) { tabItem in
             TabBarItem(
                 currentView: self.$currentView,
                 tabItem: tabItem,
@@ -31,7 +31,7 @@ struct TabItemsList_Previews: PreviewProvider {
     static var previews: some View {
         TabItemsList(
             currentView: .constant(.tab1),
-            tabItems: [
+            tabItemsProperties: [
                 TabItemProperties(
                     position: .tab1,
                     screen: TabScreen(

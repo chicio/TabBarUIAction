@@ -8,21 +8,23 @@
 import SwiftUI
 
 struct TabBar: View {
-    @Binding var currentView: TabPosition
-    @State public var showModal: Bool = false
-    private let tabItems: [TabItemProperties]
+    @Binding private var currentView: TabPosition
+    @Binding private var showModal: Bool
+    private let tabItemsProperties: [TabItemProperties]
     private let modal: TabModal
     private let tabItemColors: TabItemColors
 
     init(
-        tabItemColors: TabItemColors,
         currentView: Binding<TabPosition>,
+        showModal: Binding<Bool>,
+        tabItemColors: TabItemColors,
         tabItems: [TabItemProperties],
         modal: TabModal
     ) {
         self._currentView = currentView
+        self._showModal = showModal
         self.tabItemColors = tabItemColors
-        self.tabItems = tabItems
+        self.tabItemsProperties = tabItems
         self.modal = modal
     }
 
@@ -30,28 +32,37 @@ struct TabBar: View {
         HStack(alignment: .center, spacing: 0) {
             Spacer()
             TabItemsList(
-                currentView: self.$currentView,
-                tabItems: Array(self.tabItems[0..<self.tabItems.count/2]),
-                tabItemColors: self.tabItemColors
+                currentView: $currentView,
+                tabItemsProperties: firstHalfTabItems(),
+                tabItemColors: tabItemColors
             )
-            TabBarModalItem(modalTabBarItemContent: self.modal.modalTabBarItemContent) { self.showModal.toggle() }
+            TabBarModalItem(modalTabBarItemContent: modal.modalTabBarItemContent) { showModal.toggle() }
             Spacer()
             TabItemsList(
-                currentView: self.$currentView,
-                tabItems: Array(self.tabItems[self.tabItems.count/2..<self.tabItems.count]),
-                tabItemColors: self.tabItemColors
+                currentView: $currentView,
+                tabItemsProperties: secondHalfTabItems(),
+                tabItemColors: tabItemColors
             )
         }
         .frame(minHeight: 70)
-        .sheet(isPresented: self.$showModal) { self.modal }
+        .sheet(isPresented: $showModal) { modal }
+    }
+
+    func firstHalfTabItems() -> [TabItemProperties] {
+        return Array(tabItemsProperties[0..<tabItemsProperties.count/2])
+    }
+
+    func secondHalfTabItems() -> [TabItemProperties] {
+        return Array(tabItemsProperties[tabItemsProperties.count/2..<tabItemsProperties.count])
     }
 }
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar(
-            tabItemColors: TabItemColors(tabItemColor: Color(.blue), tabItemSelectionColor: Color(.black)),
             currentView: .constant(.tab1),
+            showModal: .constant(false),
+            tabItemColors: TabItemColors(tabItemColor: Color(.blue), tabItemSelectionColor: Color(.black)),
             tabItems: [
                 TabItemProperties(
                     position: .tab1,

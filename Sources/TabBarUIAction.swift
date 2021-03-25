@@ -24,6 +24,7 @@ public struct Colors {
 
 public struct TabBarUIAction: View {
     @Binding private var currentView: TabPosition
+    @State public var showModal: Bool = false
     private var modal: TabModal
     private let tabItemsProperties: [TabItemProperties]
     private let colors: Colors
@@ -64,8 +65,9 @@ public struct TabBarUIAction: View {
         VStack {
             tabItemsProperties[currentView.rawValue].screen
             TabBar(
-                tabItemColors: colors.tabItemColors,
                 currentView: $currentView,
+                showModal: $showModal,
+                tabItemColors: colors.tabItemColors,
                 tabItems: tabItemsProperties,
                 modal: modal
             )
