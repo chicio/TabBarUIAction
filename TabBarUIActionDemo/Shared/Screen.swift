@@ -7,18 +7,35 @@
 
 import SwiftUI
 
-struct Screen: View, Equatable {
+struct Screen<Content: View>: View {
     let text: String
     let color: Color
+    let content: () -> Content
+
+    init(text: String, color: Color, @ViewBuilder content: @escaping () -> Content) {
+        self.text = text
+        self.color = color
+        self.content = content
+    }
+
+    init(text: String, color: Color) where Content == EmptyView {
+        self.init(text: text, color: color, content: { EmptyView() })
+    }
 
     var body: some View {
         VStack {
             Spacer()
             HStack {
                 Spacer()
-                Text(self.text)
-                    .font(.system(size: 20))
-                    .bold()
+                VStack {
+                    Spacer()
+                    Text(self.text)
+                        .font(.system(size: 20))
+                        .bold()
+                    Spacer()
+                    self.content()
+                    Spacer()
+                }
                 Spacer()
             }
             Spacer()
@@ -29,7 +46,7 @@ struct Screen: View, Equatable {
     }
 }
 
-struct Screen2_Previews: PreviewProvider {
+struct Screen_Previews: PreviewProvider {
     static var previews: some View {
         Screen(text: "Screen", color: Color(.systemRed))
     }

@@ -8,8 +8,9 @@
 import SwiftUI
 import TabBarUIAction
 
-struct TabBarWith3Elements: View {
+struct TabBarWith3ElementsWithNavigation: View {
     @State private var currentTab: TabPosition = .tab1
+    @State private var text: String = ""
 
     var body: some View {
         VStack {
@@ -27,7 +28,9 @@ struct TabBarWith3Elements: View {
                         text: "Tab item 1",
                         font: Font.system(size: 16)
                     )
-                ) { ScreenWithDetail() }
+                ) {
+                    ScreenWithDetail()
+                }
                 TabModal {
                     Image(systemName: "plus.circle.fill")
                         .resizable()
@@ -42,14 +45,16 @@ struct TabBarWith3Elements: View {
                 }
                 TabScreen(
                     tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 16))
-                ) { Screen(text: "Screen 2", color: Color(.systemRed)) }
+                ) {
+                    Screen(text: "Screen 2", color: Color(.systemRed))
+                }
             }
         }
     }
 }
 
-struct TabBarWith3Elements_Previews: PreviewProvider {
+struct TabBarWith3ElementsWithNavigation_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarWith3Elements()
+        TabBarWith3ElementsWithNavigation()
     }
 }

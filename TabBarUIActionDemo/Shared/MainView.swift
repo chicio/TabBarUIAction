@@ -12,8 +12,15 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: TabBarWith3Elements()) { Text("Tab bar with 3 items") }
-                NavigationLink(destination: TabBarWith5Elements()) { Text("Tab bar with 5 items") }
+                NavigationLink(destination: TabBarWith3ElementsWithNavigation()) {
+                    Text("Tab bar 3 items + with navigation to detail")
+                }
+                NavigationLink(destination: TabBarWith3ElementsWithComplexContent()) {
+                    Text("Tab bar 3 items + complex content")
+                }
+                NavigationLink(destination: TabBarWith5Elements()) {
+                    Text("Tab bar 5 items + custom tabbar colors")
+                }
             }
             .navigationTitle("TabBarUIAction Demo")
         }
