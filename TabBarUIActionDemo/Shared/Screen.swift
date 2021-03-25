@@ -32,7 +32,7 @@ struct Screen<Content: View>: View {
                     Text(self.text)
                         .font(.system(size: 20))
                         .bold()
-                    Spacer()
+                        .padding(10)
                     self.content()
                     Spacer()
                 }

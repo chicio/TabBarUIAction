@@ -18,7 +18,7 @@ struct MainView: View {
                 NavigationLink(destination: TabBarWith3ElementsWithComplexContent()) {
                     Text("Tab bar 3 items + complex content")
                 }
-                NavigationLink(destination: TabBarWith5Elements()) {
+                NavigationLink(destination: TabBarWith5ElementsWithCustomColors()) {
                     Text("Tab bar 5 items + custom tabbar colors")
                 }
             }

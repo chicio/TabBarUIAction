@@ -43,11 +43,7 @@ struct TabBarWith3ElementsWithNavigation: View {
                         .cornerRadius(55/2)
                         .overlay(RoundedRectangle(cornerRadius: 55/2).stroke(Color(.blue), lineWidth: 2))
                 } content: {
-                    Screen(text: "Modal", color: Color(.systemOrange)) {
-                        Button("Close") {
-                            showModal.toggle()
-                        }
-                    }
+                    ScreenModal(showModal: $showModal)
                 }
                 TabScreen(
                     tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 16))

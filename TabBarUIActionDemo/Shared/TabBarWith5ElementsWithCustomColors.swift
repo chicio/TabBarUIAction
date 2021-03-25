@@ -8,7 +8,7 @@
 import SwiftUI
 import TabBarUIAction
 
-struct TabBarWith5Elements: View {
+struct TabBarWith5ElementsWithCustomColors: View {
     @State private var currentTab: TabPosition = .tab1
     @State private var showModal: Bool = false
 
@@ -19,7 +19,7 @@ struct TabBarWith5Elements: View {
                 showModal: $showModal,
                 colors: Colors(
                     tabBarColor: Color(.systemGray5),
-                    tabItemColor: Color(.black),
+                    tabItemColor: Color(.systemPurple),
                     tabItemSelectionColor: Color(.systemIndigo)
                 )
             ) {
@@ -44,11 +44,11 @@ struct TabBarWith5Elements: View {
                         .frame(width: 30, height: 30, alignment: .center)
                         .foregroundColor(Color(.white))
                         .padding(10)
-                        .background(Color(.black))
+                        .background(Color(.systemRed))
                         .cornerRadius(10)
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.black), lineWidth: 2))
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.systemRed), lineWidth: 2))
                 } content: {
-                    Screen(text: "Modal", color: Color(.systemOrange))
+                    ScreenModal(showModal: $showModal)
                 }
                 TabScreen(
                     tabItem: TabItemContent(
@@ -69,8 +69,8 @@ struct TabBarWith5Elements: View {
     }
 }
 
-struct TabBarWith5Elements_Previews: PreviewProvider {
+struct TabBarWith5ElementsWithCustomColors_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarWith5Elements()
+        TabBarWith5ElementsWithCustomColors()
     }
 }

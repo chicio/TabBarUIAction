@@ -8,24 +8,19 @@
 import SwiftUI
 
 struct ScreenModal: View {
+    @Binding var showModal: Bool
+
     var body: some View {
-        VStack {
-            Spacer()
-            HStack {
-                Spacer()
-                Text("Modal")
-                Spacer()
+        Screen(text: "Modal", color: Color(.systemOrange)) {
+            Button("Close") {
+                showModal.toggle()
             }
-            Spacer()
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-        .background(Color(.red).opacity(0.2))
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
 struct ScreenModal_Previews: PreviewProvider {
     static var previews: some View {
-        ScreenModal()
+        ScreenModal(showModal: .constant(false))
     }
 }
