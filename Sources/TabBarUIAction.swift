@@ -7,21 +7,6 @@
 
 import SwiftUI
 
-public struct TabItemColors {
-    let tabItemColor: Color
-    let tabItemSelectionColor: Color
-}
-
-public struct Colors {
-    let tabBarColor: Color
-    let tabItemColors: TabItemColors
-
-    public init(tabBarColor: Color, tabItemColor: Color, tabItemSelectionColor: Color) {
-        self.tabBarColor = tabBarColor
-        self.tabItemColors = TabItemColors(tabItemColor: tabItemColor, tabItemSelectionColor: tabItemSelectionColor)
-    }
-}
-
 public struct TabBarUIAction: View {
     @Binding private var currentView: TabPosition
     @State public var showModal: Bool = false
