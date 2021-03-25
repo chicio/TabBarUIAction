@@ -23,12 +23,17 @@ public struct Colors {
 }
 
 public struct TabBarUIAction: View {
-    @State private var currentView: TabPosition = .tab1
+    @Binding private var currentView: TabPosition
     private var modal: TabModal
     private let tabItemsProperties: [TabItemProperties]
     private let colors: Colors
 
-    public init(colors: Colors, @ViewBuilder content: () -> TupleView<(TabScreen, TabModal, TabScreen)>) {
+    public init(
+        currentTab: Binding<TabPosition>,
+        colors: Colors,
+        @ViewBuilder content: () -> TupleView<(TabScreen, TabModal, TabScreen)>
+    ) {
+        self._currentView = currentTab
         let views = content().value
         self.modal = views.1
         self.tabItemsProperties = [
@@ -39,9 +44,11 @@ public struct TabBarUIAction: View {
     }
 
     public init(
+        currentTab: Binding<TabPosition>,
         colors: Colors,
         @ViewBuilder content: () -> TupleView<(TabScreen, TabScreen, TabModal, TabScreen, TabScreen)>
     ) {
+        self._currentView = currentTab
         let views = content().value
         self.modal = views.2
         self.tabItemsProperties = [
@@ -71,6 +78,7 @@ public struct TabBarUIAction: View {
 struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
         TabBarUIAction(
+            currentTab: .constant(.tab2),
             colors: Colors(
                 tabBarColor: Color(.white),
                 tabItemColor: Color(.black),

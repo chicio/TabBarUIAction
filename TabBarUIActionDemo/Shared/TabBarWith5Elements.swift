@@ -9,9 +9,12 @@ import SwiftUI
 import TabBarUIAction
 
 struct TabBarWith5Elements: View {
+    @State private var currentTab: TabPosition = .tab1
+
     var body: some View {
         VStack {
             TabBarUIAction(
+                currentTab: $currentTab,
                 colors: Colors(
                     tabBarColor: Color(.systemGray5),
                     tabItemColor: Color(.black),
