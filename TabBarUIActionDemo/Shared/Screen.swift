@@ -23,11 +23,11 @@ struct Screen<Content: View>: View {
     }
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             Spacer()
-            HStack {
+            HStack(spacing: 0) {
                 Spacer()
-                VStack {
+                VStack(spacing: 0) {
                     Spacer()
                     Text(self.text)
                         .font(.system(size: 20))

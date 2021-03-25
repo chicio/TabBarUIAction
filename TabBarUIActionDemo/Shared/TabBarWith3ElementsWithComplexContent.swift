@@ -12,9 +12,10 @@ struct TabBarWith3ElementsWithComplexContent: View {
     @State private var currentTab: TabPosition = .tab1
     @State private var showModal: Bool = false
     @State private var text: String = ""
+    @State private var text2: String = ""
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             TabBarUIAction(
                 currentTab: $currentTab,
                 showModal: $showModal,
@@ -31,16 +32,15 @@ struct TabBarWith3ElementsWithComplexContent: View {
                         font: Font.system(size: 16)
                     )
                 ) {
-                    Screen(text: "Screen 1", color: Color(.systemYellow)) {
-                        VStack(alignment: .leading, spacing: 10) {
-                            Form {
-                                Label("Field example", systemImage: "pencil")
-                                TextField("aaaa", text: $text)
-                                    .background(Color(.white))
-                                    .multilineTextAlignment(.center)
-                            }
+                        Form {
+                            Label("Field example", systemImage: "pencil")
+                            TextField("field", text: $text)
+                                .background(Color(.white))
+                                .multilineTextAlignment(.center)
                         }
-                    }
+                        .padding(0)
+                        .background(Color.clear)
+                        .navigationTitle("Form Screen 1")
                 }
                 TabModal {
                     Image(systemName: "plus.circle.fill")
@@ -57,7 +57,15 @@ struct TabBarWith3ElementsWithComplexContent: View {
                 TabScreen(
                     tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 16))
                 ) {
-                    Screen(text: "Screen 2", color: Color(.systemRed))
+                    Form {
+                        Label("Field example", systemImage: "pencil")
+                        TextField("field", text: $text2)
+                            .background(Color(.white))
+                            .multilineTextAlignment(.center)
+                    }
+                    .padding(0)
+                    .background(Color.clear)
+                    .navigationTitle("Form Screen 2")
                 }
             }
         }
