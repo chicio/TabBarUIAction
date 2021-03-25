@@ -9,17 +9,19 @@ import SwiftUI
 
 public struct TabBarUIAction: View {
     @Binding private var currentView: TabPosition
-    @State public var showModal: Bool = false
+    @Binding private var showModal: Bool
     private var modal: TabModal
     private let tabItemsProperties: [TabItemProperties]
     private let colors: Colors
 
     public init(
         currentTab: Binding<TabPosition>,
+        showModal: Binding<Bool>,
         colors: Colors,
         @ViewBuilder content: () -> TupleView<(TabScreen, TabModal, TabScreen)>
     ) {
         self._currentView = currentTab
+        self._showModal = showModal
         let views = content().value
         self.modal = views.1
         self.tabItemsProperties = [
@@ -31,10 +33,12 @@ public struct TabBarUIAction: View {
 
     public init(
         currentTab: Binding<TabPosition>,
+        showModal: Binding<Bool>,
         colors: Colors,
         @ViewBuilder content: () -> TupleView<(TabScreen, TabScreen, TabModal, TabScreen, TabScreen)>
     ) {
         self._currentView = currentTab
+        self._showModal = showModal
         let views = content().value
         self.modal = views.2
         self.tabItemsProperties = [
@@ -66,6 +70,7 @@ struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
         TabBarUIAction(
             currentTab: .constant(.tab2),
+            showModal: .constant(false),
             colors: Colors(
                 tabBarColor: Color(.white),
                 tabItemColor: Color(.black),

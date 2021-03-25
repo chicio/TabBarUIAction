@@ -10,12 +10,14 @@ import TabBarUIAction
 
 struct TabBarWith3ElementsWithComplexContent: View {
     @State private var currentTab: TabPosition = .tab1
+    @State private var showModal: Bool = false
     @State private var text: String = ""
 
     var body: some View {
         VStack {
             TabBarUIAction(
                 currentTab: $currentTab,
+                showModal: $showModal,
                 colors: Colors(
                     tabBarColor: Color(.white),
                     tabItemColor: Color(.black),

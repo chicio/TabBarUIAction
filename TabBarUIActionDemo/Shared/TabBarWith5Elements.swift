@@ -10,11 +10,13 @@ import TabBarUIAction
 
 struct TabBarWith5Elements: View {
     @State private var currentTab: TabPosition = .tab1
+    @State private var showModal: Bool = false
 
     var body: some View {
         VStack {
             TabBarUIAction(
                 currentTab: $currentTab,
+                showModal: $showModal,
                 colors: Colors(
                     tabBarColor: Color(.systemGray5),
                     tabItemColor: Color(.black),
