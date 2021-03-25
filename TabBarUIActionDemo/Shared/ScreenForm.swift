@@ -15,7 +15,6 @@ struct ScreenForm: View {
         Form {
             Label("Field", systemImage: "pencil")
             TextField("field", text: $text)
-                .background(Color(.white))
                 .multilineTextAlignment(.center)
         }
         .padding(0)
