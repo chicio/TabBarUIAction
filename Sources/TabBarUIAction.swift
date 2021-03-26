@@ -53,6 +53,7 @@ public struct TabBarUIAction: View {
     public var body: some View {
         VStack {
             tabItemsProperties[currentView.rawValue].screen
+                .accessibility(identifier: "TabScreen\(currentView.rawValue)")
             TabBar(
                 currentView: $currentView,
                 showModal: $showModal,
@@ -60,9 +61,15 @@ public struct TabBarUIAction: View {
                 tabItems: tabItemsProperties,
                 modal: modal
             )
-            .background(colors.tabBarColor.ignoresSafeArea())
+            .background(
+                colors.tabBarColor
+                    .ignoresSafeArea()
+                    .accessibility(identifier: "TabBarUIActionBackground")
+            )
         }
         .ignoresSafeArea(.keyboard)
+        .accessibilityElement(children: .contain)
+        .accessibility(identifier: "TabBarUIAction")
     }
 }
 

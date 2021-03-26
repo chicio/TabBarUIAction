@@ -13,23 +13,25 @@ struct MainView: View {
         NavigationView {
             List {
                 NavigationLink(destination: TabBarWith3Elements()) {
-                    Text("Tab bar 3 items")
+                    Text("TabBar 3 items")
                 }
+                .accessibility(identifier: "TabBar3items")
                 NavigationLink(destination: TabBarWith5Elements()) {
-                    Text("Tab bar 5 items")
+                    Text("TabBar 5 items")
                 }
                 NavigationLink(destination: TabBarWith3ElementsWithScreensState()) {
-                    Text("Tab bar 3 items + screens state")
+                    Text("TabBar 3 items + screens state")
                 }
                 NavigationLink(destination: TabBarWith5ElementsWithNavigation()) {
-                    Text("Tab bar 5 items + navigation to detail")
+                    Text("TabBar 5 items + navigation to detail")
                 }
                 NavigationLink(destination: TabBarWith3ElementsWithProgrammaticTabChange()) {
-                    Text("Tab bar 5 items + programmatic tab change")
+                    Text("TabBar 5 items + programmatic tab change")
                 }
             }
             .navigationTitle("TabBarUIAction Demo")
         }
+        .accessibility(identifier: "TabBarUIActionDemoAppNavigationView")
         .background(Color.white)
         .navigationViewStyle(StackNavigationViewStyle())
     }

@@ -46,6 +46,8 @@ struct TabBar: View {
         }
         .frame(minHeight: 70)
         .sheet(isPresented: $showModal) { modal }
+        .accessibilityElement(children: .contain)
+        .accessibility(identifier: "TabBar")
     }
 
     func firstHalfTabItems() -> [TabItemProperties] {

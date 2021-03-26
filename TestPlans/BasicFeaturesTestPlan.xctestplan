@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "3EC25BCF-5E94-4523-8657-66453AE09522",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "selectedTests" : [
+        "TabBarWith3ElementsTests\/testTabBarWith3Elements()"
+      ],
+      "target" : {
+        "containerPath" : "container:TabBarUIAction.xcodeproj",
+        "identifier" : "456A0020260E40DE008B75B5",
+        "name" : "TabBarUIAction UITests iOS"
+      }
+    }
+  ],
+  "version" : 1
+}

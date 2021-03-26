@@ -51,6 +51,8 @@ struct TabBarWith3Elements: View {
                 }
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibility(identifier: "TabBarWith3Elements")
     }
 }
 

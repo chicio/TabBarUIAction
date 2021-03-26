@@ -17,7 +17,11 @@ struct TabBarItem: View {
             VStack(spacing: 0) {
                 tabItem.screen.tabItemContent
                     .background(
-                        tabItemColors.tabItemSelectionColor.opacity(currentView == tabItem.position ? 0.2 : 0.0)
+                        tabItemColors
+                            .tabItemSelectionColor
+                            .opacity(currentView == tabItem.position ? 0.2 : 0.0)
+                            .accessibility(identifier: "TabBarItem\(tabItem.position.rawValue + 1)ButtonBackground")
+                            .allowsHitTesting(true)
                     )
                     .foregroundColor(
                         currentView == tabItem.position
@@ -27,7 +31,11 @@ struct TabBarItem: View {
                     .cornerRadius(6)
             }
             .onTapGesture { currentView = tabItem.position }
+            .accessibilityElement(children: .contain)
+            .accessibility(identifier: "TabBarItem\(tabItem.position.rawValue + 1)Button")
         }
+        .accessibilityElement(children: .contain)
+        .accessibility(identifier: "TabBarItem\(tabItem.position.rawValue + 1)Group")
     }
 }
 

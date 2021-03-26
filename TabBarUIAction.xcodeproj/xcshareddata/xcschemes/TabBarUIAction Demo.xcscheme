@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45CA70B526078E2D008C5CDF"
                BuildableName = "TabBarUIActionDemo.app"
-               BlueprintName = "TabBarUIActionDemo"
+               BlueprintName = "TabBarUIAction Demo"
                ReferencedContainer = "container:TabBarUIAction.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,18 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45CA712D26078FEC008C5CDF"
-               BuildableName = "TabBarUIActionDemoUITests (iOS).xctest"
-               BlueprintName = "TabBarUIActionDemoUITests (iOS)"
+               BuildableName = "TabBarUIActionUITests iOS.xctest"
+               BlueprintName = "TabBarUIActionUITests iOS"
+               ReferencedContainer = "container:TabBarUIAction.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "456A0020260E40DE008B75B5"
+               BuildableName = "TabBarUIAction UITests.xctest"
+               BlueprintName = "TabBarUIAction UITests"
                ReferencedContainer = "container:TabBarUIAction.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,7 +66,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45CA70B526078E2D008C5CDF"
             BuildableName = "TabBarUIActionDemo.app"
-            BlueprintName = "TabBarUIActionDemo"
+            BlueprintName = "TabBarUIAction Demo"
             ReferencedContainer = "container:TabBarUIAction.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -73,7 +83,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45CA70B526078E2D008C5CDF"
             BuildableName = "TabBarUIActionDemo.app"
-            BlueprintName = "TabBarUIActionDemo"
+            BlueprintName = "TabBarUIAction Demo"
             ReferencedContainer = "container:TabBarUIAction.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
