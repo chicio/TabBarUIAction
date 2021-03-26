@@ -33,7 +33,7 @@ struct Screen<Content: View>: View {
                         .font(.system(size: 20))
                         .bold()
                         .padding(10)
-                        .accessibility(identifier: "\(self.text.replacingOccurrences(of: "\\s", with: "", options: .regularExpression))ScreenText")
+                        .accessibility(identifier: self.text.getAccessibilityIdentifier(suffix: "ScreenText"))
                     self.content()
                     Spacer()
                 }
@@ -44,7 +44,7 @@ struct Screen<Content: View>: View {
             Spacer()
         }
         .accessibilityElement(children: .contain)
-        .accessibility(identifier: self.text.replacingOccurrences(of: "\\s", with: "", options: .regularExpression))
+        .accessibility(identifier: self.text.getAccessibilityIdentifier(suffix: ""))
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
         .background(self.color.opacity(0.2))
         .navigationTitle(self.text)

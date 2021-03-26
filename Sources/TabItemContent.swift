@@ -29,24 +29,22 @@ public struct TabItemContent: View {
         VStack(alignment: .center, spacing: 0) {
             if let validSystemImageName = systemImageName {
                 Image(systemName: validSystemImageName)
-                    .accessibility(
-                        identifier: ("\(self.text)SystemImage").replacingOccurrences(of: "\\s", with: "", options: .regularExpression)
-                    )
+                    .accessibility(identifier: self.text.getAccessibilityIdentifier(suffix: "SystemImage"))
                     .allowsHitTesting(true)
             }
             if let validImageName = imageName {
                 Image(validImageName)
-                    .accessibility(identifier: ("\(self.text)Image").replacingOccurrences(of: "\\s", with: "", options: .regularExpression))
+                    .accessibility(identifier: self.text.getAccessibilityIdentifier(suffix: "Image"))
             }
             Text(self.text)
                 .font(self.font)
                 .lineLimit(1)
                 .padding(.top, 5)
-                .accessibility(identifier: ("\(self.text)Text").replacingOccurrences(of: "\\s", with: "", options: .regularExpression))
+                .accessibility(identifier: self.text.getAccessibilityIdentifier(suffix: "Text"))
                 .allowsHitTesting(true)
         }
         .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/, 5)
         .accessibilityElement(children: .contain)
-        .accessibility(identifier: "\(self.text)TabItemContent".replacingOccurrences(of: "\\s", with: "", options: .regularExpression))
+        .accessibility(identifier: self.text.getAccessibilityIdentifier(suffix: "TabItemContent"))
     }
 }

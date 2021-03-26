@@ -25,7 +25,7 @@ class TabBarWith5ElementsTests: XCTestCase {
             for: NSPredicate(format: "self == \"Screen 2\""),
             evaluatedWith: app.staticTexts["Screen2ScreenText"].label as NSString
         )
-        
+
         app.images["TabItem3SystemImage"].tap()
         app.staticTexts["TabItem3Text"].tap()
 
@@ -33,7 +33,7 @@ class TabBarWith5ElementsTests: XCTestCase {
             for: NSPredicate(format: "self == \"Screen 3\""),
             evaluatedWith: app.staticTexts["Screen3ScreenText"].label as NSString
         )
-        
+
         app.images["TabItem4SystemImage"].tap()
         app.staticTexts["TabItem4Text"].tap()
 
