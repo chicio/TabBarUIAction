@@ -33,7 +33,7 @@ struct Screen<Content: View>: View {
                         .font(.system(size: 20))
                         .bold()
                         .padding(10)
-                        .accessibility(identifier: "ScreenText")
+                        .accessibility(identifier: "\(self.text.replacingOccurrences(of: "\\s", with: "", options: .regularExpression))ScreenText")
                     self.content()
                     Spacer()
                 }

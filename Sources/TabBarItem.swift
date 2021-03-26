@@ -21,7 +21,6 @@ struct TabBarItem: View {
                             .tabItemSelectionColor
                             .opacity(currentView == tabItem.position ? 0.2 : 0.0)
                             .accessibility(identifier: "TabBarItem\(tabItem.position.rawValue + 1)ButtonBackground")
-                            .allowsHitTesting(true)
                     )
                     .foregroundColor(
                         currentView == tabItem.position

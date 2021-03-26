@@ -26,7 +26,7 @@ struct TabBarWith3Elements: View {
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "folder.badge.plus",
-                        text: "Tab item 1",
+                        text: "Tab Item 1",
                         font: Font.system(size: 16)
                     )
                 ) {
@@ -41,11 +41,12 @@ struct TabBarWith3Elements: View {
                         .background(Color(.white))
                         .cornerRadius(55/2)
                         .overlay(RoundedRectangle(cornerRadius: 55/2).stroke(Color(.blue), lineWidth: 2))
+                        .accessibility(identifier: "TabBarModalButton")
                 } content: {
                     ScreenModal(showModal: $showModal)
                 }
                 TabScreen(
-                    tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 16))
+                    tabItem: TabItemContent(systemImageName: "gear", text: "Tab Item 2", font: Font.system(size: 16))
                 ) {
                     Screen(text: "Screen 2", color: Color(.systemRed))
                 }

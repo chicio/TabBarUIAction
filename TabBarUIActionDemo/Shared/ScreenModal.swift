@@ -15,6 +15,7 @@ struct ScreenModal: View {
             Button("Close") {
                 showModal.toggle()
             }
+            .accessibility(identifier: "TabBarModalCloseButton")
         }
     }
 }
