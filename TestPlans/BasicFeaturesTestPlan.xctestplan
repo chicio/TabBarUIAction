@@ -15,12 +15,13 @@
     {
       "parallelizable" : true,
       "selectedTests" : [
-        "TabBarWith3ElementsTests\/testTabBarWith3Elements()"
+        "TabBarWith3ElementsTests\/testTabBarWith3Elements()",
+        "TabBarWith5ElementsTests\/testTabBarWith5Elements()"
       ],
       "target" : {
         "containerPath" : "container:TabBarUIAction.xcodeproj",
         "identifier" : "456A0020260E40DE008B75B5",
-        "name" : "TabBarUIAction UITests iOS"
+        "name" : "TabBarUIAction UITests"
       }
     }
   ],

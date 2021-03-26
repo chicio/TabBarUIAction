@@ -26,14 +26,14 @@ struct TabBarWith5Elements: View {
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "tray.fill",
-                        text: "Tab item 1",
+                        text: "Tab Item 1",
                         font: Font.system(size: 12)
                     )
                 ) { Screen(text: "Screen 1", color: Color(.systemRed)) }
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "gamecontroller.fill",
-                        text: "Tab item 2",
+                        text: "Tab Item 2",
                         font: Font.system(size: 12)
                     )
                 ) { Screen(text: "Screen 2", color: Color(.systemOrange)) }
@@ -47,20 +47,21 @@ struct TabBarWith5Elements: View {
                         .background(Color(.systemRed))
                         .cornerRadius(10)
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.systemRed), lineWidth: 2))
+                        .accessibility(identifier: "TabBarModalButton")
                 } content: {
                     ScreenModal(showModal: $showModal)
                 }
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "dpad.fill",
-                        text: "Tab item 3",
+                        text: "Tab Item 3",
                         font: Font.system(size: 12)
                     )
                 ) { Screen(text: "Screen 3", color: Color(.systemTeal)) }
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "l1.rectangle.roundedbottom.fill",
-                        text: "Tab item 4",
+                        text: "Tab Item 4",
                         font: Font.system(size: 12)
                     )
                 ) { Screen(text: "Screen 4", color: Color(.systemGreen)) }

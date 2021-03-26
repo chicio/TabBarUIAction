@@ -14,6 +14,7 @@
 		4521642E260CC025000CB2A2 /* TabItemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4521642C260CC025000CB2A2 /* TabItemColors.swift */; };
 		4525ECB7260B3673008B9BEC /* TabBarWith5ElementsWithNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525ECB6260B3673008B9BEC /* TabBarWith5ElementsWithNavigation.swift */; };
 		4525ECC5260B36AC008B9BEC /* TabBarWith5Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525ECC4260B36AC008B9BEC /* TabBarWith5Elements.swift */; };
+		453DE3B6260E5FE800993B5D /* TabBarWith5ElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453DE3B5260E5FE800993B5D /* TabBarWith5ElementsTests.swift */; };
 		45511193260D09E7001DEEE8 /* ScreenForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45511192260D09E7001DEEE8 /* ScreenForm.swift */; };
 		455111A1260D0AE6001DEEE8 /* TabBarWith3Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455111A0260D0AE6001DEEE8 /* TabBarWith3Elements.swift */; };
 		4556AE0026092EAC00390C90 /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556ADFF26092EAC00390C90 /* TabScreen.swift */; };
@@ -86,6 +87,7 @@
 		4521642C260CC025000CB2A2 /* TabItemColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemColors.swift; sourceTree = "<group>"; };
 		4525ECB6260B3673008B9BEC /* TabBarWith5ElementsWithNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith5ElementsWithNavigation.swift; sourceTree = "<group>"; };
 		4525ECC4260B36AC008B9BEC /* TabBarWith5Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith5Elements.swift; sourceTree = "<group>"; };
+		453DE3B5260E5FE800993B5D /* TabBarWith5ElementsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarWith5ElementsTests.swift; sourceTree = "<group>"; };
 		45511192260D09E7001DEEE8 /* ScreenForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenForm.swift; sourceTree = "<group>"; };
 		455111A0260D0AE6001DEEE8 /* TabBarWith3Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3Elements.swift; sourceTree = "<group>"; };
 		4556ADFF26092EAC00390C90 /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				45CA713026078FEC008C5CDF /* TabBarWith3ElementsTests.swift */,
+				453DE3B5260E5FE800993B5D /* TabBarWith5ElementsTests.swift */,
 				45CA713226078FEC008C5CDF /* Info.plist */,
 			);
 			path = TabBarUIActionUITests;
@@ -485,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453DE3B6260E5FE800993B5D /* TabBarWith5ElementsTests.swift in Sources */,
 				456A0031260E40F7008B75B5 /* TabBarWith3ElementsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

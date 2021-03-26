@@ -19,6 +19,7 @@ struct MainView: View {
                 NavigationLink(destination: TabBarWith5Elements()) {
                     Text("TabBar 5 items")
                 }
+                .accessibility(identifier: "TabBar5items")
                 NavigationLink(destination: TabBarWith3ElementsWithScreensState()) {
                     Text("TabBar 3 items + screens state")
                 }
