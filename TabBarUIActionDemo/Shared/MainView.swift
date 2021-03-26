@@ -22,7 +22,10 @@ struct MainView: View {
                     Text("Tab bar 3 items + screens state")
                 }
                 NavigationLink(destination: TabBarWith5ElementsWithNavigation()) {
-                    Text("Tab bar 5 items + with navigation to detail")
+                    Text("Tab bar 5 items + navigation to detail")
+                }
+                NavigationLink(destination: TabBarWith3ElementsWithProgrammaticTabChange()) {
+                    Text("Tab bar 5 items + programmatic tab change")
                 }
             }
             .navigationTitle("TabBarUIAction Demo")

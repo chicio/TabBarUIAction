@@ -19,6 +19,7 @@
 		4556AE0026092EAC00390C90 /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556ADFF26092EAC00390C90 /* TabScreen.swift */; };
 		4556AE0A2609D54B00390C90 /* TabModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556AE092609D54B00390C90 /* TabModal.swift */; };
 		4556AE0B2609D54B00390C90 /* TabModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556AE092609D54B00390C90 /* TabModal.swift */; };
+		4592D45D260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4592D45C260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift */; };
 		45A8984A260A8F52001D7A3B /* TabItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A89849260A8F52001D7A3B /* TabItemContent.swift */; };
 		45AB4870260884AF0025BF01 /* TabBarUIAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CA708C26078D4E008C5CDF /* TabBarUIAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45AB4879260884B70025BF01 /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA709026078D4E008C5CDF /* TabPosition.swift */; };
@@ -89,6 +90,7 @@
 		455111A0260D0AE6001DEEE8 /* TabBarWith3Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3Elements.swift; sourceTree = "<group>"; };
 		4556ADFF26092EAC00390C90 /* TabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabScreen.swift; sourceTree = "<group>"; };
 		4556AE092609D54B00390C90 /* TabModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModal.swift; sourceTree = "<group>"; };
+		4592D45C260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3ElementsProgrammaticTabChange.swift; sourceTree = "<group>"; };
 		45A89849260A8F52001D7A3B /* TabItemContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemContent.swift; sourceTree = "<group>"; };
 		45AB485C2608849D0025BF01 /* TabBarUIAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TabBarUIAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AB48B3260889B10025BF01 /* TabBarUIActionDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TabBarUIActionDemo.entitlements; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				45CA70D526078E6C008C5CDF /* TabBarUIActionDemoApp.swift */,
 				4525ECB6260B3673008B9BEC /* TabBarWith5ElementsWithNavigation.swift */,
 				45216417260C95B1000CB2A2 /* TabBarWith3ElementsWithScreensState.swift */,
+				4592D45C260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift */,
 				455111A0260D0AE6001DEEE8 /* TabBarWith3Elements.swift */,
 				4525ECC4260B36AC008B9BEC /* TabBarWith5Elements.swift */,
 				45CA7174260791B4008C5CDF /* MainView.swift */,
@@ -566,6 +569,7 @@
 				4525ECC5260B36AC008B9BEC /* TabBarWith5Elements.swift in Sources */,
 				45216418260C95B1000CB2A2 /* TabBarWith3ElementsWithScreensState.swift in Sources */,
 				45511193260D09E7001DEEE8 /* ScreenForm.swift in Sources */,
+				4592D45D260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift in Sources */,
 				45CA71942607926C008C5CDF /* ScreenWithDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
