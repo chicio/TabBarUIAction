@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "DAA9D88F-0976-4B30-BE99-E1126D4E8DE2",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TabBarUIAction.xcodeproj",
+        "identifier" : "456A0020260E40DE008B75B5",
+        "name" : "TabBarUIAction UITests"
+      }
+    }
+  ],
+  "version" : 1
+}

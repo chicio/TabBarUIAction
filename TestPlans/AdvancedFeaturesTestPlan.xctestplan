@@ -15,7 +15,9 @@
     {
       "parallelizable" : true,
       "selectedTests" : [
-        "TabBarWith3ElementsWithScreensStateTests\/testTabBarWith3Elements()"
+        "TabBarWith3ElementsWithProgrammaticTabChangeTests\/testTabBarWith3ElementsWithProgrammaticTabChange()",
+        "TabBarWith3ElementsWithScreensStateTests\/testTabBarWith3Elements()",
+        "TabBarWith5ElementsWithNavigationTests\/testTabBarWith5ElementsWithNavigation()"
       ],
       "target" : {
         "containerPath" : "container:TabBarUIAction.xcodeproj",

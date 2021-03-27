@@ -139,6 +139,7 @@
 		45DAC128260F202F00954961 /* TabBarWith3ElementsWithScreensStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3ElementsWithScreensStateTests.swift; sourceTree = "<group>"; };
 		45DAC133260F250600954961 /* TabBarWith5ElementsWithNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith5ElementsWithNavigationTests.swift; sourceTree = "<group>"; };
 		45DAC13B260F28B400954961 /* TabBarWith3ElementsWithProgrammaticTabChangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3ElementsWithProgrammaticTabChangeTests.swift; sourceTree = "<group>"; };
+		45DAC143260F2A2400954961 /* AllFeatures.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllFeatures.xctestplan; sourceTree = "<group>"; };
 		45FF4A69260B4919004D7BB8 /* TabItemsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemsList.swift; sourceTree = "<group>"; };
 		45FF4A78260B6FEE004D7BB8 /* TabItemProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +182,7 @@
 			children = (
 				4592D4C2260E3A9A00D8379B /* BasicFeaturesTestPlan.xctestplan */,
 				45DAC127260F201300954961 /* AdvancedFeaturesTestPlan.xctestplan */,
+				45DAC143260F2A2400954961 /* AllFeatures.xctestplan */,
 			);
 			path = TestPlans;
 			sourceTree = "<group>";

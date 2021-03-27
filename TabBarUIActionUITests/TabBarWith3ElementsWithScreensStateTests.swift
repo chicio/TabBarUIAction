@@ -22,8 +22,8 @@ class TabBarWith3ElementsWithScreensStateTests: XCTestCase {
 
         app.tables["TabScreen2"].textFields["Form2Field"].tap()
         app.tables["TabScreen2"].textFields["Form2Field"].typeText("Text form field 2")
-        app.buttons["Return"].tap()
-
+        app.buttons["Return"].tap()        
+        
         app.images["TabItem1SystemImage"].tap()
         app.staticTexts["TabItem1Text"].tap()
 
