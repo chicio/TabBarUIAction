@@ -29,8 +29,9 @@ struct MainView: View {
                 }
                 .accessibility(identifier: "TabBar5itemsWithNavigationDetail")
                 NavigationLink(destination: TabBarWith3ElementsWithProgrammaticTabChange()) {
-                    Text("TabBar 5 items + programmatic tab change")
+                    Text("TabBar 3 items + programmatic tab change")
                 }
+                .accessibility(identifier: "TabBar3itemsWithProgrammaticTabChange")
             }
             .navigationTitle("TabBarUIAction Demo")
         }

@@ -36,6 +36,7 @@ struct TabBarWith3ElementsWithProgrammaticTabChange: View {
                         Button("Go to tab 2") {
                             self.currentTab = .tab2
                         }
+                        .accessibility(identifier: "GoToTab2Button")
                     }
                 }
                 TabModal {
@@ -57,10 +58,13 @@ struct TabBarWith3ElementsWithProgrammaticTabChange: View {
                         Button("Go to tab 1") {
                             self.currentTab = .tab1
                         }
+                        .accessibility(identifier: "GoToTab1Button")
                     }
                 }
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibility(identifier: "TabBarWith3ElementsWithProgrammaticTabChange")
     }
 }
 
