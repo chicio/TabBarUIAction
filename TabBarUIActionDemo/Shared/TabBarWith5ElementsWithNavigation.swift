@@ -26,14 +26,14 @@ struct TabBarWith5ElementsWithNavigation: View {
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "tray.fill",
-                        text: "Tab item 1",
+                        text: "Tab Item 1",
                         font: Font.system(size: 12)
                     )
                 ) { Screen(text: "Screen 1", color: Color(.systemRed)) }
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "gamecontroller.fill",
-                        text: "Tab item 2",
+                        text: "Tab Item 2",
                         font: Font.system(size: 12)
                     )
                 ) { ScreenWithDetail() }
@@ -53,19 +53,21 @@ struct TabBarWith5ElementsWithNavigation: View {
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "dpad.fill",
-                        text: "Tab item 3",
+                        text: "Tab Item 3",
                         font: Font.system(size: 12)
                     )
                 ) { Screen(text: "Screen 3", color: Color(.systemTeal)) }
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "l1.rectangle.roundedbottom.fill",
-                        text: "Tab item 4",
+                        text: "Tab Item 4",
                         font: Font.system(size: 12)
                     )
                 ) { Screen(text: "Screen 4", color: Color(.systemGreen)) }
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibility(identifier: "TabBarWith5ElementsWithNavigation")
     }
 }
 

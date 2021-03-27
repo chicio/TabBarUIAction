@@ -27,6 +27,7 @@ struct MainView: View {
                 NavigationLink(destination: TabBarWith5ElementsWithNavigation()) {
                     Text("TabBar 5 items + navigation to detail")
                 }
+                .accessibility(identifier: "TabBar5itemsWithNavigationDetail")
                 NavigationLink(destination: TabBarWith3ElementsWithProgrammaticTabChange()) {
                     Text("TabBar 5 items + programmatic tab change")
                 }
