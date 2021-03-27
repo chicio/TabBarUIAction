@@ -53,7 +53,7 @@ public struct TabBarUIAction: View {
     public var body: some View {
         VStack {
             tabItemsProperties[currentView.rawValue].screen
-                .accessibility(identifier: "TabScreen\(currentView.rawValue)")
+                .accessibility(identifier: "TabScreen\(currentView.rawValue + 1)")
             TabBar(
                 currentView: $currentView,
                 showModal: $showModal,

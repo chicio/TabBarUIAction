@@ -16,6 +16,7 @@ struct ScreenForm: View {
             Label("Field", systemImage: "pencil")
             TextField("field", text: $text)
                 .multilineTextAlignment(.center)
+                .accessibility(identifier: self.title.getAccessibilityIdentifier(suffix: "Field"))
         }
         .padding(0)
         .background(Color.clear)

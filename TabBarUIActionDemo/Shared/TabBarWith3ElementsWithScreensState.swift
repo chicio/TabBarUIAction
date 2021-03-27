@@ -28,7 +28,7 @@ struct TabBarWith3ElementsWithScreensState: View {
                 TabScreen(
                     tabItem: TabItemContent(
                         systemImageName: "folder.badge.plus",
-                        text: "Tab item 1",
+                        text: "Tab Item 1",
                         font: Font.system(size: 16)
                     )
                 ) {
@@ -47,12 +47,14 @@ struct TabBarWith3ElementsWithScreensState: View {
                     ScreenModal(showModal: $showModal)
                 }
                 TabScreen(
-                    tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 16))
+                    tabItem: TabItemContent(systemImageName: "gear", text: "Tab Item 2", font: Font.system(size: 16))
                 ) {
                     ScreenForm(title: "Form 2", text: $text2)
                 }
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibility(identifier: "TabBarWith3ElementsWithScreenState")
     }
 }
 
