@@ -11,6 +11,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;# See:https://stackoverflow.com/questions/32184837/ui-testing-failure-neither-element-nor-any-descendant-has-keyboard-focus-on-se&#10;defaults write com.apple.iphonesimulator ConnectHardwareKeyboard 0&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
       <TestPlans>
          <TestPlanReference
             reference = "container:TestPlans/BasicFeaturesTestPlan.xctestplan">

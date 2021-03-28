@@ -20,9 +20,6 @@ class TabBarWith3ElementsWithScreensStateTests: XCTestCase {
         app.images["TabItem2SystemImage"].tap()
         app.staticTexts["TabItem2Text"].tap()
 
-        // Remember for ci
-        // swiftlilnt:disable:line_length
-        // https://stackoverflow.com/questions/32184837/ui-testing-failure-neither-element-nor-any-descendant-has-keyboard-focus-on-se
         app.tables["TabScreen2"].textFields["Form2Field"].tap()
         app.tables["TabScreen2"].textFields["Form2Field"].typeText("Text form field 2")
         app.buttons["Return"].tap()
