@@ -4,4 +4,7 @@
    <FileRef
       location = "group:TabBarUIAction.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:DemoSPM/DemoSPM.xcodeproj">
+   </FileRef>
 </Workspace>
