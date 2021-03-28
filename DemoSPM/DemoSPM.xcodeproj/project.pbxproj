@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		456A4DA02610AF9000B4211C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4D9F2610AF9000B4211C /* ContentView.swift */; };
 		456A4DA22610AF9000B4211C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456A4DA12610AF9000B4211C /* Assets.xcassets */; };
 		456A4DA52610AF9000B4211C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456A4DA42610AF9000B4211C /* Preview Assets.xcassets */; };
-		4581D45B2610B9A1002C80A9 /* TabBarUIAction in Frameworks */ = {isa = PBXBuildFile; productRef = 4581D45A2610B9A1002C80A9 /* TabBarUIAction */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +27,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4581D45B2610B9A1002C80A9 /* TabBarUIAction in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +86,6 @@
 			);
 			name = DemoSPM;
 			packageProductDependencies = (
-				4581D45A2610B9A1002C80A9 /* TabBarUIAction */,
 			);
 			productName = DemoSPM;
 			productReference = 456A4D9A2610AF9000B4211C /* DemoSPM.app */;
@@ -118,7 +115,6 @@
 			);
 			mainGroup = 456A4D912610AF9000B4211C;
 			packageReferences = (
-				4581D4592610B9A1002C80A9 /* XCRemoteSwiftPackageReference "TabBarUIAction" */,
 			);
 			productRefGroup = 456A4D9B2610AF9000B4211C /* Products */;
 			projectDirPath = "";
@@ -336,25 +332,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4581D4592610B9A1002C80A9 /* XCRemoteSwiftPackageReference "TabBarUIAction" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/chicio/TabBarUIAction.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4581D45A2610B9A1002C80A9 /* TabBarUIAction */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4581D4592610B9A1002C80A9 /* XCRemoteSwiftPackageReference "TabBarUIAction" */;
-			productName = TabBarUIAction;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 456A4D922610AF9000B4211C /* Project object */;
 }
