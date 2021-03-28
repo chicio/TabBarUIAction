@@ -9,4 +9,5 @@ let package = Package(
     platforms: [
         .iOS(.v14)
     ],
+    swiftLanguageVersions: [.v5]
 )
