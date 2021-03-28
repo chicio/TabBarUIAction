@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TabBarUIAction",
+        "repositoryURL": "https://github.com/chicio/TabBarUIAction.git",
+        "state": {
+          "branch": "main",
+          "revision": "1f89e9b46a4ae3695d68543225b223ed765d7fcd",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

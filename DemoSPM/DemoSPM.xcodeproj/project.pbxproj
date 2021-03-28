@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		456A4DA02610AF9000B4211C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4D9F2610AF9000B4211C /* ContentView.swift */; };
 		456A4DA22610AF9000B4211C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456A4DA12610AF9000B4211C /* Assets.xcassets */; };
 		456A4DA52610AF9000B4211C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456A4DA42610AF9000B4211C /* Preview Assets.xcassets */; };
+		4581D46A2610BBB3002C80A9 /* TabBarUIAction in Frameworks */ = {isa = PBXBuildFile; productRef = 4581D4692610BBB3002C80A9 /* TabBarUIAction */; };
+		4581D46E2610BBEC002C80A9 /* ScreenModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581D46C2610BBEC002C80A9 /* ScreenModal.swift */; };
+		4581D46F2610BBEC002C80A9 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581D46D2610BBEC002C80A9 /* Screen.swift */; };
+		4581D4722610BC13002C80A9 /* String+AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581D4712610BC13002C80A9 /* String+AccessibilityIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,9 @@
 		456A4DA12610AF9000B4211C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		456A4DA42610AF9000B4211C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		456A4DA62610AF9000B4211C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4581D46C2610BBEC002C80A9 /* ScreenModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenModal.swift; sourceTree = "<group>"; };
+		4581D46D2610BBEC002C80A9 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		4581D4712610BC13002C80A9 /* String+AccessibilityIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AccessibilityIdentifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4581D46A2610BBB3002C80A9 /* TabBarUIAction in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +60,9 @@
 		456A4D9C2610AF9000B4211C /* DemoSPM */ = {
 			isa = PBXGroup;
 			children = (
+				4581D4712610BC13002C80A9 /* String+AccessibilityIdentifier.swift */,
+				4581D46D2610BBEC002C80A9 /* Screen.swift */,
+				4581D46C2610BBEC002C80A9 /* ScreenModal.swift */,
 				456A4D9D2610AF9000B4211C /* DemoSPMApp.swift */,
 				456A4D9F2610AF9000B4211C /* ContentView.swift */,
 				456A4DA12610AF9000B4211C /* Assets.xcassets */,
@@ -86,6 +97,7 @@
 			);
 			name = DemoSPM;
 			packageProductDependencies = (
+				4581D4692610BBB3002C80A9 /* TabBarUIAction */,
 			);
 			productName = DemoSPM;
 			productReference = 456A4D9A2610AF9000B4211C /* DemoSPM.app */;
@@ -115,6 +127,7 @@
 			);
 			mainGroup = 456A4D912610AF9000B4211C;
 			packageReferences = (
+				4581D4682610BBB3002C80A9 /* XCRemoteSwiftPackageReference "TabBarUIAction" */,
 			);
 			productRefGroup = 456A4D9B2610AF9000B4211C /* Products */;
 			projectDirPath = "";
@@ -142,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4581D4722610BC13002C80A9 /* String+AccessibilityIdentifier.swift in Sources */,
+				4581D46E2610BBEC002C80A9 /* ScreenModal.swift in Sources */,
 				456A4DA02610AF9000B4211C /* ContentView.swift in Sources */,
 				456A4D9E2610AF9000B4211C /* DemoSPMApp.swift in Sources */,
+				4581D46F2610BBEC002C80A9 /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4581D4682610BBB3002C80A9 /* XCRemoteSwiftPackageReference "TabBarUIAction" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chicio/TabBarUIAction.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4581D4692610BBB3002C80A9 /* TabBarUIAction */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4581D4682610BBB3002C80A9 /* XCRemoteSwiftPackageReference "TabBarUIAction" */;
+			productName = TabBarUIAction;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 456A4D922610AF9000B4211C /* Project object */;
 }
