@@ -62,7 +62,7 @@ public struct TabBarUIAction: View {
                 modal: modal
             )
             .background(
-                colors.tabBarColor
+                colors.tabBarBackgroundColor
                     .ignoresSafeArea()
                     .accessibility(identifier: "TabBarUIActionBackground")
             )

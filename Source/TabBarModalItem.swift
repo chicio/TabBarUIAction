@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-public struct TabBarModalItem: View {
-    let modalTabBarItemContent: AnyView
-    let action: () -> Void
+struct TabBarModalItem: View {
+    private let modalTabBarItemContent: AnyView
+    private let action: () -> Void
 
-    public init(modalTabBarItemContent: AnyView, action: @escaping () -> Void) {
+    init(modalTabBarItemContent: AnyView, action: @escaping () -> Void) {
         self.modalTabBarItemContent = modalTabBarItemContent
         self.action = action
     }
 
-    public var body: some View {
+    var body: some View {
         Group {
             VStack(spacing: 0) {
                 self.modalTabBarItemContent

@@ -14,9 +14,11 @@ struct TabBarUIAction_Previews: PreviewProvider {
             currentTab: .constant(.tab2),
             showModal: .constant(false),
             colors: Colors(
-                tabBarColor: Color(.white),
-                tabItemColor: Color(.black),
-                tabItemSelectionColor: Color(.blue)
+                tabBarBackgroundColor: Color(.white),
+                tabItemsColors: TabItemsColors(
+                    tabItemColor: Color(.black),
+                    tabItemSelectionColor: Color(.blue)
+                )
             )
         ) {
             TabScreen(

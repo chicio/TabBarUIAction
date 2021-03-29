@@ -19,7 +19,7 @@ struct TabBarItem_Previews: PreviewProvider {
                     content: { Text("Content")}
                 )
             ),
-            tabItemColors: TabItemColors(
+            tabItemColors: TabItemsColors(
                 tabItemColor: Color(.blue),
                 tabItemSelectionColor: Color(.black)
             )
@@ -27,4 +27,3 @@ struct TabBarItem_Previews: PreviewProvider {
     }
 }
 #endif
-

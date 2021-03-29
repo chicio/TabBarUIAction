@@ -13,7 +13,7 @@ struct TabBar_Previews: PreviewProvider {
         TabBar(
             currentView: .constant(.tab1),
             showModal: .constant(false),
-            tabItemColors: TabItemColors(tabItemColor: Color(.blue), tabItemSelectionColor: Color(.black)),
+            tabItemColors: TabItemsColors(tabItemColor: Color(.blue), tabItemSelectionColor: Color(.black)),
             tabItems: [
                 TabItemProperties(
                     position: .tab1,

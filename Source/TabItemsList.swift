@@ -10,14 +10,14 @@ import SwiftUI
 struct TabItemsList: View {
     @Binding var currentView: TabPosition
     let tabItemsProperties: [TabItemProperties]
-    let tabItemColors: TabItemColors
+    let tabItemColors: TabItemsColors
 
     var body: some View {
         ForEach(tabItemsProperties) { tabItem in
             TabBarItem(
                 currentView: self.$currentView,
                 tabItem: tabItem,
-                tabItemColors: TabItemColors(
+                tabItemColors: TabItemsColors(
                     tabItemColor: self.tabItemColors.tabItemColor,
                     tabItemSelectionColor: self.tabItemColors.tabItemSelectionColor
                 )

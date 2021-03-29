@@ -12,12 +12,12 @@ struct TabBar: View {
     @Binding private var showModal: Bool
     private let tabItemsProperties: [TabItemProperties]
     private let modal: TabModal
-    private let tabItemColors: TabItemColors
+    private let tabItemColors: TabItemsColors
 
     init(
         currentView: Binding<TabPosition>,
         showModal: Binding<Bool>,
-        tabItemColors: TabItemColors,
+        tabItemColors: TabItemsColors,
         tabItems: [TabItemProperties],
         modal: TabModal
     ) {

@@ -18,9 +18,11 @@ struct TabBarWith5ElementsWithNavigation: View {
                 currentTab: $currentTab,
                 showModal: $showModal,
                 colors: Colors(
-                    tabBarColor: Color(.systemGray5),
-                    tabItemColor: Color(.systemPurple),
-                    tabItemSelectionColor: Color(.systemIndigo)
+                    tabBarBackgroundColor: Color(.systemGray5),
+                    tabItemsColors: TabItemsColors(
+                        tabItemColor: Color(.systemPurple),
+                        tabItemSelectionColor: Color(.systemIndigo)
+                    )
                 )
             ) {
                 TabScreen(

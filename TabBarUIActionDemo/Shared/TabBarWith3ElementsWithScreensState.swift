@@ -20,9 +20,11 @@ struct TabBarWith3ElementsWithScreensState: View {
                 currentTab: $currentTab,
                 showModal: $showModal,
                 colors: Colors(
-                    tabBarColor: Color(.white),
-                    tabItemColor: Color(.black),
-                    tabItemSelectionColor: Color(.blue)
+                    tabBarBackgroundColor: Color(.white),
+                    tabItemsColors: TabItemsColors(
+                        tabItemColor: Color(.black),
+                        tabItemSelectionColor: Color(.blue)
+                    )
                 )
             ) {
                 TabScreen(

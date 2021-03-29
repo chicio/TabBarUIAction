@@ -38,8 +38,8 @@
 		456A4DEF2610B85100B4211C /* TabItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD72610B85100B4211C /* TabItemsList.swift */; };
 		456A4DF02610B85100B4211C /* TabItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD82610B85100B4211C /* TabItemContent.swift */; };
 		456A4DF12610B85100B4211C /* TabItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD82610B85100B4211C /* TabItemContent.swift */; };
-		456A4DF22610B85100B4211C /* TabItemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD92610B85100B4211C /* TabItemColors.swift */; };
-		456A4DF32610B85100B4211C /* TabItemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD92610B85100B4211C /* TabItemColors.swift */; };
+		456A4DF22610B85100B4211C /* TabItemsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD92610B85100B4211C /* TabItemsColors.swift */; };
+		456A4DF32610B85100B4211C /* TabItemsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD92610B85100B4211C /* TabItemsColors.swift */; };
 		4581204B2611C76C00BAF4D7 /* TabBar_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204A2611C76C00BAF4D7 /* TabBar_Previews.swift */; };
 		458120502611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204F2611CE7E00BAF4D7 /* TabBarItem_Previews.swift */; };
 		458120512611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204F2611CE7E00BAF4D7 /* TabBarItem_Previews.swift */; };
@@ -119,7 +119,7 @@
 		456A4DD62610B85100B4211C /* TabBarModalItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModalItem.swift; sourceTree = "<group>"; };
 		456A4DD72610B85100B4211C /* TabItemsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemsList.swift; sourceTree = "<group>"; };
 		456A4DD82610B85100B4211C /* TabItemContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemContent.swift; sourceTree = "<group>"; };
-		456A4DD92610B85100B4211C /* TabItemColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemColors.swift; sourceTree = "<group>"; };
+		456A4DD92610B85100B4211C /* TabItemsColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemsColors.swift; sourceTree = "<group>"; };
 		4581203C2611B15B00BAF4D7 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
 		4581204A2611C76C00BAF4D7 /* TabBar_Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar_Previews.swift; sourceTree = "<group>"; };
 		4581204F2611CE7E00BAF4D7 /* TabBarItem_Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem_Previews.swift; sourceTree = "<group>"; };
@@ -285,7 +285,7 @@
 				456A4DCE2610B85100B4211C /* TabBarItem.swift */,
 				456A4DD62610B85100B4211C /* TabBarModalItem.swift */,
 				456A4DD32610B85100B4211C /* TabBarUIAction.swift */,
-				456A4DD92610B85100B4211C /* TabItemColors.swift */,
+				456A4DD92610B85100B4211C /* TabItemsColors.swift */,
 				456A4DD82610B85100B4211C /* TabItemContent.swift */,
 				456A4DD12610B85100B4211C /* TabItemProperties.swift */,
 				456A4DD72610B85100B4211C /* TabItemsList.swift */,
@@ -593,7 +593,7 @@
 				456A4DDB2610B85100B4211C /* TabModal.swift in Sources */,
 				456A4DE32610B85100B4211C /* TabItemProperties.swift in Sources */,
 				458120512611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */,
-				456A4DF32610B85100B4211C /* TabItemColors.swift in Sources */,
+				456A4DF32610B85100B4211C /* TabItemsColors.swift in Sources */,
 				456A4DE72610B85100B4211C /* TabBarUIAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,7 +618,7 @@
 				456A4DEA2610B85100B4211C /* TabScreen.swift in Sources */,
 				456A4DDA2610B85100B4211C /* TabModal.swift in Sources */,
 				456A4DE22610B85100B4211C /* TabItemProperties.swift in Sources */,
-				456A4DF22610B85100B4211C /* TabItemColors.swift in Sources */,
+				456A4DF22610B85100B4211C /* TabItemsColors.swift in Sources */,
 				456A4DE62610B85100B4211C /* TabBarUIAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

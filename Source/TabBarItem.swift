@@ -10,7 +10,7 @@ import SwiftUI
 struct TabBarItem: View {
     @Binding var currentView: TabPosition
     let tabItem: TabItemProperties
-    let tabItemColors: TabItemColors
+    let tabItemColors: TabItemsColors
 
     var body: some View {
         Group {

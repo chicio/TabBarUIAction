@@ -23,7 +23,7 @@ struct TabItemsList_Previews: PreviewProvider {
                         )
                     ) { Text("aaa") }
             )],
-            tabItemColors: TabItemColors(
+            tabItemColors: TabItemsColors(
                 tabItemColor: Color(.blue),
                 tabItemSelectionColor: Color(.blue)
             )
