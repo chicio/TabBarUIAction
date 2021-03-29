@@ -2,7 +2,7 @@
 //  TabBarItem.swift
 //  CustomTabBar
 //
-//  Created by Fabrizio Duroni on 06.03.20.
+//  Created by Fabrizio Duroni on 06/03/20.
 //
 
 import SwiftUI
