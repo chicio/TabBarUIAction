@@ -12,9 +12,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build iPadOS framework
+      - name: Build Framework
         run: |
           set -o pipefail && xcodebuild -project ID3TagEditor.xcodeproj -scheme "ID3TagEditor tvOS" clean test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination "platform=tvOS Simulator,name=iPad Air (4th generation),OS=latest" | xcpretty
-      - name: Build iPadOS Demo
+      - name: Build Demo
         run: | 
-          set -o pipefail && xcodebuild -project Demo/Demo.xcodeproj -scheme "Demo tvOS"  clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination "platform=tvOS Simulator,name=iPad Air (4th generation),OS=latest" | xcpretty
+          set -o pipefail && xcodebuild -project TabBarUIAction.xcodeproj -scheme "TabBarUIAction Demo" clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination "platform=tvOS Simulator,name=iPad Air (4th generation),OS=latest" | xcpretty
+      - name: Test
+        run: |
+           set -o pipefail && xcodebuild -project TabBarUIAction.xcodeproj -scheme "TabBarUIAction UITests" clean test -testPlan AllFeatures CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination 'platform=iOS Simulator,name=iPad Air (4th generation),OS=latest' | xcpretty
+
