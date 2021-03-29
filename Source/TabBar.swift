@@ -59,6 +59,7 @@ struct TabBar: View {
     }
 }
 
+#if !TEST
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar(
@@ -100,3 +101,4 @@ struct TabBar_Previews: PreviewProvider {
         )
     }
 }
+#endif
