@@ -110,6 +110,13 @@
 		456A4DD72610B85100B4211C /* TabItemsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemsList.swift; sourceTree = "<group>"; };
 		456A4DD82610B85100B4211C /* TabItemContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemContent.swift; sourceTree = "<group>"; };
 		456A4DD92610B85100B4211C /* TabItemColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemColors.swift; sourceTree = "<group>"; };
+		4581203C2611B15B00BAF4D7 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
+		4581D47C2610C211002C80A9 /* Bug_report.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Bug_report.md; path = .github/ISSUE_TEMPLATE/Bug_report.md; sourceTree = "<group>"; };
+		4581D47D2610C211002C80A9 /* Feature_request.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Feature_request.md; path = .github/ISSUE_TEMPLATE/Feature_request.md; sourceTree = "<group>"; };
+		4581D4802610C243002C80A9 /* build-ios.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-ios.yml"; sourceTree = "<group>"; };
+		4581D4822610C243002C80A9 /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
+		4581D4832610C243002C80A9 /* build-ipados.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-ipados.yml"; sourceTree = "<group>"; };
+		4581D4842610C243002C80A9 /* build-macos.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-macos.yml"; sourceTree = "<group>"; };
 		4592D45C260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3ElementsProgrammaticTabChange.swift; sourceTree = "<group>"; };
 		4592D4C2260E3A9A00D8379B /* BasicFeaturesTestPlan.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BasicFeaturesTestPlan.xctestplan; sourceTree = "<group>"; };
 		45AB485C2608849D0025BF01 /* TabBarUIAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TabBarUIAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +186,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4581D47E2610C243002C80A9 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				4581D4822610C243002C80A9 /* swiftlint.yml */,
+				4581D4802610C243002C80A9 /* build-ios.yml */,
+				4581D4832610C243002C80A9 /* build-ipados.yml */,
+				4581D4842610C243002C80A9 /* build-macos.yml */,
+			);
+			name = workflows;
+			path = .github/workflows;
+			sourceTree = "<group>";
+		};
 		4592D4C1260E3A9A00D8379B /* TestPlans */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,10 +217,14 @@
 				45CA70A526078D98008C5CDF /* CONTRIBUTING.md */,
 				45CA70A326078D98008C5CDF /* LICENSE.md */,
 				45CA70A426078D98008C5CDF /* PULL_REQUEST_TEMPLATE.md */,
+				4581D47C2610C211002C80A9 /* Bug_report.md */,
+				4581D47D2610C211002C80A9 /* Feature_request.md */,
 				45CA70A626078D98008C5CDF /* README.md */,
 				45CA70A926078DC7008C5CDF /* .gitignore */,
 				45CA70AA26078DC7008C5CDF /* .swiftlint.yml */,
+				4581203C2611B15B00BAF4D7 /* codecov.yml */,
 				45CA70AC26078DEB008C5CDF /* Package.swift */,
+				4581D47E2610C243002C80A9 /* workflows */,
 				4592D4C1260E3A9A00D8379B /* TestPlans */,
 				45CA708626078D4E008C5CDF /* Source */,
 				45CA70D026078E6C008C5CDF /* TabBarUIActionDemo */,

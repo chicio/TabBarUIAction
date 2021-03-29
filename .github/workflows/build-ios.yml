@@ -1,0 +1,25 @@
+name: Build iOS
+
+on:
+  push:
+    branches: 
+      - '*'
+
+jobs:
+  build:      
+    name: Build iOS
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build Framework
+        run: |
+           set -o pipefail && xcodebuild -project TabBarUIAction.xcodeproj -scheme "TabBarUIAction iOS" clean test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination "platform=iOS Simulator,name=iPhone 12,OS=latest" | xcpretty
+      - name: Build Demo
+        run: |
+           set -o pipefail && xcodebuild -project TabBarUIAction.xcodeproj -scheme "TabBarUIAction Demo" clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination "platform=iOS Simulator,name=iPhone 12,OS=latest" | xcpretty
+      - name: Test
+        run: |
+           set -o pipefail && xcodebuild -project TabBarUIAction.xcodeproj -scheme "TabBarUIAction UITests" clean test -testPlan AllFeatures CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' | xcpretty
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1

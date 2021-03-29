@@ -14,4 +14,4 @@
 ## Checklist:
 - [ ] My code follows the code style of this project :beers:.
 - [ ] My change requires a change to the documentation :bulb: and I have updated the documentation accordingly.
-- [ ] I have read the [CONTRIBUTING](https://github.com/chicio/RangeUISlider/blob/master/CONTRIBUTING.md) document :busts_in_silhouette:.
+- [ ] I have read the [CONTRIBUTING](https://github.com/chicio/TabBarUIAction/blob/master/CONTRIBUTING.md) document :busts_in_silhouette:.

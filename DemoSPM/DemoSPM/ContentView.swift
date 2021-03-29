@@ -11,7 +11,7 @@ import TabBarUIAction
 struct ContentView: View {
     @State private var currentTab: TabPosition = .tab1
     @State private var showModal: Bool = false
-    
+
     var body: some View {
         VStack {
             TabBarUIAction(

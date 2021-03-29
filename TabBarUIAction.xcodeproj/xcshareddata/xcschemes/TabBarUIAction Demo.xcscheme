@@ -26,18 +26,26 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "45CA707826078D2D008C5CDF"
+            BuildableName = "TabBarUIAction.framework"
+            BlueprintName = "TabBarUIAction iOS"
+            ReferencedContainer = "container:TabBarUIAction.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "45AB485B2608849C0025BF01"
+            BuildableName = "TabBarUIAction.framework"
+            BlueprintName = "TabBarUIAction macOS"
+            ReferencedContainer = "container:TabBarUIAction.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45CA712D26078FEC008C5CDF"
-               BuildableName = "TabBarUIActionUITests iOS.xctest"
-               BlueprintName = "TabBarUIActionUITests iOS"
-               ReferencedContainer = "container:TabBarUIAction.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
