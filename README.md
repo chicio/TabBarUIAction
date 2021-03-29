@@ -9,7 +9,7 @@
 [![codebeat badge](https://codebeat.co/badges/5b39bd5d-32fc-45a9-987c-d38abe4c97f5)](https://codebeat.co/projects/github-com-chicio-tabbaruiaction-main)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/chicio/TabBarUIAction/master/LICENSE.md)
  
-📚📱 A SwiftUI custom TabBar with action button for modal content display.  Fully compatible with Mac Catalyst. 📚📱
+📚📱 A SwiftUI custom TabBar view with action button for modal content display. Fully compatible with Mac Catalyst. 📚📱
 
 ***
 
