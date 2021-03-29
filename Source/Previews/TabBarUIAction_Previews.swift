@@ -20,7 +20,7 @@ struct TabBarUIAction_Previews: PreviewProvider {
         ) {
             TabScreen(
                 tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 1", font: Font.system(size: 12))
-            ) { Text("aaa") }
+            ) { Text("Test") }
             TabModal {
                 Image(systemName: "plus.circle.fill")
                     .resizable()
@@ -35,7 +35,7 @@ struct TabBarUIAction_Previews: PreviewProvider {
             }
             TabScreen(
                 tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 2", font: Font.system(size: 12))
-            ) { Text("aaa") }
+            ) { Text("Test") }
         }
     }
 }
