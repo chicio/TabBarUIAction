@@ -5,7 +5,7 @@ ignore:
 
 coverage:
   status:
-    project: off
+    project: on
     patch:
       default:
         informational: true
