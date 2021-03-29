@@ -18,7 +18,7 @@ class TabBarWith3ElementsWithScreensStateTests: XCTestCase {
         #if targetEnvironment(macCatalyst)
         app.tables["TabScreen1"].textFields["Form1Field"].typeText("\r")
         #else
-        app.keyboards.buttons["return"].tap()
+        app.buttons["Return"].tap()
         #endif
 
         app.images["TabItem2SystemImage"].tap()
@@ -29,7 +29,7 @@ class TabBarWith3ElementsWithScreensStateTests: XCTestCase {
         #if targetEnvironment(macCatalyst)
         app.tables["TabScreen2"].textFields["Form2Field"].typeText("\r")
         #else
-        app.keyboards.buttons["return"].tap()
+        app.buttons["Return"].tap()
         #endif
         app.images["TabItem1SystemImage"].tap()
         app.staticTexts["TabItem1Text"].tap()
