@@ -41,6 +41,13 @@
 		456A4DF22610B85100B4211C /* TabItemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD92610B85100B4211C /* TabItemColors.swift */; };
 		456A4DF32610B85100B4211C /* TabItemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD92610B85100B4211C /* TabItemColors.swift */; };
 		4581204B2611C76C00BAF4D7 /* TabBar_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204A2611C76C00BAF4D7 /* TabBar_Previews.swift */; };
+		458120502611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204F2611CE7E00BAF4D7 /* TabBarItem_Previews.swift */; };
+		458120512611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204F2611CE7E00BAF4D7 /* TabBarItem_Previews.swift */; };
+		458120552611CE8300BAF4D7 /* TabBar_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204A2611C76C00BAF4D7 /* TabBar_Previews.swift */; };
+		4581205A2611CECD00BAF4D7 /* TabBarModalItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458120592611CECD00BAF4D7 /* TabBarModalItem_Previews.swift */; };
+		4581205B2611CECD00BAF4D7 /* TabBarModalItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458120592611CECD00BAF4D7 /* TabBarModalItem_Previews.swift */; };
+		458120602611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581205F2611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift */; };
+		458120612611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581205F2611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift */; };
 		4592D45D260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4592D45C260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift */; };
 		4592D4C3260E3A9A00D8379B /* BasicFeaturesTestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 4592D4C2260E3A9A00D8379B /* BasicFeaturesTestPlan.xctestplan */; };
 		45AB4870260884AF0025BF01 /* TabBarUIAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CA708C26078D4E008C5CDF /* TabBarUIAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,6 +120,9 @@
 		456A4DD92610B85100B4211C /* TabItemColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemColors.swift; sourceTree = "<group>"; };
 		4581203C2611B15B00BAF4D7 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codecov.yml; sourceTree = "<group>"; };
 		4581204A2611C76C00BAF4D7 /* TabBar_Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar_Previews.swift; sourceTree = "<group>"; };
+		4581204F2611CE7E00BAF4D7 /* TabBarItem_Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem_Previews.swift; sourceTree = "<group>"; };
+		458120592611CECD00BAF4D7 /* TabBarModalItem_Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModalItem_Previews.swift; sourceTree = "<group>"; };
+		4581205F2611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUIAction_Previews.swift; sourceTree = "<group>"; };
 		4581D47C2610C211002C80A9 /* Bug_report.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Bug_report.md; path = .github/ISSUE_TEMPLATE/Bug_report.md; sourceTree = "<group>"; };
 		4581D47D2610C211002C80A9 /* Feature_request.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Feature_request.md; path = .github/ISSUE_TEMPLATE/Feature_request.md; sourceTree = "<group>"; };
 		4581D4802610C243002C80A9 /* build-ios.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-ios.yml"; sourceTree = "<group>"; };
@@ -192,6 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				4581204A2611C76C00BAF4D7 /* TabBar_Previews.swift */,
+				4581204F2611CE7E00BAF4D7 /* TabBarItem_Previews.swift */,
+				458120592611CECD00BAF4D7 /* TabBarModalItem_Previews.swift */,
+				4581205F2611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift */,
 			);
 			path = Previews;
 			sourceTree = "<group>";
@@ -559,9 +572,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				456A4DE92610B85100B4211C /* TabPosition.swift in Sources */,
+				458120612611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift in Sources */,
 				456A4DE52610B85100B4211C /* String+AccessibilityIdentifier.swift in Sources */,
 				456A4DED2610B85100B4211C /* TabBarModalItem.swift in Sources */,
 				456A4DDF2610B85100B4211C /* TabBar.swift in Sources */,
+				458120552611CE8300BAF4D7 /* TabBar_Previews.swift in Sources */,
+				4581205B2611CECD00BAF4D7 /* TabBarModalItem_Previews.swift in Sources */,
 				456A4DF12610B85100B4211C /* TabItemContent.swift in Sources */,
 				456A4DE12610B85100B4211C /* Colors.swift in Sources */,
 				456A4DEF2610B85100B4211C /* TabItemsList.swift in Sources */,
@@ -569,6 +585,7 @@
 				456A4DEB2610B85100B4211C /* TabScreen.swift in Sources */,
 				456A4DDB2610B85100B4211C /* TabModal.swift in Sources */,
 				456A4DE32610B85100B4211C /* TabItemProperties.swift in Sources */,
+				458120512611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */,
 				456A4DF32610B85100B4211C /* TabItemColors.swift in Sources */,
 				456A4DE72610B85100B4211C /* TabBarUIAction.swift in Sources */,
 			);
@@ -579,10 +596,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				456A4DE82610B85100B4211C /* TabPosition.swift in Sources */,
+				458120602611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift in Sources */,
 				456A4DE42610B85100B4211C /* String+AccessibilityIdentifier.swift in Sources */,
 				456A4DEC2610B85100B4211C /* TabBarModalItem.swift in Sources */,
 				456A4DDE2610B85100B4211C /* TabBar.swift in Sources */,
 				456A4DF02610B85100B4211C /* TabItemContent.swift in Sources */,
+				4581205A2611CECD00BAF4D7 /* TabBarModalItem_Previews.swift in Sources */,
+				458120502611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */,
 				456A4DE02610B85100B4211C /* Colors.swift in Sources */,
 				4581204B2611C76C00BAF4D7 /* TabBar_Previews.swift in Sources */,
 				456A4DEE2610B85100B4211C /* TabItemsList.swift in Sources */,

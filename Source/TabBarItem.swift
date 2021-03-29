@@ -37,22 +37,3 @@ struct TabBarItem: View {
         .accessibility(identifier: "TabBarItem\(tabItem.position.rawValue + 1)Group")
     }
 }
-
-struct TabBarItem_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBarItem(
-            currentView: .constant(.tab1),
-            tabItem: TabItemProperties(
-                position: .tab1,
-                screen: TabScreen(
-                    tabItem: TabItemContent(systemImageName: "gear", text: "Tab item 1", font: Font.system(size: 12)),
-                    content: { Text("Content")}
-                )
-            ),
-            tabItemColors: TabItemColors(
-                tabItemColor: Color(.blue),
-                tabItemSelectionColor: Color(.black)
-            )
-        )
-    }
-}
