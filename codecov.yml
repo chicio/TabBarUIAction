@@ -1,7 +1,7 @@
 ignore:
   - "TabBarUIActionUITests"
   - "TabBarUIActionDemo"
-  - "Source/Previews/**/*"
+  - "Source/Previews"
 
 coverage:
   status:
