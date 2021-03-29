@@ -166,6 +166,7 @@
 		45DAC133260F250600954961 /* TabBarWith5ElementsWithNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith5ElementsWithNavigationTests.swift; sourceTree = "<group>"; };
 		45DAC13B260F28B400954961 /* TabBarWith3ElementsWithProgrammaticTabChangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3ElementsWithProgrammaticTabChangeTests.swift; sourceTree = "<group>"; };
 		45DAC143260F2A2400954961 /* AllFeatures.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllFeatures.xctestplan; sourceTree = "<group>"; };
+		45F3E6A82611FCC500218708 /* .codebeatignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codebeatignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +249,7 @@
 				4581D47C2610C211002C80A9 /* Bug_report.md */,
 				4581D47D2610C211002C80A9 /* Feature_request.md */,
 				45CA70A926078DC7008C5CDF /* .gitignore */,
+				45F3E6A82611FCC500218708 /* .codebeatignore */,
 				45CA70AA26078DC7008C5CDF /* .swiftlint.yml */,
 				4581203C2611B15B00BAF4D7 /* codecov.yml */,
 				45CA70AC26078DEB008C5CDF /* Package.swift */,
