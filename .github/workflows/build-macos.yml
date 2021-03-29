@@ -12,10 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build macOS framework
+      - name: Build Framework
         run: |
            set -o pipefail && xcodebuild -project TabBarUIAction.xcodeproj -scheme "TabBarUIAction iOS" clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination "platform=macOS,arch=x86_64" | xcpretty
-      - name: Build macOS Demo
+      - name: Build Demo
         run: | 
            set -o pipefail && xcodebuild -project TabBarUIAction.xcodeproj -scheme "TabBarUIAction Demo" clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -destination "platform=macOS,arch=x86_64" | xcpretty
       - name: Test
