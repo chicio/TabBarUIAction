@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if !TEST
 struct TabBarItem_Previews: PreviewProvider {
     static var previews: some View {
         TabBarItem(
@@ -25,3 +26,5 @@ struct TabBarItem_Previews: PreviewProvider {
         )
     }
 }
+#endif
+

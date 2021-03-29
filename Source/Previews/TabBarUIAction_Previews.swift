@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if !TEST
 struct TabBarUIAction_Previews: PreviewProvider {
     static var previews: some View {
         TabBarUIAction(
@@ -39,3 +40,4 @@ struct TabBarUIAction_Previews: PreviewProvider {
         }
     }
 }
+#endif

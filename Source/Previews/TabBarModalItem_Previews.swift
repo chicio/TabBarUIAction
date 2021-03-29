@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if !TEST
 struct TabBarModalItem_Previews: PreviewProvider {
     static var previews: some View {
         TabBarModalItem(modalTabBarItemContent: AnyView(
@@ -21,3 +22,4 @@ struct TabBarModalItem_Previews: PreviewProvider {
         ) { }
     }
 }
+#endif
