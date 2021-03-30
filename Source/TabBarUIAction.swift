@@ -18,6 +18,14 @@ public struct TabBarUIAction: View {
     private let tabItemsProperties: [TabItemProperties]
     private let colors: Colors
 
+    /**
+     Creates a `TabBarUIAction` instance.
+     
+     - parameter currentTab: the current tab selected as `Binding` state object of type `TabPosition`.
+     - parameter showModal: the show modal toggle as `Binding` state object of type `Bool`.
+     - parameter colors: the colors of the tab bar. See `Colors`.
+     - parameter content: the content of the tab bar expressed as 3 items: first tab, modal and second tab.
+     */
     public init(
         currentTab: Binding<TabPosition>,
         showModal: Binding<Bool>,
@@ -35,6 +43,14 @@ public struct TabBarUIAction: View {
         self.colors = colors
     }
 
+    /**
+     Creates a `TabBarUIAction` instance.
+     
+     - parameter currentTab: the current tab selected as `Binding` state object of type `TabPosition`.
+     - parameter showModal: the show modal toggle as `Binding` state object of type `Bool`.
+     - parameter colors: the colors of the tab bar. See `Colors`.
+     - parameter content: the content of the tab bar expressed as 5 items: first tab, second tab, modal and third tab and forth tab.
+     */
     public init(
         currentTab: Binding<TabPosition>,
         showModal: Binding<Bool>,
@@ -54,6 +70,7 @@ public struct TabBarUIAction: View {
         self.colors = colors
     }
 
+    /// The body of TabBArUIAction. It creates a view with the modal tab content.
     public var body: some View {
         VStack {
             tabItemsProperties[currentView.rawValue].screen

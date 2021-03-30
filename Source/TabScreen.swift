@@ -25,7 +25,7 @@ public struct TabScreen: View {
         self.content = AnyView(content())
     }
 
-    /// The body of TabScreen. It create a view with the modal tab screen content.
+    /// The body of TabScreen. It creates a view with the modal tab screen content.
     public var body: some View {
         Group {
             self.content

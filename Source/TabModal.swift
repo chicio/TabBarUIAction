@@ -28,7 +28,7 @@ public struct TabModal: View {
         self.content = AnyView(content())
     }
 
-    /// The body of TabModal. It create a view with the modal tab content.
+    /// The body of TabModal. It creates a view with the modal tab content.
     public var body: some View {
         Group {
             self.content

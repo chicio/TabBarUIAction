@@ -1,19 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/fduroni/Library/Mobile Documents/com~apple~CloudDocs/Documents/Code/TabBarUIAction/Source/TabBarUIAction.swift",
-      "line": 21,
-      "symbol": "TabBarUIAction.init(currentTab:showModal:colors:content:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fduroni/Library/Mobile Documents/com~apple~CloudDocs/Documents/Code/TabBarUIAction/Source/TabBarUIAction.swift",
-      "line": 38,
-      "symbol": "TabBarUIAction.init(currentTab:showModal:colors:content:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/fduroni/Library/Mobile Documents/com~apple~CloudDocs/Documents/Code/TabBarUIAction"
 }
