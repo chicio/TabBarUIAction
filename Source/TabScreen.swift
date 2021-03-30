@@ -7,15 +7,25 @@
 
 import SwiftUI
 
+/**
+ A struct used to define the  tab screen.
+ */
 public struct TabScreen: View {
-    public let content: AnyView
-    public let tabItemContent: TabItemContent
+    let content: AnyView
+    let tabItemContent: TabItemContent
 
+    /**
+     Creates a `TabScreen` instance.
+     
+     - parameter tabItem: the the tab item content.
+     - parameter content: a `@ViewBuilder` that contains the tab screen content.
+     */
     public init<Content: View>(tabItem: TabItemContent, @ViewBuilder content: @escaping () -> Content) {
         self.tabItemContent = tabItem
         self.content = AnyView(content())
     }
 
+    /// The body of TabScreen. It create a view with the modal tab screen content.
     public var body: some View {
         Group {
             self.content

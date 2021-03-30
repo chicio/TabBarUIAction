@@ -7,10 +7,19 @@
 
 import SwiftUI
 
+/**
+ A struct used to define the  modal tab screen.
+ */
 public struct TabModal: View {
-    public let content: AnyView
-    public let modalTabBarItemContent: AnyView
+    let content: AnyView
+    let modalTabBarItemContent: AnyView
 
+    /**
+     Creates a `TabModal` instance.
+     
+     - parameter modalTabBarItemContent:a `@ViewBuilder` that contains the modal tab bar item.
+     - parameter content: a `@ViewBuilder` that contains the content of the tab bar modal screen.
+     */
     public init<Content, ModalContent>(
         @ViewBuilder modalTabBarItemContent: () -> Content,
         @ViewBuilder content: () -> ModalContent
@@ -19,6 +28,7 @@ public struct TabModal: View {
         self.content = AnyView(content())
     }
 
+    /// The body of TabModal. It create a view with the modal tab content.
     public var body: some View {
         Group {
             self.content
