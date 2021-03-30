@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/**
+ The TabBArUIAction component.
+ This is the main component that contains all the other parts.
+ */
 public struct TabBarUIAction: View {
     @Binding private var currentView: TabPosition
     @Binding private var showModal: Bool
