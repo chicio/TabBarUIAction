@@ -49,7 +49,8 @@ public struct TabBarUIAction: View {
      - parameter currentTab: the current tab selected as `Binding` state object of type `TabPosition`.
      - parameter showModal: the show modal toggle as `Binding` state object of type `Bool`.
      - parameter colors: the colors of the tab bar. See `Colors`.
-     - parameter content: the content of the tab bar expressed as 5 items: first tab, second tab, modal and third tab and forth tab.
+     - parameter content: the content of the tab bar expressed as 5 items: first tab, second tab,
+     modal and third tab and forth tab.
      */
     public init(
         currentTab: Binding<TabPosition>,
