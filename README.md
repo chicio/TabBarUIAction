@@ -57,7 +57,206 @@ and then run pod install (or pod update).
 
 ### Usage
 
-....
+To use `TabBarUIAction` in your app you have to:
+
+* import `TabBarUIAction` in your SwiftUI view
+* define two `@State` variables:
+** a `currentTab` state variable of type `TabPosition`
+** a `showModal` state variable of type `Bool`
+* configure it with colors and screens content
+
+Below you can find two examples of tab bar:
+* one with 3 screens: 2 standard tabs screen and a modal.
+* one with 5 screens: 4 standard tabs screen and a modal.
+
+```swift
+import SwiftUI
+import TabBarUIAction
+
+struct YourView: View {
+    @State private var currentTab: TabPosition = .tab1
+    @State private var showModal: Bool = false
+    //... other state of your views
+
+    var body: some View {
+        VStack {
+            TabBarUIAction(
+                currentTab: $currentTab,
+                showModal: $showModal,
+                colors: Colors(
+                    tabBarBackgroundColor: Color(.white),
+                    tabItemsColors: TabItemsColors(
+                        tabItemColor: Color(.black),
+                        tabItemSelectionColor: Color(.blue)
+                    )
+                )
+            ) {
+                TabScreen(
+                    tabItem: TabItemContent(
+                        systemImageName: "folder.badge.plus",
+                        text: "Tab Item 1",
+                        font: Font.system(size: 16)
+                    )
+                ) {
+                    /**
+                        Your first tab screen. Could be any SwiftUI view.
+                        For example...
+                    */
+                    VStack {
+                        ///...other content
+                    }
+                }
+                TabModal {
+                    /**
+                        Define an element to be used as tab bar modal item.
+                        Here you can find an exampl: an image used as button.
+                     */   
+                    Image(systemName: "plus.circle.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 55, height: 55, alignment: .center)
+                        .foregroundColor(Color(.systemBlue))
+                        .background(Color(.white))
+                        .cornerRadius(55/2)
+                        .overlay(RoundedRectangle(cornerRadius: 55/2).stroke(Color(.blue), lineWidth: 2))
+                        .accessibility(identifier: "TabBarModalButton")
+                } content: {
+                    /**
+                        Your modal screen. Could be any SwiftUI view.
+                        For example...
+                    */
+                    VStack {
+                        ///...other content
+                    }
+                }
+                TabScreen(
+                    tabItem: TabItemContent(systemImageName: "gear", text: "Tab Item 2", font: Font.system(size: 16))
+                ) {
+                    /**
+                        Your second tab screen. Could be any SwiftUI view.
+                        For example...
+                    */
+                    VStack {
+                        ///...other content
+                    }
+                }
+            }
+        }
+        .accessibilityElement(children: .contain)
+        .accessibility(identifier: "TabBarWith3Elements")
+    }
+}
+```
+```swift
+import SwiftUI
+import TabBarUIAction
+
+struct YourView: View {
+    @State private var currentTab: TabPosition = .tab1
+    @State private var showModal: Bool = false
+
+    var body: some View {
+        VStack {
+            TabBarUIAction(
+                currentTab: $currentTab,
+                showModal: $showModal,
+                colors: Colors(
+                    tabBarBackgroundColor: Color(.systemGray5),
+                    tabItemsColors: TabItemsColors(
+                        tabItemColor: Color(.systemPurple),
+                        tabItemSelectionColor: Color(.systemIndigo)
+                    )
+                )
+            ) {
+                TabScreen(
+                    tabItem: TabItemContent(
+                        systemImageName: "tray.fill",
+                        text: "Tab Item 1",
+                        font: Font.system(size: 12)
+                    )
+                ) { 
+                    /**
+                        Your first tab screen. Could be any SwiftUI view.
+                        For example...
+                    */
+                    VStack {
+                        ///...other content
+                    }
+                }
+                TabScreen(
+                    tabItem: TabItemContent(
+                        systemImageName: "gamecontroller.fill",
+                        text: "Tab Item 2",
+                        font: Font.system(size: 12)
+                    )
+                ) { 
+                    /**
+                        Your first tab screen. Could be any SwiftUI view.
+                        For example...
+                    */
+                    VStack {
+                        ///...other content
+                    }
+                }
+                TabModal {
+                    /**
+                        Define an element to be used as tab bar modal item.
+                        Here you can find an exampl: an image used as button.
+                     */   
+                    Image(systemName: "plus")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30, alignment: .center)
+                        .foregroundColor(Color(.white))
+                        .padding(10)
+                        .background(Color(.systemRed))
+                        .cornerRadius(10)
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.systemRed), lineWidth: 2))
+                        .accessibility(identifier: "TabBarModalButton")
+                } content: {
+                    /**
+                        Your modal screen. Could be any SwiftUI view.
+                        For example...
+                    */
+                    VStack {
+                        ///...other content
+                    }
+                }
+                TabScreen(
+                    tabItem: TabItemContent(
+                        systemImageName: "dpad.fill",
+                        text: "Tab Item 3",
+                        font: Font.system(size: 12)
+                    )
+                ) { 
+                    /**
+                        Your first tab screen. Could be any SwiftUI view.
+                        For example...
+                    */
+                    VStack {
+                        ///...other content
+                    }
+                }
+                TabScreen(
+                    tabItem: TabItemContent(
+                        systemImageName: "l1.rectangle.roundedbottom.fill",
+                        text: "Tab Item 4",
+                        font: Font.system(size: 12)
+                    )
+                ) { 
+                    /**
+                        Your first tab screen. Could be any SwiftUI view.
+                        For example...
+                    */
+                    VStack {
+                        ///...other content
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ***
 
