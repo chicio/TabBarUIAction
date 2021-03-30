@@ -49,11 +49,9 @@ and then run pod install (or pod update).
 
 **Swift Package Manager (SPM)**
 
-`TabBarUIAction` is also available as a SPM package. Add it from the project configuration using the Github repository url. Choose master or a tag. 
+`TabBarUIAction` is also available as a SPM package. Add it from the project configuration using the Github repository url. Choose main branch or a tag. 
 
-![spm 1](https://raw.githubusercontent.com/chicio/TabBarUIAction/master/Screenshots/spm1.png)
-![spm 2](https://raw.githubusercontent.com/chicio/TabBarUIAction/master/Screenshots/spm2.png)
-![spm 3](https://raw.githubusercontent.com/chicio/TabBarUIAction/master/Screenshots/spm3.png)
+![spm 1](https://raw.githubusercontent.com/chicio/TabBarUIAction/master/Screenshots/spm.png)
 
 ***
 
