@@ -14,6 +14,12 @@ public struct TabItemsColors {
     let tabItemColor: Color
     let tabItemSelectionColor: Color
 
+    /**
+     Creates a `TabItemsColors` instance.
+     
+     - parameter tabItemColor: the tab item color.
+     - parameter tabItemSelectionColor: the tab item selection color.
+     */
     public init(tabItemColor: Color, tabItemSelectionColor: Color) {
         self.tabItemColor = tabItemColor
         self.tabItemSelectionColor = tabItemSelectionColor
