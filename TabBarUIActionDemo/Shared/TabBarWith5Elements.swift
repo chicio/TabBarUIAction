@@ -69,6 +69,8 @@ struct TabBarWith5Elements: View {
                 ) { Screen(text: "Screen 4", color: Color(.systemGreen)) }
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibility(identifier: "TabBarWith5Elements")
     }
 }
 

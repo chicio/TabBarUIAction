@@ -142,8 +142,6 @@ struct YourView: View {
                 }
             }
         }
-        .accessibilityElement(children: .contain)
-        .accessibility(identifier: "TabBarWith3Elements")
     }
 }
 ```
