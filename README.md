@@ -12,7 +12,7 @@
 📚📱 A SwiftUI custom TabBar view with action button for modal content display. Fully compatible with Mac Catalyst. 📚📱
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/chicio/TabBarUIAction/master/Screenshots/zxr.png">
+  <img src="https://github.com/chicio/TabBarUIAction/blob/main/Screenshots/logo-github.png?raw=true">
 </p>
 
 ***
