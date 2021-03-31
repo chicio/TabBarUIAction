@@ -267,9 +267,9 @@ You can find the complete api documentation on [fabrizioduroni.it](https://tabba
 
 ### Examples
 
-In the following screenshot you can find some TabBarUIAction usage examples. You can find this examples in the [demo project](https://github.com/chicio/TabBarUIAction/tree/master/TabBarUIActionDemo).
+In the following screenshots you can find some TabBarUIAction usage examples. You can find this examples in the [demo project](https://github.com/chicio/TabBarUIAction/tree/master/TabBarUIActionDemo).
 
 <p align="center">
-<img  hspace="50" src="https://raw.githubusercontent.com/chicio/TabBarUIAction/master/Screenshots/YYY.png">
+<img  hspace="50" src="https://github.com/chicio/TabBarUIAction/blob/main/Screenshots/iphone-screens.png?raw=true">
 </p>
 
