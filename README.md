@@ -60,8 +60,8 @@ To use `TabBarUIAction` in your app you have to:
 
 * import `TabBarUIAction` in your SwiftUI view
 * define two `@State` variables:
-** a `currentTab` state variable of type `TabPosition`
-** a `showModal` state variable of type `Bool`
+   * a `currentTab` state variable of type `TabPosition`
+   * a `showModal` state variable of type `Bool`
 * configure it with colors and screens content
 
 Below you can find two examples of tab bar:
