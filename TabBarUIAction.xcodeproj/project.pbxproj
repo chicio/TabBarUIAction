@@ -15,49 +15,28 @@
 		455111A1260D0AE6001DEEE8 /* TabBarWith3Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455111A0260D0AE6001DEEE8 /* TabBarWith3Elements.swift */; };
 		456A0031260E40F7008B75B5 /* TabBarWith3ElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA713026078FEC008C5CDF /* TabBarWith3ElementsTests.swift */; };
 		456A4DDA2610B85100B4211C /* TabModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DCD2610B85100B4211C /* TabModal.swift */; };
-		456A4DDB2610B85100B4211C /* TabModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DCD2610B85100B4211C /* TabModal.swift */; };
 		456A4DDC2610B85100B4211C /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DCE2610B85100B4211C /* TabBarItem.swift */; };
-		456A4DDD2610B85100B4211C /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DCE2610B85100B4211C /* TabBarItem.swift */; };
 		456A4DDE2610B85100B4211C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DCF2610B85100B4211C /* TabBar.swift */; };
-		456A4DDF2610B85100B4211C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DCF2610B85100B4211C /* TabBar.swift */; };
 		456A4DE02610B85100B4211C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD02610B85100B4211C /* Colors.swift */; };
-		456A4DE12610B85100B4211C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD02610B85100B4211C /* Colors.swift */; };
 		456A4DE22610B85100B4211C /* TabItemProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD12610B85100B4211C /* TabItemProperties.swift */; };
-		456A4DE32610B85100B4211C /* TabItemProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD12610B85100B4211C /* TabItemProperties.swift */; };
 		456A4DE42610B85100B4211C /* String+AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD22610B85100B4211C /* String+AccessibilityIdentifier.swift */; };
-		456A4DE52610B85100B4211C /* String+AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD22610B85100B4211C /* String+AccessibilityIdentifier.swift */; };
 		456A4DE62610B85100B4211C /* TabBarUIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD32610B85100B4211C /* TabBarUIAction.swift */; };
-		456A4DE72610B85100B4211C /* TabBarUIAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD32610B85100B4211C /* TabBarUIAction.swift */; };
 		456A4DE82610B85100B4211C /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD42610B85100B4211C /* TabPosition.swift */; };
-		456A4DE92610B85100B4211C /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD42610B85100B4211C /* TabPosition.swift */; };
 		456A4DEA2610B85100B4211C /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD52610B85100B4211C /* TabScreen.swift */; };
-		456A4DEB2610B85100B4211C /* TabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD52610B85100B4211C /* TabScreen.swift */; };
 		456A4DEC2610B85100B4211C /* TabBarModalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD62610B85100B4211C /* TabBarModalItem.swift */; };
-		456A4DED2610B85100B4211C /* TabBarModalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD62610B85100B4211C /* TabBarModalItem.swift */; };
 		456A4DEE2610B85100B4211C /* TabItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD72610B85100B4211C /* TabItemsList.swift */; };
-		456A4DEF2610B85100B4211C /* TabItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD72610B85100B4211C /* TabItemsList.swift */; };
 		456A4DF02610B85100B4211C /* TabItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD82610B85100B4211C /* TabItemContent.swift */; };
-		456A4DF12610B85100B4211C /* TabItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD82610B85100B4211C /* TabItemContent.swift */; };
 		456A4DF22610B85100B4211C /* TabItemsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD92610B85100B4211C /* TabItemsColors.swift */; };
-		456A4DF32610B85100B4211C /* TabItemsColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456A4DD92610B85100B4211C /* TabItemsColors.swift */; };
 		4581204B2611C76C00BAF4D7 /* TabBar_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204A2611C76C00BAF4D7 /* TabBar_Previews.swift */; };
 		458120502611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204F2611CE7E00BAF4D7 /* TabBarItem_Previews.swift */; };
-		458120512611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204F2611CE7E00BAF4D7 /* TabBarItem_Previews.swift */; };
-		458120552611CE8300BAF4D7 /* TabBar_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581204A2611C76C00BAF4D7 /* TabBar_Previews.swift */; };
 		4581205A2611CECD00BAF4D7 /* TabBarModalItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458120592611CECD00BAF4D7 /* TabBarModalItem_Previews.swift */; };
-		4581205B2611CECD00BAF4D7 /* TabBarModalItem_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458120592611CECD00BAF4D7 /* TabBarModalItem_Previews.swift */; };
 		458120602611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581205F2611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift */; };
-		458120612611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581205F2611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift */; };
 		4581206B2611FAC900BAF4D7 /* TabItemsList_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581206A2611FAC900BAF4D7 /* TabItemsList_Previews.swift */; };
-		4581206C2611FAC900BAF4D7 /* TabItemsList_Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581206A2611FAC900BAF4D7 /* TabItemsList_Previews.swift */; };
 		4592D45D260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4592D45C260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift */; };
 		4592D4C3260E3A9A00D8379B /* BasicFeaturesTestPlan.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 4592D4C2260E3A9A00D8379B /* BasicFeaturesTestPlan.xctestplan */; };
-		45AB4870260884AF0025BF01 /* TabBarUIAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CA708C26078D4E008C5CDF /* TabBarUIAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45CA709826078D4E008C5CDF /* TabBarUIAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CA708C26078D4E008C5CDF /* TabBarUIAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45CA70DC26078E6C008C5CDF /* TabBarUIActionDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA70D526078E6C008C5CDF /* TabBarUIActionDemoApp.swift */; };
 		45CA70FD26078F06008C5CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45CA70FC26078F06008C5CDF /* Assets.xcassets */; };
-		45CA715F260790DD008C5CDF /* TabBarUIAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CA707926078D2D008C5CDF /* TabBarUIAction.framework */; };
-		45CA7160260790DD008C5CDF /* TabBarUIAction.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45CA707926078D2D008C5CDF /* TabBarUIAction.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45CA7176260791B4008C5CDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA7174260791B4008C5CDF /* MainView.swift */; };
 		45CA718826079247008C5CDF /* ScreenModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA718626079247008C5CDF /* ScreenModal.swift */; };
 		45CA71922607926C008C5CDF /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA71902607926C008C5CDF /* Screen.swift */; };
@@ -66,6 +45,8 @@
 		45DAC129260F202F00954961 /* TabBarWith3ElementsWithScreensStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAC128260F202F00954961 /* TabBarWith3ElementsWithScreensStateTests.swift */; };
 		45DAC134260F250600954961 /* TabBarWith5ElementsWithNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAC133260F250600954961 /* TabBarWith5ElementsWithNavigationTests.swift */; };
 		45DAC13C260F28B400954961 /* TabBarWith3ElementsWithProgrammaticTabChangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAC13B260F28B400954961 /* TabBarWith3ElementsWithProgrammaticTabChangeTests.swift */; };
+		45F3E6DD2615EE4F00218708 /* TabBarUIAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CA707926078D2D008C5CDF /* TabBarUIAction.framework */; };
+		45F3E6DE2615EE4F00218708 /* TabBarUIAction.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45CA707926078D2D008C5CDF /* TabBarUIAction.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +57,7 @@
 			remoteGlobalIDString = 45CA70B526078E2D008C5CDF;
 			remoteInfo = TabBarUIActionDemo;
 		};
-		45CA7161260790DD008C5CDF /* PBXContainerItemProxy */ = {
+		45F3E6DF2615EE4F00218708 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 45CA707026078D2D008C5CDF /* Project object */;
 			proxyType = 1;
@@ -86,13 +67,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		45CA7163260790DE008C5CDF /* Embed Frameworks */ = {
+		45F3E6E12615EE4F00218708 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				45CA7160260790DD008C5CDF /* TabBarUIAction.framework in Embed Frameworks */,
+				45F3E6DE2615EE4F00218708 /* TabBarUIAction.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +115,6 @@
 		4581D4842610C243002C80A9 /* build-macos.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = "build-macos.yml"; sourceTree = "<group>"; };
 		4592D45C260E349000D8379B /* TabBarWith3ElementsProgrammaticTabChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWith3ElementsProgrammaticTabChange.swift; sourceTree = "<group>"; };
 		4592D4C2260E3A9A00D8379B /* BasicFeaturesTestPlan.xctestplan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BasicFeaturesTestPlan.xctestplan; sourceTree = "<group>"; };
-		45AB485C2608849D0025BF01 /* TabBarUIAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TabBarUIAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AB48B3260889B10025BF01 /* TabBarUIActionDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TabBarUIActionDemo.entitlements; sourceTree = "<group>"; };
 		45CA707926078D2D008C5CDF /* TabBarUIAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TabBarUIAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CA708C26078D4E008C5CDF /* TabBarUIAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarUIAction.h; sourceTree = "<group>"; };
@@ -178,13 +158,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45AB48592608849C0025BF01 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		45CA707626078D2D008C5CDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,7 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45CA715F260790DD008C5CDF /* TabBarUIAction.framework in Frameworks */,
+				45F3E6DD2615EE4F00218708 /* TabBarUIAction.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +243,6 @@
 			children = (
 				45CA707926078D2D008C5CDF /* TabBarUIAction.framework */,
 				45CA70B626078E2D008C5CDF /* TabBarUIActionDemo.app */,
-				45AB485C2608849D0025BF01 /* TabBarUIAction.framework */,
 				456A0021260E40DE008B75B5 /* TabBarUIAction UITests.xctest */,
 			);
 			name = Products;
@@ -369,14 +341,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		45AB48572608849C0025BF01 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45AB4870260884AF0025BF01 /* TabBarUIAction.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		45CA707426078D2D008C5CDF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,27 +370,9 @@
 			productReference = 456A0021260E40DE008B75B5 /* TabBarUIAction UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		45AB485B2608849C0025BF01 /* TabBarUIAction macOS */ = {
+		45CA707826078D2D008C5CDF /* TabBarUIAction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45AB48612608849D0025BF01 /* Build configuration list for PBXNativeTarget "TabBarUIAction macOS" */;
-			buildPhases = (
-				45AB48572608849C0025BF01 /* Headers */,
-				45AB48582608849C0025BF01 /* Sources */,
-				45AB48592608849C0025BF01 /* Frameworks */,
-				45AB485A2608849C0025BF01 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TabBarUIAction macOS";
-			productName = "TabBarUIAction macOS";
-			productReference = 45AB485C2608849D0025BF01 /* TabBarUIAction.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		45CA707826078D2D008C5CDF /* TabBarUIAction iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45CA708126078D2D008C5CDF /* Build configuration list for PBXNativeTarget "TabBarUIAction iOS" */;
+			buildConfigurationList = 45CA708126078D2D008C5CDF /* Build configuration list for PBXNativeTarget "TabBarUIAction" */;
 			buildPhases = (
 				45CA707426078D2D008C5CDF /* Headers */,
 				45CA707526078D2D008C5CDF /* Sources */,
@@ -438,7 +384,7 @@
 			);
 			dependencies = (
 			);
-			name = "TabBarUIAction iOS";
+			name = TabBarUIAction;
 			productName = TabBarUIAction;
 			productReference = 45CA707926078D2D008C5CDF /* TabBarUIAction.framework */;
 			productType = "com.apple.product-type.framework";
@@ -450,12 +396,12 @@
 				45CA70B226078E2D008C5CDF /* Sources */,
 				45CA70B326078E2D008C5CDF /* Frameworks */,
 				45CA70B426078E2D008C5CDF /* Resources */,
-				45CA7163260790DE008C5CDF /* Embed Frameworks */,
+				45F3E6E12615EE4F00218708 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				45CA7162260790DD008C5CDF /* PBXTargetDependency */,
+				45F3E6E02615EE4F00218708 /* PBXTargetDependency */,
 			);
 			name = "TabBarUIAction Demo";
 			productName = "TabBarUIActionDemo (iOS)";
@@ -474,10 +420,6 @@
 					456A0020260E40DE008B75B5 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 45CA70B526078E2D008C5CDF;
-					};
-					45AB485B2608849C0025BF01 = {
-						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1240;
 					};
 					45CA707826078D2D008C5CDF = {
 						CreatedOnToolsVersion = 12.4;
@@ -501,8 +443,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				45CA707826078D2D008C5CDF /* TabBarUIAction iOS */,
-				45AB485B2608849C0025BF01 /* TabBarUIAction macOS */,
+				45CA707826078D2D008C5CDF /* TabBarUIAction */,
 				45CA70B526078E2D008C5CDF /* TabBarUIAction Demo */,
 				456A0020260E40DE008B75B5 /* TabBarUIAction UITests */,
 			);
@@ -511,13 +452,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		456A001F260E40DE008B75B5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45AB485A2608849C0025BF01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -575,31 +509,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45AB48582608849C0025BF01 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				456A4DE92610B85100B4211C /* TabPosition.swift in Sources */,
-				458120612611CEEC00BAF4D7 /* TabBarUIAction_Previews.swift in Sources */,
-				456A4DE52610B85100B4211C /* String+AccessibilityIdentifier.swift in Sources */,
-				4581206C2611FAC900BAF4D7 /* TabItemsList_Previews.swift in Sources */,
-				456A4DED2610B85100B4211C /* TabBarModalItem.swift in Sources */,
-				456A4DDF2610B85100B4211C /* TabBar.swift in Sources */,
-				458120552611CE8300BAF4D7 /* TabBar_Previews.swift in Sources */,
-				4581205B2611CECD00BAF4D7 /* TabBarModalItem_Previews.swift in Sources */,
-				456A4DF12610B85100B4211C /* TabItemContent.swift in Sources */,
-				456A4DE12610B85100B4211C /* Colors.swift in Sources */,
-				456A4DEF2610B85100B4211C /* TabItemsList.swift in Sources */,
-				456A4DDD2610B85100B4211C /* TabBarItem.swift in Sources */,
-				456A4DEB2610B85100B4211C /* TabScreen.swift in Sources */,
-				456A4DDB2610B85100B4211C /* TabModal.swift in Sources */,
-				456A4DE32610B85100B4211C /* TabItemProperties.swift in Sources */,
-				458120512611CE7E00BAF4D7 /* TabBarItem_Previews.swift in Sources */,
-				456A4DF32610B85100B4211C /* TabItemsColors.swift in Sources */,
-				456A4DE72610B85100B4211C /* TabBarUIAction.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		45CA707526078D2D008C5CDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -652,10 +561,10 @@
 			target = 45CA70B526078E2D008C5CDF /* TabBarUIAction Demo */;
 			targetProxy = 456A0026260E40DE008B75B5 /* PBXContainerItemProxy */;
 		};
-		45CA7162260790DD008C5CDF /* PBXTargetDependency */ = {
+		45F3E6E02615EE4F00218708 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 45CA707826078D2D008C5CDF /* TabBarUIAction iOS */;
-			targetProxy = 45CA7161260790DD008C5CDF /* PBXContainerItemProxy */;
+			target = 45CA707826078D2D008C5CDF /* TabBarUIAction */;
+			targetProxy = 45F3E6DF2615EE4F00218708 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -698,63 +607,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "TabBarUIAction Demo";
-			};
-			name = Release;
-		};
-		45AB48622608849D0025BF01 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Y682K92RZU;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "it.chicio.TabBarUIAction-macOS";
-				PRODUCT_NAME = TabBarUIAction;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		45AB48632608849D0025BF01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Y682K92RZU;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "it.chicio.TabBarUIAction-macOS";
-				PRODUCT_NAME = TabBarUIAction;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -940,7 +792,6 @@
 		45CA70C826078E2D008C5CDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TabBarUIActionDemo.entitlements;
@@ -966,7 +817,6 @@
 		45CA70C926078E2D008C5CDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TabBarUIActionDemo.entitlements;
@@ -1002,15 +852,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45AB48612608849D0025BF01 /* Build configuration list for PBXNativeTarget "TabBarUIAction macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45AB48622608849D0025BF01 /* Debug */,
-				45AB48632608849D0025BF01 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		45CA707326078D2D008C5CDF /* Build configuration list for PBXProject "TabBarUIAction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1020,7 +861,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45CA708126078D2D008C5CDF /* Build configuration list for PBXNativeTarget "TabBarUIAction iOS" */ = {
+		45CA708126078D2D008C5CDF /* Build configuration list for PBXNativeTarget "TabBarUIAction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				45CA708226078D2D008C5CDF /* Debug */,

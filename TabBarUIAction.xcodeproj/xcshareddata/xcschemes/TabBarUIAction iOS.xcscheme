@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "45CA707826078D2D008C5CDF"
                BuildableName = "TabBarUIAction.framework"
-               BlueprintName = "TabBarUIAction iOS"
+               BlueprintName = "TabBarUIAction"
                ReferencedContainer = "container:TabBarUIAction.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -52,7 +52,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "45CA707826078D2D008C5CDF"
             BuildableName = "TabBarUIAction.framework"
-            BlueprintName = "TabBarUIAction iOS"
+            BlueprintName = "TabBarUIAction"
             ReferencedContainer = "container:TabBarUIAction.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
