@@ -9,7 +9,7 @@
 jazzy \
   --output docs \
   --module TabBarUIAction \
-  --build-tool-arguments -project,TabBarUIAction.xcodeproj,-scheme,"TabBarUIAction iOS",-arch,arm64 \
+  --build-tool-arguments -project,TabBarUIAction.xcodeproj,-scheme,"TabBarUIAction",-arch,arm64 \
   --author_url https://www.fabrizioduroni.it \
   --github_url https://github.com/chicio/TabBarUIAction \
   --sdk iphoneos \
