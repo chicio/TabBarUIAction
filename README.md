@@ -269,3 +269,4 @@ In the following screenshots you can find some TabBarUIAction usage examples. Yo
 
 ![iphone screens](https://github.com/chicio/TabBarUIAction/blob/main/Screenshots/iphones-screens.png?raw=true)
 ![ipad screens](https://github.com/chicio/TabBarUIAction/blob/main/Screenshots/ipad-screen.png?raw=true)
+![macos screens](https://github.com/chicio/TabBarUIAction/blob/main/Screenshots/macos-screen.png?raw=true)
