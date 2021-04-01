@@ -148,6 +148,7 @@
 		45DAC143260F2A2400954961 /* AllFeatures.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllFeatures.xctestplan; sourceTree = "<group>"; };
 		45F3E6A82611FCC500218708 /* .codebeatignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codebeatignore; sourceTree = "<group>"; };
 		45F3E6AF261345B700218708 /* generate-docs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "generate-docs.sh"; sourceTree = "<group>"; };
+		45F3E6E42615EEB900218708 /* TabBarUIAction.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TabBarUIAction.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +228,7 @@
 				45CA70AA26078DC7008C5CDF /* .swiftlint.yml */,
 				4581203C2611B15B00BAF4D7 /* codecov.yml */,
 				45F3E6AF261345B700218708 /* generate-docs.sh */,
+				45F3E6E42615EEB900218708 /* TabBarUIAction.podspec */,
 				45CA70AC26078DEB008C5CDF /* Package.swift */,
 				4581D47E2610C243002C80A9 /* workflows */,
 				4592D4C1260E3A9A00D8379B /* TestPlans */,
