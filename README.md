@@ -18,7 +18,7 @@
 
 ### Installation
 
-There are three ways to install `TabBarUIAction` in your project: manual installation, as a standalone framework or using cocoapods.
+There are four ways to install `TabBarUIAction` in your project: manual installation, as a standalone framework, cocoapods or the Swift Package Manager.
 
 **Manual installation**
 
