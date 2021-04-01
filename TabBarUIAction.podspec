@@ -12,7 +12,7 @@ A SwiftUI custom TabBar view with action button for modal content display. Fully
   s.license      = { :type => "MIT", :file => "LICENSE.md" }
   s.author             = { "chicio" => "fabrizio.duroni@gmail.com" }
   s.social_media_url   = "https://github.com/chicio"
-  s.platforms = { :ios => "14.0", :osx => "11.0" }
+  s.platform     = :ios, "13.0"
   s.source       = { :git => "https://github.com/chicio/TabBarUIAction.git", :tag => "#{s.version}" }
   s.source_files  = "Source", "Source/**/*.{h,m}", "Source/**/*.swift"
   s.swift_version = '5.0'
