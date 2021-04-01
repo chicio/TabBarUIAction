@@ -25,7 +25,7 @@ To manually install `TabBarUIAction` simply drag and drop all the file contained
 
 **Framework**
 
-`TabBarUIAction` is available also as a framework. To install it follow the standard procedure used to install a custom cocoa touch framework:
+`TabBarUIAction` is available also as a framework. To install it follow the standard installation procedure for a cocoa touch framework:
 
 - drag the TabBarUIAction.xcodeproj inside your project 
 - add it to the Embedded Binaries/Linked Frameworks and Libraries section of your project. 
