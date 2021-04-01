@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "TabBarUIAction"
   s.version      = "0.8.0"
-  s.summary      = "A cusatom SwiftUI TabBar"
+  s.summary      = "A custom SwiftUI TabBar for iOS, iPadOS and macOS."
   s.description  = <<-DESC
 A SwiftUI custom TabBar view with action button for modal content display. Fully compatible with Mac Catalyst.
                    DESC
